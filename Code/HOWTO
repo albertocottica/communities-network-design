@@ -1,0 +1,26 @@
+HOW TO
+
+Description of the different parameters of the algorithm, with default values
+
+a = 1 in [Ø-1]      
+   #node probability parameter for preferential attachment
+
+m = 1 in [0-1]      
+   #global probability parameter for preferential attachment
+
+networkSize = 2000  
+   #size of the network to be generated (real size = network size + 2)
+
+alpha = nu1 in [0.0, 0.2, 0.4, 0.6, 0.8, 1.0] 
+   # With probability alpha, "the new community members reacts": one edge is added with the new 
+		  node as source. The target is allocated by preferential attachment.
+
+gamma = nu2 in [0.0...nu1] 
+   # With probability gamma, "onboarding works": one edge is added with the new node as target
+		  and a randomly chosen source.
+
+nb_runs = 2500 
+   #number of runs for fitting (random process)
+
+nb_workers = 48
+   #number of workers for parallelization
