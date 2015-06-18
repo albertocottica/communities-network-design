@@ -1,0 +1,84 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/albertocottica/github/local/communities-network-design/Stata files/Signature_regression.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}14 Jun 2015, 23:26:46
+
+{com}. do "/var/folders/n8/szbcd5613wg9bk3r40lyrdlr0000gn/T//SD08074.000000"
+{txt}
+{com}. reg pv_all i.Nu1##i.Nu2
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}    3600
+{txt}{hline 13}{char +}{hline 30}           F( 35,  3564) ={res}    5.44
+    {txt}   Model {char |} {res} 2.15768167    35  .061648048           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 40.4169084  3564  .011340322           {txt}R-squared     = {res} 0.0507
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.0414
+    {txt}   Total {char |} {res} 42.5745901  3599  .011829561           {txt}Root MSE      = {res} .10649
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}      pv_all{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}Nu1 {c |}
+{space 10}2  {c |}{col 14}{res}{space 2}  .003592{col 26}{space 2} .0150601{col 37}{space 1}    0.24{col 46}{space 3}0.811{col 54}{space 4}-.0259353{col 67}{space 3} .0331193
+{txt}{space 10}3  {c |}{col 14}{res}{space 2}  .045376{col 26}{space 2} .0150601{col 37}{space 1}    3.01{col 46}{space 3}0.003{col 54}{space 4} .0158487{col 67}{space 3} .0749033
+{txt}{space 10}4  {c |}{col 14}{res}{space 2}  .037088{col 26}{space 2} .0150601{col 37}{space 1}    2.46{col 46}{space 3}0.014{col 54}{space 4} .0075607{col 67}{space 3} .0666153
+{txt}{space 10}5  {c |}{col 14}{res}{space 2}  .073304{col 26}{space 2} .0150601{col 37}{space 1}    4.87{col 46}{space 3}0.000{col 54}{space 4} .0437767{col 67}{space 3} .1028313
+{txt}{space 10}6  {c |}{col 14}{res}{space 2}  .041556{col 26}{space 2} .0150601{col 37}{space 1}    2.76{col 46}{space 3}0.006{col 54}{space 4} .0120287{col 67}{space 3} .0710833
+{txt}{space 12} {c |}
+{space 9}Nu2 {c |}
+{space 10}2  {c |}{col 14}{res}{space 2}  .000784{col 26}{space 2} .0150601{col 37}{space 1}    0.05{col 46}{space 3}0.958{col 54}{space 4}-.0287433{col 67}{space 3} .0303113
+{txt}{space 10}3  {c |}{col 14}{res}{space 2} -.007352{col 26}{space 2} .0150601{col 37}{space 1}   -0.49{col 46}{space 3}0.625{col 54}{space 4}-.0368793{col 67}{space 3} .0221753
+{txt}{space 10}4  {c |}{col 14}{res}{space 2} -.011376{col 26}{space 2} .0150601{col 37}{space 1}   -0.76{col 46}{space 3}0.450{col 54}{space 4}-.0409033{col 67}{space 3} .0181513
+{txt}{space 10}5  {c |}{col 14}{res}{space 2}  -.00424{col 26}{space 2} .0150601{col 37}{space 1}   -0.28{col 46}{space 3}0.778{col 54}{space 4}-.0337673{col 67}{space 3} .0252873
+{txt}{space 10}6  {c |}{col 14}{res}{space 2} -.007916{col 26}{space 2} .0150601{col 37}{space 1}   -0.53{col 46}{space 3}0.599{col 54}{space 4}-.0374433{col 67}{space 3} .0216113
+{txt}{space 12} {c |}
+{space 5}Nu1#Nu2 {c |}
+{space 8}2 2  {c |}{col 14}{res}{space 2}  .015968{col 26}{space 2} .0212982{col 37}{space 1}    0.75{col 46}{space 3}0.453{col 54}{space 4}-.0257899{col 67}{space 3} .0577259
+{txt}{space 8}2 3  {c |}{col 14}{res}{space 2}  .029696{col 26}{space 2} .0212982{col 37}{space 1}    1.39{col 46}{space 3}0.163{col 54}{space 4}-.0120619{col 67}{space 3} .0714539
+{txt}{space 8}2 4  {c |}{col 14}{res}{space 2}  .031884{col 26}{space 2} .0212982{col 37}{space 1}    1.50{col 46}{space 3}0.134{col 54}{space 4}-.0098739{col 67}{space 3} .0736419
+{txt}{space 8}2 5  {c |}{col 14}{res}{space 2}  .023488{col 26}{space 2} .0212982{col 37}{space 1}    1.10{col 46}{space 3}0.270{col 54}{space 4}-.0182699{col 67}{space 3} .0652459
+{txt}{space 8}2 6  {c |}{col 14}{res}{space 2}  .024608{col 26}{space 2} .0212982{col 37}{space 1}    1.16{col 46}{space 3}0.248{col 54}{space 4}-.0171499{col 67}{space 3} .0663659
+{txt}{space 8}3 2  {c |}{col 14}{res}{space 2} -.008472{col 26}{space 2} .0212982{col 37}{space 1}   -0.40{col 46}{space 3}0.691{col 54}{space 4}-.0502299{col 67}{space 3} .0332859
+{txt}{space 8}3 3  {c |}{col 14}{res}{space 2}  .001268{col 26}{space 2} .0212982{col 37}{space 1}    0.06{col 46}{space 3}0.953{col 54}{space 4}-.0404899{col 67}{space 3} .0430259
+{txt}{space 8}3 4  {c |}{col 14}{res}{space 2}  -.01024{col 26}{space 2} .0212982{col 37}{space 1}   -0.48{col 46}{space 3}0.631{col 54}{space 4}-.0519979{col 67}{space 3} .0315179
+{txt}{space 8}3 5  {c |}{col 14}{res}{space 2} -.017532{col 26}{space 2} .0212982{col 37}{space 1}   -0.82{col 46}{space 3}0.410{col 54}{space 4}-.0592899{col 67}{space 3} .0242259
+{txt}{space 8}3 6  {c |}{col 14}{res}{space 2}  .018888{col 26}{space 2} .0212982{col 37}{space 1}    0.89{col 46}{space 3}0.375{col 54}{space 4}-.0228699{col 67}{space 3} .0606459
+{txt}{space 8}4 2  {c |}{col 14}{res}{space 2} -.011688{col 26}{space 2} .0212982{col 37}{space 1}   -0.55{col 46}{space 3}0.583{col 54}{space 4}-.0534459{col 67}{space 3} .0300699
+{txt}{space 8}4 3  {c |}{col 14}{res}{space 2}  .013072{col 26}{space 2} .0212982{col 37}{space 1}    0.61{col 46}{space 3}0.539{col 54}{space 4}-.0286859{col 67}{space 3} .0548299
+{txt}{space 8}4 4  {c |}{col 14}{res}{space 2}  .041848{col 26}{space 2} .0212982{col 37}{space 1}    1.96{col 46}{space 3}0.050{col 54}{space 4} .0000901{col 67}{space 3} .0836059
+{txt}{space 8}4 5  {c |}{col 14}{res}{space 2} -.001572{col 26}{space 2} .0212982{col 37}{space 1}   -0.07{col 46}{space 3}0.941{col 54}{space 4}-.0433299{col 67}{space 3} .0401859
+{txt}{space 8}4 6  {c |}{col 14}{res}{space 2} -.008832{col 26}{space 2} .0212982{col 37}{space 1}   -0.41{col 46}{space 3}0.678{col 54}{space 4}-.0505899{col 67}{space 3} .0329259
+{txt}{space 8}5 2  {c |}{col 14}{res}{space 2} -.018224{col 26}{space 2} .0212982{col 37}{space 1}   -0.86{col 46}{space 3}0.392{col 54}{space 4}-.0599819{col 67}{space 3} .0235339
+{txt}{space 8}5 3  {c |}{col 14}{res}{space 2} -.021648{col 26}{space 2} .0212982{col 37}{space 1}   -1.02{col 46}{space 3}0.309{col 54}{space 4}-.0634059{col 67}{space 3} .0201099
+{txt}{space 8}5 4  {c |}{col 14}{res}{space 2} -.012132{col 26}{space 2} .0212982{col 37}{space 1}   -0.57{col 46}{space 3}0.569{col 54}{space 4}-.0538899{col 67}{space 3} .0296259
+{txt}{space 8}5 5  {c |}{col 14}{res}{space 2} -.009548{col 26}{space 2} .0212982{col 37}{space 1}   -0.45{col 46}{space 3}0.654{col 54}{space 4}-.0513059{col 67}{space 3} .0322099
+{txt}{space 8}5 6  {c |}{col 14}{res}{space 2} -.001912{col 26}{space 2} .0212982{col 37}{space 1}   -0.09{col 46}{space 3}0.928{col 54}{space 4}-.0436699{col 67}{space 3} .0398459
+{txt}{space 8}6 2  {c |}{col 14}{res}{space 2}  .019024{col 26}{space 2} .0212982{col 37}{space 1}    0.89{col 46}{space 3}0.372{col 54}{space 4}-.0227339{col 67}{space 3} .0607819
+{txt}{space 8}6 3  {c |}{col 14}{res}{space 2}  .039048{col 26}{space 2} .0212982{col 37}{space 1}    1.83{col 46}{space 3}0.067{col 54}{space 4}-.0027099{col 67}{space 3} .0808059
+{txt}{space 8}6 4  {c |}{col 14}{res}{space 2}  .026956{col 26}{space 2} .0212982{col 37}{space 1}    1.27{col 46}{space 3}0.206{col 54}{space 4}-.0148019{col 67}{space 3} .0687139
+{txt}{space 8}6 5  {c |}{col 14}{res}{space 2}  .026396{col 26}{space 2} .0212982{col 37}{space 1}    1.24{col 46}{space 3}0.215{col 54}{space 4}-.0153619{col 67}{space 3} .0681539
+{txt}{space 8}6 6  {c |}{col 14}{res}{space 2}  .027512{col 26}{space 2} .0212982{col 37}{space 1}    1.29{col 46}{space 3}0.197{col 54}{space 4}-.0142459{col 67}{space 3} .0692699
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2}  .059312{col 26}{space 2} .0106491{col 37}{space 1}    5.57{col 46}{space 3}0.000{col 54}{space 4} .0384331{col 67}{space 3} .0801909
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. translate @results mylog.txt
+{err}translator results2txt not found
+{txt}{search r(111):r(111);}
+
+{com}. translate
+{err}invalid file specification
+{txt}{search r(198):r(198);}
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/albertocottica/github/local/communities-network-design/Stata files/Signature_regression.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}14 Jun 2015, 23:36:55
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
