@@ -1,0 +1,462 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/albertocottica/github/local/communities-network-design/Stata files/ttest01.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}30 Jun 2015, 16:24:53
+
+{com}. do "/var/folders/n8/szbcd5613wg9bk3r40lyrdlr0000gn/T//SD00395.000000"
+{txt}
+{com}. macro def pv_allz pva0000 pva0002 pva0004 pva0006 pva0008 pva0010 pva0200 pva0202 pva0204 pva0206 ///
+> pva0208 pva0210 pva0400 pva0402 pva0404 pva0406 pva0408 pva0410 pva0600 pva0602 pva0604 pva0606 pva0608 ///
+> pva0610 pva0800 pva0802 pva0804 pva0806 pva0808 pva0810 pva1000 pva1002 pva1004 pva1006 pva1008 pva1010
+{txt}
+{com}. 
+. 
+. foreach X in $pv_allz   {c -(}
+{txt}  2{com}.         ttest `X' == 0.1
+{txt}  3{com}.         {c )-}
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0000 {c |}{res}{col 12}    100{col 22}  .058808{col 34} .0076412{col 46} .0764125{col 58} .0436461{col 70} .0739699
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0000{txt})                                          t = {res} -5.3907
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0002 {c |}{res}{col 12}    100{col 22}  .060096{col 34} .0078102{col 46} .0781019{col 58} .0445989{col 70} .0755931
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0002{txt})                                          t = {res} -5.1092
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0004 {c |}{res}{col 12}    100{col 22}   .05196{col 34} .0085874{col 46} .0858744{col 58} .0349207{col 70} .0689993
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0004{txt})                                          t = {res} -5.5942
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0006 {c |}{res}{col 12}    100{col 22}  .047936{col 34} .0082026{col 46} .0820264{col 58} .0316602{col 70} .0642118
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0006{txt})                                          t = {res} -6.3472
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0008 {c |}{res}{col 12}    100{col 22}  .055072{col 34}  .006609{col 46} .0660903{col 58} .0419583{col 70} .0681857
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0008{txt})                                          t = {res} -6.7980
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0010 {c |}{res}{col 12}    100{col 22}  .051396{col 34} .0070033{col 46} .0700334{col 58} .0374998{col 70} .0652922
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0010{txt})                                          t = {res} -6.9401
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0200 {c |}{res}{col 12}    100{col 22}  .062904{col 34} .0062136{col 46} .0621357{col 58} .0505749{col 70} .0752331
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0200{txt})                                          t = {res} -5.9702
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0202 {c |}{res}{col 12}    100{col 22}  .087652{col 34} .0102548{col 46} .1025476{col 58} .0673043{col 70} .1079997
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0202{txt})                                          t = {res} -1.2041
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.1157         {txt}Pr(|T| > |t|) = {res}0.2314          {txt}Pr(T > t) = {res}0.8843
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0204 {c |}{res}{col 12}    100{col 22}  .085248{col 34} .0096484{col 46}  .096484{col 58} .0661035{col 70} .1043925
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0204{txt})                                          t = {res} -1.5290
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0647         {txt}Pr(|T| > |t|) = {res}0.1295          {txt}Pr(T > t) = {res}0.9353
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0206 {c |}{res}{col 12}    100{col 22}  .083412{col 34} .0090572{col 46} .0905716{col 58} .0654406{col 70} .1013834
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0206{txt})                                          t = {res} -1.8315
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0350         {txt}Pr(|T| > |t|) = {res}0.0700          {txt}Pr(T > t) = {res}0.9650
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0208 {c |}{res}{col 12}    100{col 22}  .082152{col 34} .0108948{col 46} .1089478{col 58} .0605344{col 70} .1037696
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0208{txt})                                          t = {res} -1.6382
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0523         {txt}Pr(|T| > |t|) = {res}0.1046          {txt}Pr(T > t) = {res}0.9477
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0210 {c |}{res}{col 12}    100{col 22}  .079596{col 34} .0093417{col 46} .0934174{col 58}   .06106{col 70}  .098132
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0210{txt})                                          t = {res} -2.1842
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0157         {txt}Pr(|T| > |t|) = {res}0.0313          {txt}Pr(T > t) = {res}0.9843
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0400 {c |}{res}{col 12}    100{col 22}  .104688{col 34} .0126138{col 46} .1261377{col 58} .0796595{col 70} .1297165
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0400{txt})                                          t = {res}  0.3717
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.6445         {txt}Pr(|T| > |t|) = {res}0.7109          {txt}Pr(T > t) = {res}0.3555
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0402 {c |}{res}{col 12}    100{col 22}     .097{col 34} .0104827{col 46} .1048266{col 58} .0762001{col 70} .1177999
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0402{txt})                                          t = {res} -0.2862
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.3877         {txt}Pr(|T| > |t|) = {res}0.7753          {txt}Pr(T > t) = {res}0.6123
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0404 {c |}{res}{col 12}    100{col 22}  .107824{col 34} .0116687{col 46}  .116687{col 58} .0846708{col 70} .1309772
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0404{txt})                                          t = {res}  0.6705
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.7480         {txt}Pr(|T| > |t|) = {res}0.5041          {txt}Pr(T > t) = {res}0.2520
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0406 {c |}{res}{col 12}    100{col 22}  .083072{col 34}  .009015{col 46} .0901495{col 58} .0651844{col 70} .1009596
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0406{txt})                                          t = {res} -1.8778
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0317         {txt}Pr(|T| > |t|) = {res}0.0634          {txt}Pr(T > t) = {res}0.9683
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0408 {c |}{res}{col 12}    100{col 22}  .082916{col 34} .0103097{col 46}  .103097{col 58} .0624593{col 70} .1033727
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0408{txt})                                          t = {res} -1.6571
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0503         {txt}Pr(|T| > |t|) = {res}0.1007          {txt}Pr(T > t) = {res}0.9497
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0410 {c |}{res}{col 12}    100{col 22}   .11566{col 34} .0108818{col 46} .1088176{col 58} .0940682{col 70} .1372518
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0410{txt})                                          t = {res}  1.4391
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.9234         {txt}Pr(|T| > |t|) = {res}0.1533          {txt}Pr(T > t) = {res}0.0766
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0600 {c |}{res}{col 12}    100{col 22}    .0964{col 34} .0084528{col 46} .0845275{col 58} .0796279{col 70} .1131721
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0600{txt})                                          t = {res} -0.4259
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.3356         {txt}Pr(|T| > |t|) = {res}0.6711          {txt}Pr(T > t) = {res}0.6644
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0602 {c |}{res}{col 12}    100{col 22}  .085496{col 34} .0097459{col 46}  .097459{col 58}  .066158{col 70}  .104834
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0602{txt})                                          t = {res} -1.4882
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0699         {txt}Pr(|T| > |t|) = {res}0.1399          {txt}Pr(T > t) = {res}0.9301
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0604 {c |}{res}{col 12}    100{col 22}   .10212{col 34} .0096431{col 46} .0964311{col 58}  .082986{col 70}  .121254
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0604{txt})                                          t = {res}  0.2198
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.5868         {txt}Pr(|T| > |t|) = {res}0.8264          {txt}Pr(T > t) = {res}0.4132
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0606 {c |}{res}{col 12}    100{col 22}  .103236{col 34} .0108214{col 46} .1082139{col 58}  .081764{col 70}  .124708
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0606{txt})                                          t = {res}  0.2990
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.6172         {txt}Pr(|T| > |t|) = {res}0.7655          {txt}Pr(T > t) = {res}0.3828
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0608 {c |}{res}{col 12}    100{col 22} 1.792172{col 34} .0004162{col 46} .0041625{col 58} 1.791346{col 70} 1.792998
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0608{txt})                                          t = {res} 4.1e+03
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0610 {c |}{res}{col 12}    100{col 22}  .079652{col 34} .0082764{col 46} .0827636{col 58} .0632299{col 70} .0960741
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0610{txt})                                          t = {res} -2.4586
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.0078         {txt}Pr(|T| > |t|) = {res}0.0157          {txt}Pr(T > t) = {res}0.9922
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0800 {c |}{res}{col 12}    100{col 22}  .132616{col 34} .0136711{col 46} .1367112{col 58} .1054895{col 70} .1597425
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0800{txt})                                          t = {res}  2.3858
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.9905         {txt}Pr(|T| > |t|) = {res}0.0189          {txt}Pr(T > t) = {res}0.0095
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0802 {c |}{res}{col 12}    100{col 22}  .115176{col 34} .0118124{col 46} .1181239{col 58} .0917377{col 70} .1386143
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0802{txt})                                          t = {res}  1.2848
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.8991         {txt}Pr(|T| > |t|) = {res}0.2019          {txt}Pr(T > t) = {res}0.1009
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0804 {c |}{res}{col 12}    100{col 22}  .103616{col 34} .0121182{col 46} .1211819{col 58} .0795709{col 70} .1276611
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0804{txt})                                          t = {res}  0.2984
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.6170         {txt}Pr(|T| > |t|) = {res}0.7660          {txt}Pr(T > t) = {res}0.3830
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0806 {c |}{res}{col 12}    100{col 22}  .109108{col 34} .0112837{col 46} .1128372{col 58} .0867187{col 70} .1314973
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0806{txt})                                          t = {res}  0.8072
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.7893         {txt}Pr(|T| > |t|) = {res}0.4215          {txt}Pr(T > t) = {res}0.2107
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0808 {c |}{res}{col 12}    100{col 22}  .122888{col 34} .0146512{col 46} .1465121{col 58} .0938168{col 70} .1519592
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0808{txt})                                          t = {res}  1.5622
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.9393         {txt}Pr(|T| > |t|) = {res}0.1214          {txt}Pr(T > t) = {res}0.0607
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva0810 {c |}{res}{col 12}    100{col 22}  .122788{col 34} .0141778{col 46} .1417782{col 58} .0946561{col 70} .1509199
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva0810{txt})                                          t = {res}  1.6073
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.9444         {txt}Pr(|T| > |t|) = {res}0.1112          {txt}Pr(T > t) = {res}0.0556
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva1000 {c |}{res}{col 12}    100{col 22}  .100868{col 34} .0106383{col 46} .1063832{col 58} .0797593{col 70} .1219767
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva1000{txt})                                          t = {res}  0.0816
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.5324         {txt}Pr(|T| > |t|) = {res}0.9351          {txt}Pr(T > t) = {res}0.4676
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva1002 {c |}{res}{col 12}    100{col 22}  .120676{col 34} .0119045{col 46} .1190448{col 58} .0970549{col 70} .1442971
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva1002{txt})                                          t = {res}  1.7368
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.9572         {txt}Pr(|T| > |t|) = {res}0.0855          {txt}Pr(T > t) = {res}0.0428
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva1004 {c |}{res}{col 12}    100{col 22}  .132564{col 34} .0124599{col 46} .1245995{col 58} .1078408{col 70} .1572872
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva1004{txt})                                          t = {res}  2.6135
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.9948         {txt}Pr(|T| > |t|) = {res}0.0104          {txt}Pr(T > t) = {res}0.0052
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva1006 {c |}{res}{col 12}    100{col 22}  .116448{col 34} .0126703{col 46} .1267031{col 58} .0913074{col 70} .1415886
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva1006{txt})                                          t = {res}  1.2982
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.9014         {txt}Pr(|T| > |t|) = {res}0.1973          {txt}Pr(T > t) = {res}0.0986
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva1008 {c |}{res}{col 12}    100{col 22}  .123024{col 34} .0125063{col 46} .1250627{col 58} .0982088{col 70} .1478392
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva1008{txt})                                          t = {res}  1.8410
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.9657         {txt}Pr(|T| > |t|) = {res}0.0686          {txt}Pr(T > t) = {res}0.0343
+
+{txt}One-sample t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ pva1010 {c |}{res}{col 12}    100{col 22}  .115704{col 34} .0113839{col 46} .1138391{col 58} .0931158{col 70} .1382922
+{txt}{hline 9}{c BT}{hline 68}
+    mean = mean({res}pva1010{txt})                                          t = {res}  1.3795
+{txt}Ho: mean = {res}0.1                                   {txt}degrees of freedom = {res}      99
+
+   {txt}Ha: mean < {res}0.1               {txt}Ha: mean != {res}0.1               {txt}Ha: mean > {res}0.1
+ {txt}Pr(T < t) = {res}0.9146         {txt}Pr(|T| > |t|) = {res}0.1709          {txt}Pr(T > t) = {res}0.0854
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/albertocottica/github/local/communities-network-design/Stata files/ttest01.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}30 Jun 2015, 16:26:35
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

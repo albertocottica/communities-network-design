@@ -1,25 +1,46 @@
 cumul pv_all if ob == 0, generate(CDF_f_pv_all) equal
-cumul pv_all if ob == 1 & nu1 == 0, generate(CDF_nu1_00_pv_all) equal
-cumul pv_all if ob == 1 & nu1 < 0.21 & nu1 > .19, generate(CDF_nu1_02_pv_all) equal
-cumul pv_all if ob == 1 & nu1 < 0.41 & nu1 > .39, generate(CDF_nu1_04_pv_all) equal
-cumul pv_all if ob == 1 & nu1 < .61 & nu1 > .59, generate(CDF_nu1_06_pv_all) equal
-cumul pv_all if ob == 1 & nu1 < .81 & nu1 > .79, generate(CDF_nu1_08_pv_all) equal
-cumul pv_all if ob == 1 & nu1 == 1, generate(CDF_nu1_10_pv_all) equal
+cumul pv_all if ob == 1 & nu2 == 0, generate(CDF_nu2_00_pv_all) equal
+cumul pv_all if ob == 1 & nu2 < 0.21 & nu2 > .19, generate(CDF_nu2_02_pv_all) equal
+cumul pv_all if ob == 1 & nu2 < 0.41 & nu2 > .39, generate(CDF_nu2_04_pv_all) equal
+cumul pv_all if ob == 1 & nu2 < .61 & nu2 > .59, generate(CDF_nu2_06_pv_all) equal
+cumul pv_all if ob == 1 & nu2 < .81 & nu2 > .79, generate(CDF_nu2_08_pv_all) equal
+cumul pv_all if ob == 1 & nu2 == 1, generate(CDF_nu2_10_pv_all) equal
+cumul pv_all if ob == 1, generate (CDF_onb_pv_all)
 
-twoway (connected CDF_f_pv_all pv_all, sort) (connected CDF_nu1_00_pv_all pv_all, sort) ///
-(connected CDF_nu1_02_pv_all pv_all, sort) (connected CDF_nu1_04_pv_all pv_all, sort) ///
-(connected CDF_nu1_06_pv_all pv_all, sort) (connected CDF_nu1_08_pv_all pv_all, sort) ///
-(connected CDF_nu1_10_pv_all pv_all, sort), xline(.1)
+
+twoway (connected CDF_f_pv_all pv_all, sort) (connected CDF_nu2_00_pv_all pv_all, sort) ///
+(connected CDF_nu2_02_pv_all pv_all, sort) (connected CDF_nu2_04_pv_all pv_all, sort) ///
+(connected CDF_nu2_06_pv_all pv_all, sort) (connected CDF_nu2_08_pv_all pv_all, sort) ///
+(connected CDF_nu2_10_pv_all pv_all, sort), xline(.1)
 
 cumul kmin if ob == 0, generate(CDF_f_kmin) equal
-cumul kmin if ob == 1 & nu1 == 0, generate(CDF_nu1_00_kmin) equal
-cumul kmin if ob == 1 & nu1 < 0.21 & nu1 > .19, generate(CDF_nu1_02_kmin) equal
-cumul kmin if ob == 1 & nu1 < 0.41 & nu1 > .39, generate(CDF_nu1_04_kmin) equal
-cumul kmin if ob == 1 & nu1 < .61 & nu1 > .59, generate(CDF_nu1_06_kmin) equal
-cumul kmin if ob == 1 & nu1 < .81 & nu1 > .79, generate(CDF_nu1_08_kmin) equal
-cumul kmin if ob == 1 & nu1 == 1, generate(CDF_nu1_10_kmin) equal
+cumul kmin if ob == 1 & nu2 == 0, generate(CDF_nu2_00_kmin) equal
+cumul kmin if ob == 1 & nu2 < 0.21 & nu2 > .19, generate(CDF_nu2_02_kmin) equal
+cumul kmin if ob == 1 & nu2 < 0.41 & nu2 > .39, generate(CDF_nu2_04_kmin) equal
+cumul kmin if ob == 1 & nu2 < .61 & nu2 > .59, generate(CDF_nu2_06_kmin) equal
+cumul kmin if ob == 1 & nu2 < .81 & nu2 > .79, generate(CDF_nu2_08_kmin) equal
+cumul kmin if ob == 1 & nu2 == 1, generate(CDF_nu2_10_kmin) equal
 
-twoway (connected CDF_f_kmin kmin, sort) (connected CDF_nu1_00_kmin kmin, sort) ///
-(connected CDF_nu1_02_kmin kmin, sort) (connected CDF_nu1_04_kmin kmin, sort) ///
-(connected CDF_nu1_06_kmin kmin, sort) (connected CDF_nu1_08_kmin kmin, sort) ///
-(connected CDF_nu1_10_kmin kmin, sort), xline(3) xline(2)
+
+twoway (connected CDF_f_kmin kmin, sort) (connected CDF_nu2_00_kmin kmin, sort) ///
+(connected CDF_nu2_02_kmin kmin, sort) (connected CDF_nu2_04_kmin kmin, sort) ///
+(connected CDF_nu2_06_kmin kmin, sort) (connected CDF_nu2_08_kmin kmin, sort) ///
+(connected CDF_nu2_10_kmin kmin, sort), xline(3)
+
+twoway (connected CDF_f_kmin kmin, sort) (connected CDF_ob1_kmin kmin, sort)
+
+cumul exp_all if ob == 0, generate(CDF_f_exp_all) equal
+cumul exp_all if ob == 1 & nu1 == 0, generate(CDF_nu1_00_exp_all) equal
+cumul exp_all if ob == 1 & nu1 < 0.21 & nu1 > .19, generate(CDF_nu1_02_exp_all) equal
+cumul exp_all if ob == 1 & nu1 < 0.41 & nu1 > .39, generate(CDF_nu1_04_exp_all) equal
+cumul exp_all if ob == 1 & nu1 < .61 & nu1 > .59, generate(CDF_nu1_06_exp_all) equal
+cumul exp_all if ob == 1 & nu1 < .81 & nu1 > .79, generate(CDF_nu1_08_exp_all) equal
+cumul exp_all if ob == 1 & nu1 == 1, generate(CDF_nu1_10_exp_all) equal
+
+twoway (connected CDF_f_exp_all exp_all, sort) (connected CDF_nu1_00_exp_all exp_all, sort) ///
+(connected CDF_nu1_02_exp_all exp_all, sort) (connected CDF_nu1_04_exp_all exp_all, sort) ///
+(connected CDF_nu1_06_exp_all exp_all, sort) (connected CDF_nu1_08_exp_all exp_all, sort) ///
+(connected CDF_nu1_10_exp_all exp_all, sort), xline(2) xline(3)
+
+twoway (connected exp_all nu1, sort) if ob == 0
+twoway (connected exp nu1, sort) if ob == 1

@@ -1,0 +1,570 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/albertocottica/github/local/communities-network-design/Stata files/ttestExp.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 1 Jul 2015, 16:06:33
+
+{com}. do "/var/folders/n8/szbcd5613wg9bk3r40lyrdlr0000gn/T//SD00395.000000"
+{txt}
+{com}. macro def exp_allz exp0000 exp0002 exp0004 exp0006 exp0008 exp0010 exp0200 exp0202 exp0204 exp0206 ///
+> exp0208 exp0210 exp0400 exp0402 exp0404 exp0406 exp0408 exp0410 exp0600 exp0602 exp0604 exp0606 exp0608 ///
+> exp0610 exp0800 exp0802 exp0804 exp0806 exp0808 exp0810 exp1000 exp1002 exp1004 exp1006 exp1008 exp1010
+{txt}
+{com}. 
+. 
+. foreach X in $exp_allz  {c -(}
+{txt}  2{com}.         ttest `X' == expfalse
+{txt}  3{com}.         {c )-}
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0000 {c |}{res}{col 12}    100{col 22} 2.985189{col 34} .0247251{col 46} .2472507{col 58} 2.936129{col 70} 3.034249
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .5656647{col 34} .0310852{col 46}  .310852{col 58} .5039849{col 70} .6273444
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0000{txt} - {res}expfalse{txt})                        t = {res} 18.1972
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0002 {c |}{res}{col 12}    100{col 22} 2.988683{col 34} .0242237{col 46} .2422367{col 58} 2.940618{col 70} 3.036748
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .5691584{col 34} .0310402{col 46} .3104024{col 58} .5075678{col 70} .6307489
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0002{txt} - {res}expfalse{txt})                        t = {res} 18.3361
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0004 {c |}{res}{col 12}    100{col 22}   2.9999{col 34} .0242375{col 46} .2423747{col 58} 2.951808{col 70} 3.047993
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22}  .580376{col 34} .0325944{col 46} .3259436{col 58} .5157017{col 70} .6450503
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0004{txt} - {res}expfalse{txt})                        t = {res} 17.8060
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0006 {c |}{res}{col 12}    100{col 22} 2.962059{col 34}  .018778{col 46} .1877805{col 58}   2.9248{col 70} 2.999319
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .5425349{col 34} .0292326{col 46} .2923264{col 58}  .484531{col 70} .6005389
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0006{txt} - {res}expfalse{txt})                        t = {res} 18.5592
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0008 {c |}{res}{col 12}    100{col 22}  3.00369{col 34} .0232967{col 46} .2329665{col 58} 2.957464{col 70} 3.049915
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22}  .584165{col 34} .0292914{col 46} .2929136{col 58} .5260446{col 70} .6422854
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0008{txt} - {res}expfalse{txt})                        t = {res} 19.9433
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0010 {c |}{res}{col 12}    100{col 22} 3.014995{col 34} .0216764{col 46} .2167645{col 58} 2.971985{col 70} 3.058006
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22}  .595471{col 34} .0294831{col 46}  .294831{col 58} .5369701{col 70} .6539719
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0010{txt} - {res}expfalse{txt})                        t = {res} 20.1970
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0200 {c |}{res}{col 12}    100{col 22} 2.854681{col 34} .0203909{col 46} .2039089{col 58} 2.814221{col 70} 2.895141
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .4351569{col 34} .0255805{col 46} .2558054{col 58} .3843996{col 70} .4859143
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0200{txt} - {res}expfalse{txt})                        t = {res} 17.0112
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0202 {c |}{res}{col 12}    100{col 22} 2.851776{col 34}  .020254{col 46} .2025397{col 58} 2.811588{col 70} 2.891964
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .4322516{col 34} .0287323{col 46} .2873227{col 58} .3752405{col 70} .4892626
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0202{txt} - {res}expfalse{txt})                        t = {res} 15.0441
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0204 {c |}{res}{col 12}    100{col 22} 2.867796{col 34} .0188966{col 46} .1889656{col 58} 2.830301{col 70}  2.90529
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .4482711{col 34} .0260047{col 46} .2600466{col 58} .3966722{col 70}   .49987
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0204{txt} - {res}expfalse{txt})                        t = {res} 17.2381
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0206 {c |}{res}{col 12}    100{col 22} 2.833863{col 34} .0217952{col 46} .2179515{col 58} 2.790617{col 70}  2.87711
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .4143387{col 34} .0278475{col 46} .2784749{col 58} .3590833{col 70} .4695942
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0206{txt} - {res}expfalse{txt})                        t = {res} 14.8789
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0208 {c |}{res}{col 12}    100{col 22} 2.820651{col 34} .0198043{col 46} .1980429{col 58} 2.781355{col 70} 2.859947
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .4011262{col 34}  .025917{col 46} .2591696{col 58} .3497013{col 70} .4525511
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0208{txt} - {res}expfalse{txt})                        t = {res} 15.4774
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0210 {c |}{res}{col 12}    100{col 22} 2.853725{col 34} .0217027{col 46} .2170266{col 58} 2.810662{col 70} 2.896788
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .4342004{col 34} .0303895{col 46} .3038949{col 58}  .373901{col 70} .4944997
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0210{txt} - {res}expfalse{txt})                        t = {res} 14.2878
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0400 {c |}{res}{col 12}    100{col 22} 2.745795{col 34} .0183931{col 46} .1839313{col 58} 2.709299{col 70} 2.782291
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .3262708{col 34} .0270716{col 46} .2707163{col 58} .2725548{col 70} .3799868
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0400{txt} - {res}expfalse{txt})                        t = {res} 12.0521
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0402 {c |}{res}{col 12}    100{col 22} 2.726633{col 34} .0186196{col 46} .1861957{col 58} 2.689688{col 70} 2.763578
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .3071087{col 34} .0272065{col 46} .2720646{col 58} .2531252{col 70} .3610922
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0402{txt} - {res}expfalse{txt})                        t = {res} 11.2881
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0404 {c |}{res}{col 12}    100{col 22} 2.735134{col 34}   .01925{col 46} .1924999{col 58} 2.696938{col 70} 2.773331
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .3156099{col 34} .0278332{col 46} .2783321{col 58} .2603828{col 70} .3708371
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0404{txt} - {res}expfalse{txt})                        t = {res} 11.3393
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0406 {c |}{res}{col 12}    100{col 22} 2.724758{col 34} .0171239{col 46}  .171239{col 58}  2.69078{col 70} 2.758735
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .3052333{col 34} .0243228{col 46} .2432275{col 58} .2569717{col 70} .3534949
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0406{txt} - {res}expfalse{txt})                        t = {res} 12.5493
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0408 {c |}{res}{col 12}    100{col 22} 2.739086{col 34} .0151802{col 46} .1518025{col 58} 2.708965{col 70} 2.769206
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22}  .319561{col 34}  .025004{col 46} .2500402{col 58} .2699476{col 70} .3691744
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0408{txt} - {res}expfalse{txt})                        t = {res} 12.7804
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0410 {c |}{res}{col 12}    100{col 22} 2.748573{col 34} .0182155{col 46} .1821547{col 58}  2.71243{col 70} 2.784716
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .3290484{col 34} .0248218{col 46} .2482177{col 58} .2797967{col 70} .3783002
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0410{txt} - {res}expfalse{txt})                        t = {res} 13.2564
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0600 {c |}{res}{col 12}    100{col 22} 2.661403{col 34} .0168391{col 46} .1683908{col 58} 2.627991{col 70} 2.694815
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .2418784{col 34} .0261988{col 46} .2619876{col 58} .1898944{col 70} .2938625
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0600{txt} - {res}expfalse{txt})                        t = {res}  9.2324
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0602 {c |}{res}{col 12}    100{col 22} 2.655231{col 34} .0141966{col 46}  .141966{col 58} 2.627061{col 70}   2.6834
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22}  .235706{col 34} .0247843{col 46} .2478429{col 58} .1865286{col 70} .2848834
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0602{txt} - {res}expfalse{txt})                        t = {res}  9.5103
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0604 {c |}{res}{col 12}    100{col 22}  2.63179{col 34} .0169349{col 46} .1693489{col 58} 2.598187{col 70} 2.665392
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .2122651{col 34} .0267539{col 46} .2675385{col 58} .1591797{col 70} .2653506
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0604{txt} - {res}expfalse{txt})                        t = {res}  7.9340
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0606 {c |}{res}{col 12}    100{col 22} 2.649652{col 34} .0169434{col 46} .1694336{col 58} 2.616033{col 70} 2.683271
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .2301274{col 34} .0248825{col 46} .2488245{col 58} .1807552{col 70} .2794995
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0606{txt} - {res}expfalse{txt})                        t = {res}  9.2486
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0608 {c |}{res}{col 12}    100{col 22} 2.656471{col 34}  .016757{col 46}   .16757{col 58} 2.623222{col 70} 2.689721
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .2369467{col 34} .0249461{col 46} .2494612{col 58} .1874482{col 70} .2864452
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0608{txt} - {res}expfalse{txt})                        t = {res}  9.4983
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0610 {c |}{res}{col 12}    100{col 22} 2.623203{col 34} .0139901{col 46} .1399012{col 58} 2.595443{col 70} 2.650962
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .2036784{col 34} .0242215{col 46} .2422145{col 58} .1556177{col 70}  .251739
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0610{txt} - {res}expfalse{txt})                        t = {res}  8.4090
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0800 {c |}{res}{col 12}    100{col 22} 2.562148{col 34} .0165578{col 46} .1655785{col 58} 2.529293{col 70} 2.595002
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .1426231{col 34} .0258413{col 46} .2584128{col 58} .0913484{col 70} .1938978
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0800{txt} - {res}expfalse{txt})                        t = {res}  5.5192
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0802 {c |}{res}{col 12}    100{col 22}  2.60162{col 34} .0181887{col 46} .1818874{col 58} 2.565529{col 70}  2.63771
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .1820952{col 34} .0252952{col 46} .2529522{col 58}  .131904{col 70} .2322864
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0802{txt} - {res}expfalse{txt})                        t = {res}  7.1988
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0804 {c |}{res}{col 12}    100{col 22} 2.571419{col 34} .0158957{col 46} .1589568{col 58} 2.539878{col 70} 2.602959
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .1518944{col 34} .0224026{col 46} .2240262{col 58} .1074427{col 70}  .196346
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0804{txt} - {res}expfalse{txt})                        t = {res}  6.7802
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0806 {c |}{res}{col 12}    100{col 22}  2.55349{col 34} .0149808{col 46} .1498079{col 58} 2.523764{col 70} 2.583215
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .1339651{col 34} .0260842{col 46} .2608423{col 58} .0822083{col 70} .1857219
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0806{txt} - {res}expfalse{txt})                        t = {res}  5.1359
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0808 {c |}{res}{col 12}    100{col 22} 2.554462{col 34} .0155916{col 46} .1559156{col 58} 2.523525{col 70} 2.585399
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .1349374{col 34} .0232157{col 46} .2321569{col 58} .0888725{col 70} .1810024
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0808{txt} - {res}expfalse{txt})                        t = {res}  5.8123
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp0810 {c |}{res}{col 12}    100{col 22}  2.55311{col 34} .0156526{col 46} .1565258{col 58} 2.522052{col 70} 2.584168
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .1335857{col 34} .0236956{col 46} .2369557{col 58} .0865686{col 70} .1806029
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp0810{txt} - {res}expfalse{txt})                        t = {res}  5.6376
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp1000 {c |}{res}{col 12}    100{col 22} 2.495606{col 34} .0121642{col 46} .1216417{col 58}  2.47147{col 70} 2.519742
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .0760816{col 34} .0217589{col 46} .2175893{col 58} .0329072{col 70}  .119256
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp1000{txt} - {res}expfalse{txt})                        t = {res}  3.4966
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.9996         {txt}Pr(|T| > |t|) = {res}0.0007          {txt}Pr(T > t) = {res}0.0004
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp1002 {c |}{res}{col 12}    100{col 22} 2.527421{col 34} .0154411{col 46} .1544106{col 58} 2.496783{col 70}  2.55806
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .1078969{col 34}  .021932{col 46} .2193203{col 58}  .064379{col 70} .1514148
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp1002{txt} - {res}expfalse{txt})                        t = {res}  4.9196
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp1004 {c |}{res}{col 12}    100{col 22} 2.518159{col 34}  .014793{col 46} .1479298{col 58} 2.488807{col 70} 2.547512
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .0986349{col 34} .0252443{col 46} .2524434{col 58} .0485447{col 70} .1487252
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp1004{txt} - {res}expfalse{txt})                        t = {res}  3.9072
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.9999         {txt}Pr(|T| > |t|) = {res}0.0002          {txt}Pr(T > t) = {res}0.0001
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp1006 {c |}{res}{col 12}    100{col 22} 2.514244{col 34} .0129503{col 46} .1295026{col 58} 2.488548{col 70}  2.53994
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .0947194{col 34} .0218362{col 46} .2183621{col 58} .0513916{col 70} .1380471
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp1006{txt} - {res}expfalse{txt})                        t = {res}  4.3377
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp1008 {c |}{res}{col 12}    100{col 22} 2.514262{col 34} .0141841{col 46} .1418414{col 58} 2.486117{col 70} 2.542406
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22}  .094737{col 34} .0226259{col 46} .2262595{col 58} .0498422{col 70} .1396318
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp1008{txt} - {res}expfalse{txt})                        t = {res}  4.1871
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}1.0000         {txt}Pr(|T| > |t|) = {res}0.0001          {txt}Pr(T > t) = {res}0.0000
+
+{txt}Paired t test
+{hline 9}{c TT}{hline 68}
+Variable{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ exp1010 {c |}{res}{col 12}    100{col 22} 2.498593{col 34} .0137712{col 46} .1377116{col 58} 2.471268{col 70} 2.525918
+{txt}expfalse {c |}{res}{col 12}    100{col 22} 2.419525{col 34} .0187063{col 46} .1870635{col 58} 2.382407{col 70} 2.456642
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 12}    100{col 22} .0790685{col 34} .0241648{col 46} .2416485{col 58} .0311202{col 70} .1270168
+{txt}{hline 9}{c BT}{hline 68}
+     mean(diff) = mean({res}exp1010{txt} - {res}expfalse{txt})                        t = {res}  3.2720
+{txt} Ho: mean(diff) = 0                              degrees of freedom = {res}      99
+
+ {txt}Ha: mean(diff) < 0           Ha: mean(diff) != 0           Ha: mean(diff) > 0
+ Pr(T < t) = {res}0.9993         {txt}Pr(|T| > |t|) = {res}0.0015          {txt}Pr(T > t) = {res}0.0007
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/albertocottica/github/local/communities-network-design/Stata files/ttestExp.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 1 Jul 2015, 16:06:58
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

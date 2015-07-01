@@ -1,0 +1,122 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/albertocottica/github/local/communities-network-design/Stata files/regExp.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 1 Jul 2015, 16:42:39
+
+{com}. do "/var/folders/n8/szbcd5613wg9bk3r40lyrdlr0000gn/T//SD00395.000000"
+{txt}
+{com}. reg exp i.Nu1##i.Nu2
+
+      {txt}Source {c |}       SS       df       MS              Number of obs ={res}    3600
+{txt}{hline 13}{char +}{hline 30}           F( 35,  3564) ={res}   85.96
+    {txt}   Model {char |} {res} 98.6103565    35  2.81743876           {txt}Prob > F      = {res} 0.0000
+    {txt}Residual {char |} {res} 116.817263  3564   .03277701           {txt}R-squared     = {res} 0.4577
+{txt}{hline 13}{char +}{hline 30}           Adj R-squared = {res} 0.4524
+    {txt}   Total {char |} {res}  215.42762  3599  .059857633           {txt}Root MSE      = {res} .18104
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         exp{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}Nu1 {c |}
+{space 10}2  {c |}{col 14}{res}{space 2}-.1367488{col 26}{space 2} .0256035{col 37}{space 1}   -5.34{col 46}{space 3}0.000{col 54}{space 4}-.1869478{col 67}{space 3}-.0865498
+{txt}{space 10}3  {c |}{col 14}{res}{space 2}-.2456349{col 26}{space 2} .0256035{col 37}{space 1}   -9.59{col 46}{space 3}0.000{col 54}{space 4}-.2958339{col 67}{space 3}-.1954359
+{txt}{space 10}4  {c |}{col 14}{res}{space 2}-.3300273{col 26}{space 2} .0256035{col 37}{space 1}  -12.89{col 46}{space 3}0.000{col 54}{space 4}-.3802263{col 67}{space 3}-.2798283
+{txt}{space 10}5  {c |}{col 14}{res}{space 2}-.4292826{col 26}{space 2} .0256035{col 37}{space 1}  -16.77{col 46}{space 3}0.000{col 54}{space 4}-.4794817{col 67}{space 3}-.3790836
+{txt}{space 10}6  {c |}{col 14}{res}{space 2}-.4958241{col 26}{space 2} .0256035{col 37}{space 1}  -19.37{col 46}{space 3}0.000{col 54}{space 4}-.5460232{col 67}{space 3}-.4456251
+{txt}{space 12} {c |}
+{space 9}Nu2 {c |}
+{space 10}2  {c |}{col 14}{res}{space 2}-.0027474{col 26}{space 2} .0256035{col 37}{space 1}   -0.11{col 46}{space 3}0.915{col 54}{space 4}-.0529464{col 67}{space 3} .0474517
+{txt}{space 10}3  {c |}{col 14}{res}{space 2} .0084703{col 26}{space 2} .0256035{col 37}{space 1}    0.33{col 46}{space 3}0.741{col 54}{space 4}-.0417288{col 67}{space 3} .0586693
+{txt}{space 10}4  {c |}{col 14}{res}{space 2}-.0293708{col 26}{space 2} .0256035{col 37}{space 1}   -1.15{col 46}{space 3}0.251{col 54}{space 4}-.0795698{col 67}{space 3} .0208282
+{txt}{space 10}5  {c |}{col 14}{res}{space 2} .0122593{col 26}{space 2} .0256035{col 37}{space 1}    0.48{col 46}{space 3}0.632{col 54}{space 4}-.0379397{col 67}{space 3} .0624583
+{txt}{space 10}6  {c |}{col 14}{res}{space 2} .0235653{col 26}{space 2} .0256035{col 37}{space 1}    0.92{col 46}{space 3}0.357{col 54}{space 4}-.0266338{col 67}{space 3} .0737643
+{txt}{space 12} {c |}
+{space 5}Nu1#Nu2 {c |}
+{space 8}2 2  {c |}{col 14}{res}{space 2}-.0039898{col 26}{space 2} .0362088{col 37}{space 1}   -0.11{col 46}{space 3}0.912{col 54}{space 4} -.074982{col 67}{space 3} .0670023
+{txt}{space 8}2 3  {c |}{col 14}{res}{space 2} .0046439{col 26}{space 2} .0362088{col 37}{space 1}    0.13{col 46}{space 3}0.898{col 54}{space 4}-.0663482{col 67}{space 3} .0756361
+{txt}{space 8}2 4  {c |}{col 14}{res}{space 2} .0085526{col 26}{space 2} .0362088{col 37}{space 1}    0.24{col 46}{space 3}0.813{col 54}{space 4}-.0624396{col 67}{space 3} .0795447
+{txt}{space 8}2 5  {c |}{col 14}{res}{space 2}  -.04629{col 26}{space 2} .0362088{col 37}{space 1}   -1.28{col 46}{space 3}0.201{col 54}{space 4}-.1172821{col 67}{space 3} .0247021
+{txt}{space 8}2 6  {c |}{col 14}{res}{space 2}-.0245218{col 26}{space 2} .0362088{col 37}{space 1}   -0.68{col 46}{space 3}0.498{col 54}{space 4}-.0955139{col 67}{space 3} .0464703
+{txt}{space 8}3 2  {c |}{col 14}{res}{space 2}-.0164148{col 26}{space 2} .0362088{col 37}{space 1}   -0.45{col 46}{space 3}0.650{col 54}{space 4}-.0874069{col 67}{space 3} .0545774
+{txt}{space 8}3 3  {c |}{col 14}{res}{space 2}-.0354743{col 26}{space 2} .0362088{col 37}{space 1}   -0.98{col 46}{space 3}0.327{col 54}{space 4}-.1064665{col 67}{space 3} .0355178
+{txt}{space 8}3 4  {c |}{col 14}{res}{space 2} .0083333{col 26}{space 2} .0362088{col 37}{space 1}    0.23{col 46}{space 3}0.818{col 54}{space 4}-.0626589{col 67}{space 3} .0793254
+{txt}{space 8}3 5  {c |}{col 14}{res}{space 2}-.0189691{col 26}{space 2} .0362088{col 37}{space 1}   -0.52{col 46}{space 3}0.600{col 54}{space 4}-.0899612{col 67}{space 3}  .052023
+{txt}{space 8}3 6  {c |}{col 14}{res}{space 2}-.0207876{col 26}{space 2} .0362088{col 37}{space 1}   -0.57{col 46}{space 3}0.566{col 54}{space 4}-.0917798{col 67}{space 3} .0502045
+{txt}{space 8}4 2  {c |}{col 14}{res}{space 2}-.0034251{col 26}{space 2} .0362088{col 37}{space 1}   -0.09{col 46}{space 3}0.925{col 54}{space 4}-.0744172{col 67}{space 3} .0675671
+{txt}{space 8}4 3  {c |}{col 14}{res}{space 2}-.0380836{col 26}{space 2} .0362088{col 37}{space 1}   -1.05{col 46}{space 3}0.293{col 54}{space 4}-.1090757{col 67}{space 3} .0329086
+{txt}{space 8}4 4  {c |}{col 14}{res}{space 2} .0269179{col 26}{space 2} .0362088{col 37}{space 1}    0.74{col 46}{space 3}0.457{col 54}{space 4}-.0440743{col 67}{space 3}   .09791
+{txt}{space 8}4 5  {c |}{col 14}{res}{space 2} -.017191{col 26}{space 2} .0362088{col 37}{space 1}   -0.47{col 46}{space 3}0.635{col 54}{space 4}-.0881831{col 67}{space 3} .0538011
+{txt}{space 8}4 6  {c |}{col 14}{res}{space 2}-.0617653{col 26}{space 2} .0362088{col 37}{space 1}   -1.71{col 46}{space 3}0.088{col 54}{space 4}-.1327575{col 67}{space 3} .0092268
+{txt}{space 8}5 2  {c |}{col 14}{res}{space 2} .0422194{col 26}{space 2} .0362088{col 37}{space 1}    1.17{col 46}{space 3}0.244{col 54}{space 4}-.0287727{col 67}{space 3} .1132116
+{txt}{space 8}5 3  {c |}{col 14}{res}{space 2}  .000801{col 26}{space 2} .0362088{col 37}{space 1}    0.02{col 46}{space 3}0.982{col 54}{space 4}-.0701911{col 67}{space 3} .0717932
+{txt}{space 8}5 4  {c |}{col 14}{res}{space 2} .0207128{col 26}{space 2} .0362088{col 37}{space 1}    0.57{col 46}{space 3}0.567{col 54}{space 4}-.0502793{col 67}{space 3} .0917049
+{txt}{space 8}5 5  {c |}{col 14}{res}{space 2}-.0099772{col 26}{space 2} .0362088{col 37}{space 1}   -0.28{col 46}{space 3}0.783{col 54}{space 4}-.0809693{col 67}{space 3}  .061015
+{txt}{space 8}5 6  {c |}{col 14}{res}{space 2}-.0326026{col 26}{space 2} .0362088{col 37}{space 1}   -0.90{col 46}{space 3}0.368{col 54}{space 4}-.1035948{col 67}{space 3} .0383895
+{txt}{space 8}6 2  {c |}{col 14}{res}{space 2} .0345627{col 26}{space 2} .0362088{col 37}{space 1}    0.95{col 46}{space 3}0.340{col 54}{space 4}-.0364294{col 67}{space 3} .1055549
+{txt}{space 8}6 3  {c |}{col 14}{res}{space 2} .0140831{col 26}{space 2} .0362088{col 37}{space 1}    0.39{col 46}{space 3}0.697{col 54}{space 4} -.056909{col 67}{space 3} .0850752
+{txt}{space 8}6 4  {c |}{col 14}{res}{space 2} .0480086{col 26}{space 2} .0362088{col 37}{space 1}    1.33{col 46}{space 3}0.185{col 54}{space 4}-.0229836{col 67}{space 3} .1190007
+{txt}{space 8}6 5  {c |}{col 14}{res}{space 2} .0063962{col 26}{space 2} .0362088{col 37}{space 1}    0.18{col 46}{space 3}0.860{col 54}{space 4} -.064596{col 67}{space 3} .0773883
+{txt}{space 8}6 6  {c |}{col 14}{res}{space 2}-.0245113{col 26}{space 2} .0362088{col 37}{space 1}   -0.68{col 46}{space 3}0.498{col 54}{space 4}-.0955035{col 67}{space 3} .0464808
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2}  2.99143{col 26}{space 2} .0181044{col 37}{space 1}  165.23{col 46}{space 3}0.000{col 54}{space 4} 2.955934{col 67}{space 3} 3.026926
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. testparm i.Nu1
+
+{p 0 7}{space 1}{text:( 1)}{space 1} {res}2.Nu1 = 0{p_end}
+{p 0 7}{space 1}{text:( 2)}{space 1} 3.Nu1 = 0{p_end}
+{p 0 7}{space 1}{text:( 3)}{space 1} 4.Nu1 = 0{p_end}
+{p 0 7}{space 1}{text:( 4)}{space 1} 5.Nu1 = 0{p_end}
+{p 0 7}{space 1}{text:( 5)}{space 1} 6.Nu1 = 0{p_end}
+
+{txt}       F(  5,  3564) ={res}  104.44
+{txt}{col 13}Prob > F ={res}    0.0000
+{txt}
+{com}. testparm i.Nu2
+
+{p 0 7}{space 1}{text:( 1)}{space 1} {res}2.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 2)}{space 1} 3.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 3)}{space 1} 4.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 4)}{space 1} 5.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 5)}{space 1} 6.Nu2 = 0{p_end}
+
+{txt}       F(  5,  3564) ={res}    0.99
+{txt}{col 13}Prob > F ={res}    0.4220
+{txt}
+{com}. testparm i.Nu1#i.Nu2
+
+{p 0 7}{space 1}{text:( 1)}{space 1} {res}2.Nu1#2.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 2)}{space 1} 2.Nu1#3.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 3)}{space 1} 2.Nu1#4.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 4)}{space 1} 2.Nu1#5.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 5)}{space 1} 2.Nu1#6.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 6)}{space 1} 3.Nu1#2.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 7)}{space 1} 3.Nu1#3.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 8)}{space 1} 3.Nu1#4.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:( 9)}{space 1} 3.Nu1#5.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(10)}{space 1} 3.Nu1#6.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(11)}{space 1} 4.Nu1#2.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(12)}{space 1} 4.Nu1#3.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(13)}{space 1} 4.Nu1#4.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(14)}{space 1} 4.Nu1#5.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(15)}{space 1} 4.Nu1#6.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(16)}{space 1} 5.Nu1#2.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(17)}{space 1} 5.Nu1#3.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(18)}{space 1} 5.Nu1#4.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(19)}{space 1} 5.Nu1#5.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(20)}{space 1} 5.Nu1#6.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(21)}{space 1} 6.Nu1#2.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(22)}{space 1} 6.Nu1#3.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(23)}{space 1} 6.Nu1#4.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(24)}{space 1} 6.Nu1#5.Nu2 = 0{p_end}
+{p 0 7}{space 1}{text:(25)}{space 1} 6.Nu1#6.Nu2 = 0{p_end}
+
+{txt}       F( 25,  3564) ={res}    0.81
+{txt}{col 13}Prob > F ={res}    0.7313
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. 

@@ -128,10 +128,12 @@
 \ifCLASSINFOpdf
    \usepackage[pdftex]{graphicx}
   % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
+   \graphicspath{{/Users/albertocottica/github/local/communities-network-design/Pictures/}}
+ 
+  % {{../pdf/}{../jpeg/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+  \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 \else
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
@@ -404,13 +406,13 @@
 % a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
 % was not built to handle multiple paragraphs
 %
-\author{Alberto~Cottica~, 
-            Guy~Melan\c {c}on~, 
+\author{Alberto~Cottica, 
+            Guy~Melan\c {c}on, 
             and Benjamin Renoust%
 \thanks{Alberto is with the University of Alicante, Spain.}%
 \thanks{Guy is with University of Bordeaux, France}%
 \thanks{Ben is with the National Institute of Informatics \& CNRS UMI 3527 JFLI, Tokyo, Japan}%
-\thanks{Manuscript last revised 2015-06-01, Draft – please do not quote.}}
+\thanks{Manuscript last revised 2015-07-01, Draft ?please do not quote.}}
 
 %\author{Michael~Shell,~\IEEEmembership{Member,~IEEE,}
 %        John~Doe,~\IEEEmembership{Fellow,~OSA,}
@@ -442,8 +444,8 @@
 
 
 % The paper headers
-\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
-{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+% \markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
+% {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
 % 
@@ -474,15 +476,12 @@
 
 
 \begin{abstract}
-Online communities are used across several fields of human activities, as environments for large-scale collaboration. Most successful ones employ professionals, sometimes called ``community managers'' or ``moderators'', for a variety of tasks including onboarding new participants, mediating conflict, and policing unwanted behaviour. 
+Online communities are used across several fields of human activities, as environments for large-scale collaboration. Most successful ones employ professionals, sometimes called "community managers'" or "moderators'', for a variety of tasks including onboarding new participants, mediating conflict, and policing unwanted behaviour. Network scientists routinely model interaction across participants in online communities as social networks. We interpret the activity of community managers as network design: they take action oriented at shaping the network of interactions in a way conducive to their community's goals. It follows that, if such action is successful, we should be able to detect its signature in the network itself. 
 
-Network scientists routinely model interaction across participants in online communities as social networks. We interpret the activity of community managers as network design: they take action oriented at shaping the network of interactions in a way conducive to their community's goals. It follows that, if such action is successful, we should be able to detect its signature in the network itself. 
+Growing networks where links are allocated by a preferential attachment mechanism are known to converge to networks displaying a power law degree distribution. Growth and preferential attachment are both reasonable first-approximation assumptions to describe interaction networks in online communities. Our main hypothesis is that managed online communities are characterised by in-degree distributions that deviate from the power law form; such deviation constitutes the signature of successful community management. If true, this hypothesis would give us with a simple test for the effectiveness of community management practices. Our secondary hypothesis is that said deviation happens in a predictable way, once community management practices are accounted for. 
 
-Growing networks where links are allocated by a preferential attachment mechanism are known to converge to networks displaying a power law degree distribution. Growth and preferential attachment are both reasonable first-approximation assumptions to describe interaction networks in online communities. Our main hypothesis is that managed online communities are characterized by degree distributions that deviate from the power law form; such deviation constitutes the signature of successful community management. If true, this hypothesis would give us with a simple test for the effectiveness of community management practices. Our secondary hypothesis is that said deviation happens in a predictable way, once community management practices are accounted for.
+We investigate the issue using empirical data on three small online communities and a computer model that simulates a widely used community management activity called \emph{onboarding}. We find that the model produces in-degree distributions that systematically deviate from power law behaviour for low-values of the in-degree; we then explore the implications and possible applications of the finding, 
 
-We proceed as follows. First, we examine empirical data on three online communities, two of which are known to be managed with the same goals and practices, whereas the third is known not to be. We run statistical tests of the null hypothesis that their degree distribution was generated by a power function; the test strongly rejects the null for the two managed communities, and does not reject it for the unmanaged one. This result is in agreement with our main hypothesis.
-
-Next, we investigate the impact of community management practices on the interaction network of online communities by simulation techniques. We build a model of interaction in an online community on which community management practices are enacted. We explore its evolution under the assumptions of growth, preferential attachment and presence of some of the most widespread online community management practices. We then discuss the effect of the model's specification on the degree distribution of the simulated interaction network.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -493,7 +492,7 @@ Next, we investigate the impact of community management practices on the interac
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-IEEEtran, journal, \LaTeX, paper, template.
+networks, online communities, management, power law
 \end{IEEEkeywords}
 
 
