@@ -57,17 +57,17 @@ We now turn to the question of the role played by $\nu_1$ and $\nu_2$ within the
 \begin{figure}[thb]
 \centering
 
-	\includegraphics[width=.9\linewidth]{CDF_pva_$\nu_1$.png}\label{fig:CDF$\nu_1$}
-	\includegraphics[width=.9\linewidth]{CDF_pva_$\nu_2$.png}\label{fig:CDF$\nu_2$}
+	\includegraphics[width=.9\linewidth]{../Pictures/CDF_pva_nu1.png}\label{fig:CDFnu_1}
+	\includegraphics[width=.9\linewidth]{../Pictures/CDF_pva_nu2.png}\label{fig:CDFnu_2}
   %\subfloat[][]{}
   %\subfloat[][]{}
   \caption{Cumulate Density Functions of p-values returned by goodness-of-fit tests to the (best-fit) power-law models for in-degree distributions of the interaction networks in the control and treatment groups. 20\% of the networks evolved without onboarding (dark blue) have degree distributions that test negatively for H1. When onboarding is introduced, that percentage rises to between 50 and 90\%. Above, the treatment group interaction networks have been grouped according to the value taken by $\nu_1$; below, they have been grouped according to the value taken by $\nu_2$ } 
- \label{fig:CDFpva$\nu_1$$\nu_2$}
+ \label{fig:CDFpvanu_1nu_2}
 \end{figure}
 
 Onboarding effectiveness $\nu_1$ and community responsiveness $\nu_2$ seem to affect the in-degree distributions in different ways. Increasing $\nu_1$ pushes average p-values of the goodness-of-fit tests down, making it less likely that Hypothesis 1 would be rejected. Increasing $\nu_2$ seems not to play any role at all. This is somewhat surprising; higher values of $\nu_2$ lead to allocating an extra edge to the newcomer, and we have seen that allocating the first one (which is what happens when onboarding is introduced) has a strong negative effect on the p-value returned by the goodness-of-fit test. 
 
-Regression analysis confirms the intuition from Figure \ref{fig:CDFpva$\nu_1$$\nu_2$}. We generated 6 dummy variables, each taking value 1 when $\nu_1 =  c$ and 0 otherwise, with $c = [0, 0.2, 0-4, 0-6, 0.8, 1]]$; next we generated 6 more dummy variables for the same vaules of $\nu_2$ . We then estimated a linear regression model with the p-value of our goodness-of-fit test as the dependent variable and the 12 dummy variables as its predictors. The results are:
+Regression analysis confirms the intuition from Figure \ref{fig:CDFpvanu_1nu_2}. We generated 6 dummy variables, each taking value 1 when $\nu_1 =  c$ and 0 otherwise, with $c = [0, 0.2, 0-4, 0-6, 0.8, 1]]$; next we generated 6 more dummy variables for the same vaules of $\nu_2$ . We then estimated a linear regression model with the p-value of our goodness-of-fit test as the dependent variable and the 12 dummy variables as its predictors. The results are:
 
 \begin{enumerate}
 \item Coefficients on predictors corresponding to different values of $\nu_1$ are positive and significant at the 0.05 level or better, with the exception of that corresponding to $\nu_1 = 0.2$.
@@ -128,17 +128,17 @@ $\nu_1$ = 1            & 4.16 (0.000)         & 4.58 (0.000)        & 4.49 (0.00
 \begin{figure}[thb]
 \centering
 
-	\includegraphics[width=.9\linewidth]{CDF_kmin_$\nu_1$.png}
-	\includegraphics[width=.9\linewidth]{CDF_kmin_$\nu_2$.png}
+	\includegraphics[width=.9\linewidth]{../Pictures/CDF_kmin_nu1.png}
+	\includegraphics[width=.9\linewidth]{../Pictures/CDF_kmin_nu2.png}
   %\subfloat[][]{}
   %\subfloat[][]{}
   \caption{Cumulate Density Functions of the average value of $k_{min}$ that minimizes the Kolmogorov-Smirnov distance between the in-degree distribution of each interaction network and its best-fit power-law model.  returned by goodness-of-fit tests to the (best-fit) power-law models for in-degree distributions of the interaction networks in the control and treatment groups. 20\% of the networks evolved without onboarding (dark blue) have degree distributions that test negatively for H1. When onboarding is introduced, that percentage rises to between 50 and 90\%. Above, the treatment group interaction networks have been grouped according to the value taken by $\nu_1$; below, they have been grouped according to the value taken by $\nu_2$.} 
- \label{fig:CDFkmin$\nu_1$$\nu_2$}
+ \label{fig:CDFkminnu_1nu_2}
 \end{figure}
 
 
 
-A glance at figure \ref{fig:CDFkmin$\nu_1$$\nu_2$} shows that over 60\% of the in-degree distributions from interaction networks in the control group, vis-a-vis only 30 to 40\% of those in the treatment group, fit a power-law model best for $k_{min}<=3$. Within the treatment group, some variability is associated to the increase of $\$\nu_1$$, whereas $\nu_2$ does not seem to play a significant role. Regression analysis, however, shows that, once we control for the presence of onboarding, neither parameter is significant. To prove this, we proceed analogously to section \ref{ssec:GOF of power law}: we estimated a linear regression model with the value of $k_{min}$ as the dependent variable and the 12 dummy variables as its predictors. The results are:
+A glance at figure \ref{fig:CDFkminnu_1nu_2} shows that over 60\% of the in-degree distributions from interaction networks in the control group, vis-a-vis only 30 to 40\% of those in the treatment group, fit a power-law model best for $k_{min}<=3$. Within the treatment group, some variability is associated to the increase of $\nu_1$, whereas $\nu_2$ does not seem to play a significant role. Regression analysis, however, shows that, once we control for the presence of onboarding, neither parameter is significant. To prove this, we proceed analogously to section \ref{ssec:GOF of power law}: we estimated a linear regression model with the value of $k_{min}$ as the dependent variable and the 12 dummy variables as its predictors. The results are:
 
 \begin{enumerate}
 \item Coefficients on predictors corresponding to different values of $\nu_1$ are positive but non-significant, with the exception of that corresponding to $\nu_1 = 0.4$.
@@ -155,7 +155,7 @@ Full regression analysis is available in the appendix.
 \subsection{Exponents} \label{ssec:exponents}
 We find that introducing onboarding to an online community has a positive and significant on the value of the exponent of the best-fit power-law model for the in-degree distribution of its interaction network. This is consistent with the theoretical results by Dorogovtsev and Mendes \cite{dorogovtsev2002evolution}, who proved that introducing a fraction of non-preferential attachment edges in evolving networks with preferential attachment does not suppress the power-law dependence of its degree distribution, but only increases the scaling exponent thereof. 
 
-This result holds when the best-fit power-law models is computed over $k>=k_{min}$, where $k_{min}$ is, as usual, the value of $k$ that minimizes the Kolmogorov-Smirnov distance between the simulated in-degree distribution and its best-fit power-law model. When it is computed over the whole support of the in-degree distribution ($k>= 1$), it also holds, except for $\nu_1 = 1$; in the latter case, the null hypothesis that the values of the exponent in the control and in the treatment groups are drawn from the same distribution cannot be rejected. Tables \ref {table:ttestExpA} and \ref {table:ttestExp} illustrate, for each value of  $\nu_1$ and $|nu_2$, the average value of the scaling parameter $\alpha$, and the result (expressed in p-value) of a t-test on the null hypothesis that such average value is the same as the corresponding statistics in the control group, against the alternative hypothesis that the former is greater than the latter. Table \ref{table:ttestExpA} refers to $k>= 1$, whereas Table \ref{table:ttestExp} refers to $k_{min}$.
+This result holds when the best-fit power-law models is computed over $k>=k_{min}$, where $k_{min}$ is, as usual, the value of $k$ that minimizes the Kolmogorov-Smirnov distance between the simulated in-degree distribution and its best-fit power-law model. When it is computed over the whole support of the in-degree distribution ($k>= 1$), it also holds, except for $\nu_1 = 1$; in the latter case, the null hypothesis that the values of the exponent in the control and in the treatment groups are drawn from the same distribution cannot be rejected. Tables \ref {table:ttestExpA} and \ref {table:ttestExp} illustrate, for each value of  $\nu_1$ and $\nu_2$, the average value of the scaling parameter $\alpha$, and the result (expressed in p-value) of a t-test on the null hypothesis that such average value is the same as the corresponding statistics in the control group, against the alternative hypothesis that the former is greater than the latter. Table \ref{table:ttestExpA} refers to $k>= 1$, whereas Table \ref{table:ttestExp} refers to $k_{min}$.
 
 \begin{table}[h]
 \centering
