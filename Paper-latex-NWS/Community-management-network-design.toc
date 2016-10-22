@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Literature survey}{4}
+\contentsline {section}{\numberline {3}Materials and methods}{6}
+\contentsline {subsection}{\numberline {3.1}Empirical data}{7}
+\contentsline {subsection}{\numberline {3.2}Experiment protocol}{11}
+\contentsline {subsection}{\numberline {3.3}The simulation model}{12}
+\contentsline {section}{\numberline {4}Results}{13}
+\contentsline {subsection}{\numberline {4.1}Goodness-of-fit of the power-law model}{13}
+\contentsline {subsection}{\numberline {4.2}Lower bounds}{15}
+\contentsline {subsection}{\numberline {4.3}Exponents}{17}
+\contentsline {section}{\numberline {5}Discussion}{18}
+\contentsline {subsection}{\numberline {5.1}Accounting for degree distribution shape in the interaction networks of online communities}{18}
+\contentsline {subsection}{\numberline {5.2}Limitations}{20}
+\contentsline {subsection}{\numberline {5.3}Directions for future research}{20}
+\contentsline {section}{\numberline {6}Appendix}{21}
+\contentsline {subsection}{\numberline {6.1}Testing for goodness-of-fit of a power law distribution}{21}
+\contentsline {section}{References}{23}

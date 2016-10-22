@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Community-management-network-design.aux
+The style file: apa.bst
+Database file #1: bibliography.bib
+Warning--entry type for "slegg2014facebook" isn't style-file defined
+--line 59 of file bibliography.bib
+Warning--empty school in nick2013toward
+You've used 32 entries,
+            1940 wiz_defined-function locations,
+            655 strings with 9008 characters,
+and the built_in function-call counts, 12510 in all, are:
+= -- 1216
+> -- 478
+< -- 23
++ -- 170
+- -- 158
+* -- 1078
+:= -- 2156
+add.period$ -- 100
+call.type$ -- 32
+change.case$ -- 232
+chr.to.int$ -- 32
+cite$ -- 33
+duplicate$ -- 500
+empty$ -- 892
+format.name$ -- 200
+if$ -- 2442
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 36
+newline$ -- 162
+num.names$ -- 96
+pop$ -- 226
+preamble$ -- 1
+purify$ -- 239
+quote$ -- 0
+skip$ -- 377
+stack$ -- 0
+substring$ -- 830
+swap$ -- 102
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 180
+warning$ -- 1
+while$ -- 102
+width$ -- 0
+write$ -- 410
+(There were 2 warnings)
