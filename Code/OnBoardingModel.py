@@ -306,44 +306,50 @@ def generate_and_fit_network(input_tuple):
 if __name__ == '__main__':
 
 	# Initialization
-	m = 1
-	networkSize = 650 # nb steps to iterate node addition, pref attach and on-boarding
+	m = 10
+	networkSize = 2000 # nb steps to iterate node addition, pref attach and on-boarding
 	#alpha = 0.75
 	#gamma = 0.6
 
-	alpha = 0.0
-	gamma = 0.0
+	alphas = [0.0] #, 0.2, 0.4, 0.6, 0.8, 1.0]
+	gammas = [0.8, 1.0] #[0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
 
 	nb_runs = 2500
 
 	#path = '/Users/melancon/Documents/Recherche/Work in progress/Alberto/' # change this to your local path
 	path = '/net/cremi/gmelanco/Alberto/' # change this to your local path
+	global_start = time.time()
 
-	filename = 'Fitting_statistics_' +  str(networkSize)  + '_' + str(m) + '_' + str(alpha) + '_' + str(gamma) + '_' + str(nb_runs) + '.txt'# use a name with m and networkSize and trial number
+	for alpha in alphas:
+		for gamma in gammas:
 
-	print 'Set all variables'
+			filename = 'Fitting_statistics_' +  str(networkSize)  + '_' + str(m) + '_' + str(alpha) + '_' + str(gamma) + '_' + str(nb_runs) + '.txt'# use a name with m and networkSize and trial number
 
-	# Real work starts here
-	start = time.time()
-	
-	# number of workers is number of processes ran in parallel
-	# this should ultimately be equal to the number of networks we wish to generate
-	nb_workers = 48
-	# builds an input_tuple fro each of the processes
-	input_tuples = [[m, networkSize, alpha, gamma, nb_runs] for graphNameIndex in range(nb_workers)]
-	print 'Built tuples'
-	print input_tuples
+			print 'Dealing with alpha, gamma = ' + str(alpha) + ', ' + str(gamma)
+			print '\tSet all variables'
 
-	# processes are launched, the multiprocessing package takes care of dispatching things around
-	p = Pool(nb_workers)
+			# Real work starts here
+			start = time.time()
 
-	all_stats = p.map(generate_and_fit_network, input_tuples)
-	#stats = generate_and_fit_network(input_tuples[0])
-	
-	fp = open(path + filename, 'w')
-	fp.write('\n'.join(map(lambda x: str(x), all_stats)))
-	fp.close()
+			# number of workers is number of processes ran in parallel
+			# this should ultimately be equal to the number of networks we wish to generate
+			nb_workers = 48
+			# builds an input_tuple fro each of the processes
+			input_tuples = [[m, networkSize, alpha, gamma, nb_runs] for graphNameIndex in range(nb_workers)]
+			print '\tBuilt tuples'
+			print input_tuples
+			print '\t*********************************'
+			# processes are launched, the multiprocessing package takes care of dispatching things around
+			p = Pool(nb_workers)
+
+			all_stats = p.map(generate_and_fit_network, input_tuples)
+			#stats = generate_and_fit_network(input_tuples[0])
+
+			fp = open(path + filename, 'w')
+			fp.write('\n'.join(map(lambda x: str(x), all_stats)))
+			fp.close()
+			print '\tDealing with alpha, gamma = ' + str(alpha) + ', ' + str(gamma) + ' took ', time.time()-start, ' seconds'
 	#print all_stats
 	#print stats
 
-	print 'The whole thing took ', time.time()-start, ' seconds'
+	print 'The whole thing took ', time.time()-global_start, ' seconds'
