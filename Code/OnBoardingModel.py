@@ -146,7 +146,7 @@ class OnBoardingModel(object):
 				self.current_edge_index += 1
 				self.graph.add_edge(source, self.newly_added_node, self.current_edge_index, {'time_step': self.time_step})
 
-	def generate(self):
+	def generate(self, onboarding = True):
 		'''
 		Generates a new graph according to Cottica model
 		each time this routine is called
@@ -158,7 +158,8 @@ class OnBoardingModel(object):
 		for t in range(self.networkSize):
 			self.__addOneNode__()
 			self.__preferentialAttachmentEdges__()
-			#self.__onboarding__()
+			if onboarding:
+				self.__onboarding__()
 
 	def get_degree_distribution(self):
 		'''
@@ -284,7 +285,7 @@ class PowerlawFitting(object):
 the next function is defined as external to the above classes
 to make it easier to call them from the multiprocessing package
 '''
-def generate_and_fit_network(input_tuple):
+def generate_and_fit_network(input_tuple, onboarding = True):
 
 	# input_tuple contains [m, networkSize, alpha, gamma, nb_runs] to feed the on-boarding model
 	# plus the number of runs used to compute p_values
@@ -295,7 +296,7 @@ def generate_and_fit_network(input_tuple):
 	nb_runs = input_tuple[4]
 
 	cm = OnBoardingModel(m, networkSize, alpha, gamma)
-	cm.generate()
+	cm.generate(onboarding)
 	degree_distribution = cm.get_degree_distribution()
 
 	pf = PowerlawFitting(degree_distribution, nb_runs)
@@ -306,14 +307,14 @@ def generate_and_fit_network(input_tuple):
 if __name__ == '__main__':
 
 	# Initialization
-	m = 10
+	m = 2
 	networkSize = 2000 # nb steps to iterate node addition, pref attach and on-boarding
 	#alpha = 0.75
 	#gamma = 0.6
 
-	alphas = [0.0] #, 0.2, 0.4, 0.6, 0.8, 1.0]
-	gammas = [0.8, 1.0] #[0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
-
+	alphas = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+	gammas = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+	onboarding = True
 	nb_runs = 2500
 
 	#path = '/Users/melancon/Documents/Recherche/Work in progress/Alberto/' # change this to your local path
@@ -323,7 +324,7 @@ if __name__ == '__main__':
 	for alpha in alphas:
 		for gamma in gammas:
 
-			filename = 'Fitting_statistics_' +  str(networkSize)  + '_' + str(m) + '_' + str(alpha) + '_' + str(gamma) + '_' + str(nb_runs) + '.txt'# use a name with m and networkSize and trial number
+			filename = 'Fitting_statistics_' +  str(networkSize)  + '_' + str(m) + '_' + str(onboarding) + '_' + str(alpha) + '_' + str(gamma) + '_' + str(nb_runs) + '.txt'# use a name with m and networkSize and trial number
 
 			print 'Dealing with alpha, gamma = ' + str(alpha) + ', ' + str(gamma)
 			print '\tSet all variables'
@@ -333,7 +334,7 @@ if __name__ == '__main__':
 
 			# number of workers is number of processes ran in parallel
 			# this should ultimately be equal to the number of networks we wish to generate
-			nb_workers = 48
+			nb_workers = 100
 			# builds an input_tuple fro each of the processes
 			input_tuples = [[m, networkSize, alpha, gamma, nb_runs] for graphNameIndex in range(nb_workers)]
 			print '\tBuilt tuples'
@@ -342,7 +343,7 @@ if __name__ == '__main__':
 			# processes are launched, the multiprocessing package takes care of dispatching things around
 			p = Pool(nb_workers)
 
-			all_stats = p.map(generate_and_fit_network, input_tuples)
+			all_stats = p.map(generate_and_fit_network, input_tuples, onboarding)
 			#stats = generate_and_fit_network(input_tuples[0])
 
 			fp = open(path + filename, 'w')
