@@ -1,0 +1,338 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.4 (15/5/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english]{babel} % Language hyphenation and typographical rules
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Online community management as social network design} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\Huge\bfseries} % Article title formatting
+\posttitle{\end{center}} % Article title closing formatting
+\title{Online community management as social network design: testing for the signature of management activities in online communities} % Article title
+\author{\textsc{Alberto Cottica}\thanks{Corresponding author} \\[1ex] \normalsize University of Alicante, Edgeryders \\ \normalsize \href{mailto:alberto@edgeryders.eu}{alberto@edgeryders.eu}\\
+\and \textsc{Guy Melançon}\\
+[1ex] \normalsize University of Bordeaux \\ 
+\and \textsc{Benjamin Renoust} \\[1ex] 
+\normalsize National Institute of Informatics, Tokyo \\ 
+}
+\date{} % Leave empty to omit a date
+\renewcommand{\maketitlehookd}{%
+\begin{abstract}
+\noindent Online communities are used across several fields of human activities, as environments for large-scale collaboration. Most successful ones employ professionals, sometimes called "community managers'" or "moderators'', for a variety of tasks including onboarding new participants, mediating conflict, and policing unwanted behaviour. Network scientists routinely model interaction across participants in online communities as social networks. We interpret the activity of community managers as network design: they take action oriented at shaping the network of interactions in a way conducive to their community's goals. It follows that, if such action is successful, we should be able to detect its signature in the network itself. 
+
+Growing networks where links are allocated by a preferential attachment mechanism are known to converge to networks displaying a power law degree distribution. Growth and preferential attachment are both reasonable first-approximation assumptions to describe interaction networks in online communities. Our main hypothesis is that managed online communities are characterised by in-degree distributions that deviate from the power law form; such deviation constitutes the signature of successful community management. If true, this hypothesis would give us with a simple test for the effectiveness of community management practices. Our secondary hypothesis is that said deviation happens in a predictable way, once community management practices are accounted for. 
+
+We investigate the issue using (1) empirical data on three small online communities and (2) a computer model that simulates a widely used community management activity called \emph{onboarding}. We find that the model produces in-degree distributions that systematically deviate from power law behaviour for low-values of the in-degree; we then explore the implications and possible applications of the finding. 
+ % Dummy abstract text - replace \blindtext with your abstract text
+\end{abstract}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% Print the title
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+Organizations running online communities typically employ community managers, tasked with encouraging participation and resolving conflict \cite{rheingold1993virtual}. 
+Only a small number of the participants (one or two members in the smaller communities) will recognize some central command, and carry out its directives. We shall henceforth call such directives \emph{policies}. 
+Putting in place policies for online communities is costly, in terms of recruitment, training, and software tools. 
+This raises the question of what benefits organizations running online communities expect from policies; and why they choose certain policies, and not others. In what follows we outline and briefly discuss the set of assumptions that underpin our investigation.
+
+\begin{enumerate}
+\item We model online communities as social networks of interactions across participants. 
+\item We assume that organisations can be modelled as economic agents maximizing some objective function. The target variable being maximised can be profit (for online communities run by commercial companies); or welfare (for online communities run by governments or other nonprofit entities); or some combination of the two. 
+\item We assume that the topology of the interaction network characteristic of online communities affects their ability to contribute to the maximisation of the target variable. Indications that this assumption might be reasonable are not difficult to find in the literature (\cite{tapscott2008wikinomics},\cite{slegg2014facebook}).
+\item We assume that such organisations choose their policies as follows: 
+    \begin{itemize} 
+	\item Solve their maximisation problem over network topology. This yields a vector of desired network characteristics, where ``desired'' means that those characteristics define a maximum of the objective function. These solutions will be statements with the form ``In order to best meet our ultimate [profit or welfare] goals, the interaction network in our online community should be in state $\Theta_D$'', where $\Theta$ is a vector of topology-related parameters.
+	\item Derive a course of action that community managers could take to change the network away from its present state $\Theta_0$ to the desired state $\Theta_D$.
+	\item Encode such course of action in a set of simple instructions for community managers to execute. Computer scientists might think of such instructions as algorithms; economists call them mechanisms; professional online community managers call them policies. In this paper we use this third term. 
+    \end{itemize}
+\end{enumerate}
+All this implies that the decision to deploy a particular policy on an online community is a network design exercise. An organisation decides to employ a community manager to shape the interaction network of its community in a way that helps ist own ultimate goals. 
+And yet, interaction networks in online communities cannot really be designed; they are the result of many independent decisions, made by individuals who do not respond to the organization's command structure. An online community management policy is then best understood as an attempt to ``influence'' emergent social dynamics; to use a more synthetic expression, it can be best understood as the attempt to design for emergence. Its paradoxical nature is at the heart of its appeal. 
+
+We are interested in detecting the mathematical signature of specific policies in the network topology. 
+We consider a simple policy called \emph{onboarding} \cite{rheingold1993virtual, shirky2008here}. As a new participant becomes active (\emph{e.g.} by posting her first post), community managers are instructed to leave her a comment that contains (a) positive feedback and (b) suggestions to engage with other participants that she might share interests with.
+
+We model online conversations as social networks, and look for the effect of onboarding on the topology of those networks. We proceed as follows:
+\begin{enumerate}
+\item We initially examine data from three small online communities. Only two of them deploy a policy of \emph{onboarding}. We observe that, indeed, the shape of the degree distribution of these two differs from that of the third.  
+\item We propose an experiment protocol to determine whether onboarding policies can explain the differences observed between the degree distributions of the first two online communities and that of the third one. 
+\item Based on a generalized preferential attachment model \cite{dorogovtsev2002evolution}, we simulate the growth of online communities. Variants to the model cover the relevant cases: the absence of onboarding policies and their presence, with varying degrees of effectiveness. 
+\item We run the experiment protocol against the degree distributions generated by the computer model, and discuss its results.
+\end{enumerate}
+Section 2 briefly examines the two strands of literature that we mostly draw upon. Section 3 presents some data from real-world online communities; it then proceeds to describe our main experiment, a computer simulation of interaction in online communities with and without onboarding. Section 4 presents the experiment's results. Section 5 discusses them.
+%------------------------------------------------
+
+\section{Related works}
+
+The extraordinary successes of online communities in deploying large-scale, decentralized projects has led many scholars to conjecture that online communities exhibit emergent behavior, and called such behavior collective intelligence, after an influential book by Pierre L\'evy \cite{pierre1997collective}. This name was adopted by a research community that aims at providing tools for better collective sense- and decision making such as argument maps (representations of the logical structure of a debate, with all redundancy eliminated) \cite{shum2003roots} and attention-mediation metrics (indicators that signal what, in an online debate, is worthiest reading and responding to. The number of Likes on Facebook is one such metric) \cite{klein2012enabling}. 
+
+Collective intelligence scholars confirmed importance of online community management practices, indeed, they have tried to systematize it \cite{diplaris2011emerging} and produce technological innovation to support it \cite{shum2003roots, de2012contested}. 
+These tools are meant to facilitate and encourage participation to online communities, to make it easier for individuals to extract knowledge from them.
+Studying human communities is a traditional focus of network science \cite{borgatti2009network, burt2009structural}, for which  easily available datasets of online communities make an ideal ground for structural analysis: friendship in Facebook \cite{lewis2008tastes, nick2013toward}, following/retweet/mentions for Twitter \cite{kunegis2013preferential, java2007we, hodas2014simple}, or vote and comments in discussions \cite{hodas2014simple, laniado2011wikipedians, zhang2007expertise, zanetti2012quantitative}. 
+
+Starting in the 2000s, online communities became the object of another line of enquiry, stemming from network science. Network representation of relationships across groups of humans has yielded considerable insights in social sciences since the work of the sociometrists in the 1930s, and continues to do so; phenomena like effective spread of information, innovation adoption, and brokerage have all been addressed in a network perspective \cite{borgatti2009network, burt2009structural}. As new datasets encoding human interaction became available, many online communities came to be represented as social networks. This was the case for social networking sites, like Facebook \cite{lewis2008tastes, nick2013toward}; microblogging platform like Twitter \cite{kunegis2013preferential, java2007we, hodas2014simple}; news-sharing services like Digg \cite{hodas2014simple}; collaborative editing projects like Wikipedia \cite{laniado2011wikipedians}; discussion forums like the Java forum \cite{zhang2007expertise}; and bug reporting services for software developers like Bugzilla \cite{zanetti2012quantitative}. Generally, such networks represent participants as nodes. Edges represent a relationship or interaction. The nature of interaction varies across online communities: one edge can stand for friendship for Facebook; follower-followed relationship, retweet or mention in Twitter; vote or comment in Digg and the Java forum; talk in Wikipedia; comment in Bugzilla. 
+
+In contrast to collective intelligence scholars, network scientists typically do not address the issue of community management, and treat social networks drawn from online interaction as fully emergent. In this paper, we employ a network approach to investigate the issue of whether the work of community managers leaves a footprint detectable by quantitative analysis. To our knowledge, no other work attempted this investigation.
+In particular, we exploit a result from the theory of evolving networks, from seminal work by Barab\'asi and Albert \cite{barabasi1999emergence} showing that the assumption of growth and preferential attachment, when taken together, result in a network whose degree distribution converges to a power law ( \cite{barabasi2005origin, barabasi1999mean}). The model was later generalized in various ways and tested across a broad range of networks, including social networks 
+\cite{dorogovtsev2002evolution}. 
+
+We use this generalized model as a baseline. The degree distribution of the interaction network in an online community follows a power law by default. The action of online community managers, as they attempt to further the goals of the organisation that runs the online community, will result in its degree distribution deviating from the baseline power law in predictable ways. Such deviation can be interpreted as the signature that the policy is working well. 
+
+The most important difficulty with this method is the absence of a counterfactual: if a policy is enacted in the online community, the baseline degree distribution corresponding to the absence of the policy is not observable, and viceversa. This rules out a direct proof that the policy ``works''. Hence our choice to combine empirical data and computer simulations. 
+
+%------------------------------------------------
+
+\section{Materials and methods}
+
+In this section we introduce the empirical data, the experiment protocol and the simulation model we use in the experiment. 
+
+\subsection{Empirical data}
+\label{sec:empirical_data}
+
+We examine data from three real-world online communities. All three use the same software (Drupal 7), are roughly comparable in size and are used by practitioners and interested citizens to publicly discuss issues that have a collective dimension. They are modelled as interaction networks, in which nodes are registered users and edges represent comments. The presence of an edge from Alice to Bob indicates that Alice has commented content authored by Bob at least once. The resulting graphs are directed ("Alice comments Bob'' is not equivalent to "Bob comments Alice'') and weighted (Alice can write multiple comments to Bob's content; the edge's weight is equal to the number of comments written). Table \ref{table:empiricalData} presents some descriptive statistics about them. 
+
+\begin{itemize}
+\item InnovatoriPA is a community of (mostly) Italian civil servants discussing how to introduce and foster innovation in the public sector. It does not employ any special onboarding or moderation policy. 
+\item Edgeryders is a community of (mostly) European citizens, discussing public policy issues from the perspective of grassroot activism and social innovation. It enacts the onboarding of new members policy. 
+\item Matera 2019 is a community of (mostly) citizens of the Italian city of Matera and the surrounding region, discussing the city's policies.
+It, too, enacts an onboarding policy.
+\end{itemize}
+
+\begin{table*}[t]
+\centering 
+\begin{tabular}{| c | c | c | c |} 
+\hline 
+& \textbf{Innovatori PA} & \textbf{Edgeryders} & \textbf{Matera2019}\\ 
+\hline
+Policy & \emph{``no special policy''} & \emph{``onboard new users''} & \emph{``onboard new users''}\\ 
+\hline 
+In existence since & December 2008 & October 2011 & March 2013 \\
+Accounts created & 10,815 & 2,419 & 512 \\
+\hline 
+Active participants (nodes) & 619 & 596 & 198 \\
+Number of edges (weighted) & 1,241 & 4,073 & 883 \\
+\hline 
+Average distance & 3.77 & 2.34 & 2.51 \\
+Maximum degree & 155 & 238 & 46 \\
+Average degree & 2.033 & 6.798 & 4.454 \\
+\hline 
+\multicolumn{4}{c} {\textbf{Goodness-of-fit for $k \geq 1$}}\\
+\hline
+exponent & 1.611 & 1.477 & 1.606 \\
+$p$-value & 0.21 & 0.00 (reject) & 0.00 (reject)\\
+\hline
+\multicolumn{4}{c} {\textbf{Goodness-of-fit for $k \geq k_{min}$}}\\
+\hline
+$k_{min}$ & 2 & 5 & 6 \\
+exponent & 1.834 & 2.250 & 2.817 \\
+$p$-value & 0.76 & 0.45 & 0.94 \\
+\hline
+\end{tabular}
+\caption{Comparing interaction networks of the three online communities and testing for goodness-of-fit of power functions to degree distributions. "Exponent" refers to the power law's scaling parameter. "$p$-value" to the result of the test that the degree distribution of the community was generated by a power law with that exponent. \vspace{-0 cm}}
+\label{table:empiricalData}
+\end{table*}
+
+The communities are modeled as interaction networks (summarized in Table \ref{table:empiricalData}) in which nodes are users and edges represent directed comments from $A$ to $B$, weighted by the number of comments written. A glance at their respective visualizations (Figure\,\ref{fig:NetViz}) suggests that the networks of the three communities have very different topologies. Innovatori PA displays more obviously visible hubs than the other two. 
+
+%\begin{figure}[t]
+%\centering
+%	\includegraphics[width=.32\linewidth]{innovatoripa_01}\label{fig:InnoNet}
+%	\includegraphics[width=.32\linewidth]{edgeryders_02}\label{fig:EdgeNet}
+%  	\includegraphics[width=.32\linewidth]{matera2019_01}\label{fig:MT2019Net}
+%  \caption{Interaction networks of three small online communities. Innovatori PA (left) does not have an onboarding policy in place, whereas the two others do (Edgeryders: center, Matera: right). \vspace{-.5cm}} 
+% \label{fig:NetViz}
+%\end{figure}
+
+We fitted power laws in-degree distributions of these three online communities, as of early December 2014. Next, we tested the hypothesis that degree distributions follow a power law, as predicted by \cite{dorogovtsev2002evolution}. To do so, we first fitted power functions to the entire support of each in-degree distribution\footnote{We emphasize in-degree, as opposed to out-degree, 
+because directedness is implicit in the idea of preferential attachment, and because the in-degree distribution is the one to follow a power law in online conversation networks (\cite{dorogovtsev2002evolution}).
+}. We next fitted power functions to the right tail of each in-degree distribution, \emph{i.e.} for any degree $k(n) \geq k_{min}$, where $k_{min}$ is the in-degree that minimizes the Kolmogorov-Smirnov distance (hereafter denoted as $D$) between the fitted function and the data with in-degree $k \geq k_{min}$. 
+
+Finally, we ran goodness-of-fit (hereafter $GoF$) tests for each in-degree distribution and for fitted power functions. The method we followed throughout the paper is borrowed from Clauset \emph{et al} \cite{clauset2009power}. The null hypothesis tested is that the observed distribution is generated by a power function with exponent $\alpha$. We compare the $D$ statistic of the observed distribution with those of a large number of synthetic datasets drawn by the fitted power function. Such comparison is summarized in a $p$-value, that indicates the probability of the $D$ statistic to exceed the observed value conditional to the null hypothesis being true. $p$-values close to 1 indicate that the power function is a good fit for the data: the null hypothesis is not rejected. $p$-values close to zero indicate that the power function is a bad fit for the data, and reject the null hypothesis. The rejection value is set, conservatively, at 0.1. Results are summarized in Table \ref{table:empiricalData}. 
+
+	
+%\begin{figure*}
+%\makebox[\textwidth]{
+%\subfloat[fig:_flow_example][]{
+%	\includegraphics[width=.5\linewidth, height=4cm]{PDF_fit_innovatoriPA}\label{fig:fit_innovatoriPA}
+%}
+%\subfloat[fig:_fit_no_onboarding][]{
+%\includegraphics[width=.5\linewidth, height=4cm]{YES_PDF_fit_no_onboarding_178}\label{fig:fit_no_onboarding}
+%}
+%}
+%\\
+%\makebox[\textwidth]{
+%\subfloat[fig:_fit_edgeryders][]{
+%	\includegraphics[width=.5\linewidth, height=4cm]{PDF_fit_edgeryders}\label{fig:fit_edgeryders}
+%}
+%\subfloat[fig:_fit_nu_1_1][]{
+%	\includegraphics[width=.5\linewidth, height=4cm]{YES-PDF_fit_onboarding_nu_1_1__429}\label{fig:fit_nu_1_1}
+%}
+%}
+%\caption{($\log$ - $\log$) Probability density function from the degree distributions of: (a) the Innovatori PA network without onboarding policy in place versus (b) a simulated network with preferential attachment and no onboarding.
+%(c) The Edgeryders network with onboarding and preferential attachment versus (d) a simulated network with preferential attachment and fully effective onboarding ($\nu_1 = \nu_2 = 1$).\vspace{-.5cm}}
+% \label{fig:PDFViz}
+%\end{figure*}
+
+
+As we consider the interval  $k \geq 1$, we find that the in-degree distribution of the Innovatori PA network -- the unmoderated one -- is consistent with the expected behavior of an evolving network with preferential attachment. We cannot reject the null hypothesis that it was generated by a power law. For other two communities, both with onboarding policies, the null hypothesis is strongly rejected. On the other hand, when we consider only the tail of the degree distributions, i.e. $k \geq k_{min}$, all three communities display a behavior that is consistent of a setting with preferential attachment.
+
+These results are consistent with the objectives of the onboarding policy, consisting in helping newcomers find their way around a community that they don't know yet. A successfully onboarded new user will generally have some extra interaction with existing active members. All things being equal, we can expect extra edges to appear in the network, and interfere with the in-degree distribution that would appear in the absence of onboarding -- explaining the non-power law distribution of Edgeryders and Matera2019. Extra edges target mostly low connectivity nodes: onboarding targets newcomers, and focuses on helping them through the first few successful interactions. Highly active (therefore highly connected) members do not need to be onboarded. This may explain why all three communities display power law behavior in the upper tail of their in-degree distributions, regardless of onboarding. 
+
+\subsection{Experiment protocol}
+The difference observed between the two communities with onboarding policies and the one without might be caused not by the policy itself, but by some other unobserved variable. To explore the issue further, we generate and compare computer simulations of interaction networks in online communities that are identical except for the presence and effectiveness of onboarding policies. Communities are assumed to grow over time, with new participants joining them in sequence; at each point in time, new edges appear; their probability of targeting an existing node grows linearly with that node's in-degree. Additionally, communities might have or not have onboarding policies. For those communities that do have them, they are modelled by means of two scalar parameters $\nu_1$  and $\nu_2$ , that vary between 0 and 1. The first one captures onboarding effectiveness;  the second one captures community responsiveness. As they get closer to 1, the community manager's onboarding action gets closer to having the desired effects. In the next subsection, we specify the model and define more specifically the meaning of both parameters.
+
+We proceed as follows.
+
+First, we simulate the evolution of the interaction network of a large number of online communities. Divide them into a control group (no onboarding policy) and a treatment group (presence of onboarding policy). Specifically, we simulate the evolution of the interaction network of:
+
+\begin{itemize}
+\item 100 communities with no onboarding policy. These will constitute the control group of our simulated communities. 
+\item 100 communities for each couple of values of $\nu_1$  and $\nu_2$, with $\nu_1, \nu_2 \in \{0.0, 0.2, 0.4, 0.6, 0.8, 1.0\}$. These will constitute our treatment groups.
+\item For each of these networks, we compute the in-degree distribution.
+\end{itemize}
+
+Next, we define the following hypotheses. 
+
+%%% reorder notation! 
+
+\begin{itemize}
+\item Let $C$ be the network of interaction in an online community. Denote the in-degree of nodes in the network by $k$. Let $F$ be the best-fit power-law model for the distribution  $q(k) = k + mA$, where $k($ the in-degree distribution of $C$, $m$ the number of nodes that join the network at each timestep and $A$ a node attractiveness parameter.
+\item \emph{Hypothesis 1}. The distribution of $q(k)$ is generated by $F$ for any $k > 1$.
+\item \emph{Hypothesis 2}. The distribution $q(k)$ is generated by $F$ for any $k \geq k_{min}$, where $k_{min}$ is the in-degree that minimizes the Kolmogorov-Smirnov distance between the fitted function and the data over $k \geq k_{min}$.
+\end{itemize}
+
+Both hypotheses are based on the asymptotic form taken by the stationary in-degree distribution of networks growing by preferential attachments in \cite{dorogovtsev2002evolution}. The result holds even if preferential attachment is not the sole mode of network evolution, and for any edge sources.
+
+Finally, we test Hypothesis 1 and 2 on each of the 3700 in-degree distributions generated. We do this using the goodness-of-fit tests proposed by Clauset et.al. \cite{clauset2009power} and illustrated in detail in the Appendix. We expect to obtain the following:
+
+\begin{itemize}
+\item In the control group, both Hypothesis 1 and Hypothesis 2 are true. 
+\item In the treatment group with fully effective onboarding Hypothesis 1 is false and Hypothesis 2 is true. 
+\item In the intermediate situations of partially ineffective onboarding, Hypothesis 1 can be true or false, according to the value of $\nu_1$ and $\nu_2$. Hypothesis 2 is true.
+\end{itemize}
+
+
+%-------------------------------------------------
+
+\section{Results}
+
+
+%------------------------------------------------
+
+\section{Appendix}
+\subsection{A1. Testing for goodness-of-fit of a power law distribution}
+
+The goodness-of-fit tests we employed were built following a procedure indicated by Clauset, Shalizi and Newman \cite[pp. 15-18]{clauset2009power}. What follows summarizes it in the context of the paper. The test's null hypothesis is that the empirical data are distributed according to a power law model; the alternative hypothesis is that they are not.
+
+First, we fit the data for the degree distribution of a network generated by our model to a discrete power-law model, using maximum likelihood estimation. When we are testing for goodness-of-fit of the entire degree distribution, we set the fitted power-law model lower bound to 1; when we are testing for goodness-of-fit of the distribution's upper tail only, we choose a lower bound  such that the Kolmogorov-Smirnov distance $D$ between the power law model and the empirical data is minimized. Formally, define
+
+%$$D = \underset_{k \geq k_{min}{max}} | S(k) - P(k)|$$
+$$D = \max_{k \geq k_{min}} | S(k) - P(k) |$$
+
+Here, $S(k)$ is the cumulative density function of the data for the observations with value at least $k_{min}$, and $P(k)$ is the cumulative density function for the power-law model that best fits the data in the region $k \geq k_{min}$. The value of $k_{min}$ that minimizes the function $D$ is the estimate for the model's lower bound.
+
+Next, we generate a large number of power-law distributed synthetic datasets with the same scaling parameter, standard deviation and lower bound as those of the distribution that best fits the empirical data. We fit each of these synthetic datasets to its own power-law model and calculate the $D$ statistics of each one relative to its own model. Finally, we count what fraction of the values of $D$ thus computed is larger than the value of $D$ computed for the empirical data. This fraction is interpretable as a p-value: the probability that data generated by our estimated best-fit power-law model will be more distant from the model than our empirical data (``distant'' in the Kolmogorov-Smirnov sense). A p-value close to zero indicates that it is quite unlikely that the estimated power-law model would generate empirical data so distant from the fitted power function; a p-value close to one, on the contrary, indicates that the estimated power model is quite likely to generate empirical data that are further away from the fitted power function than the ones we collected. 
+
+Generating artificial datasets requires a treatment for the region below $k_{min}$  that differs from that of the one above it. We proceed as follows. Assume that our observed dataset has $n$ observations total and $n_{tail}$ observations such that $k \geq k_{min}$. To generate a synthetic datasets with $n$ observations, we repeat the following procedure $n$ times:
+\begin{itemize}
+\item With probability $n/n_{tail}$ we generate a random number $k_i$ with $k_i \geq k_{min}$, drawn from a power law with the same scaling parameter as our best-fit model.
+\item Otherwise, with probability $1 - n/n_{tail}$, we select one element uniformly at random from among the elements of the observed dataset in the region $k<k_{min}$.
+\end{itemize}
+
+At the end of the process, we will have a synthetic dataset that follows the estimated power-law model for $k \geq k_{min}$, but has the same non-power law distribution below $k_{min}$.
+
+This test requires we decide how many synthetic datasets to generate for each test; and what is the threshold value below which we reject the null hypothesis. Again based on \cite{clauset2009power} we make the following decisions:
+
+\begin{itemize}
+\item We set the number of artificial datasets generated to 2500. This corresponds to an accuracy of about 0.01, based on an analysis of the expected worst-case performance of the test. 
+\item We conservatively set the rejection threshold at 0.01.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+
+\bibitem[Figueredo and Wolf, 2009]{Figueredo:2009dg}
+Figueredo, A.~J. and Wolf, P. S.~A. (2009).
+\newblock Assortative pairing and life history strategy - a cross-cultural
+  study.
+\newblock {\em Human Nature}, 20:317--330.
+ 
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
