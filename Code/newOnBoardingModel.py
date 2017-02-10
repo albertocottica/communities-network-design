@@ -448,10 +448,10 @@ def generate_and_fit_network(input_tuple):
 
     pf = PowerlawFitting(degree_distribution, m, attractiveness, nb_runs)
     pf.fit_to_powerLaw()
-    return ';'.join(map(lambda x: str(x), [pf.alpha_constrained, pf.sigma_constrained, pf.p_value_constrained, pf.alpha, pf.sigma, pf.p_value, pf.xmin]))
+    return ';'.join(map(lambda x: str(x), [pf.alpha_constrained, pf.sigma_constrained, pf.p_value_constrained, pf.alpha, pf.sigma, pf.p_value, pf.xmin, cm.get_raw_degree_distribution()]))
 
 
-single_test = False
+single_test = True
 pack = False
 if single_test:
     m = 1
@@ -462,8 +462,9 @@ if single_test:
     nu2 = 0.0
     nb_runs = 2
     print '[m, networkSize, nu1, nu2, nb_runs, attractiveness, onBoard]', [m, networkSize, nu1, nu2, nb_runs, attractiveness, onBoard]
-    for i in range(10):
+    for i in range(1):
         print generate_and_fit_network([m, networkSize, nu1, nu2, nb_runs, attractiveness, onBoard])
+
 
 elif pack:
     # takes all files and compiles them into a single one
@@ -497,6 +498,7 @@ elif pack:
     fp_in.close()
 
     fp_out.close()
+
 
 elif __name__ == '__main__':
 
@@ -539,7 +541,7 @@ elif __name__ == '__main__':
                 #stats = generate_and_fit_network(input_tuples[0])
 
                 fp = open(path + filename, 'w')
-                fp.write('alpha_constrained;sigma_constrained;p_value_constrained;alpha;sigma;p_value;x_min\n')
+                fp.write('alpha_constrained;sigma_constrained;p_value_constrained;alpha;sigma;p_value;x_min;original_degree_distribution\n')
                 fp.write('\n'.join(map(lambda x: str(x), all_stats)))
                 fp.close()
 
@@ -568,7 +570,7 @@ elif __name__ == '__main__':
         #stats = generate_and_fit_network(input_tuples[0])
 
         fp = open(path + filename, 'w')
-        fp.write('alpha_constrained;sigma_constrained;p_value_constrained;alpha;sigma;p_value;x_min\n')
+        fp.write('alpha_constrained;sigma_constrained;p_value_constrained;alpha;sigma;p_value;x_min;original_degree_distribution\n')
         fp.write('\n'.join(map(lambda x: str(x), all_stats)))
         fp.close()
 
