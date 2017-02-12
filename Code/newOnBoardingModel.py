@@ -1,5 +1,6 @@
 # Simulates the interaction network in a growing online community with onboarding policy
 # The network is directed
+import sys
 import networkx
 import random as rd
 import time
@@ -8,7 +9,7 @@ import math
 from multiprocessing import Pool
 
 
-import time                                                
+import time
 
 # time profiler decorator
 def timeit(method):
@@ -274,7 +275,7 @@ class PowerlawFitting(object):
         self.D_constrained = self.fit_constrained.power_law.D
         self.sigma_constrained = self.fit_constrained.power_law.sigma
 
-        print 'fit_obj xmin = ', self.fit_constrained.power_law.xmin
+        #print 'fit_obj xmin = ', self.fit_constrained.power_law.xmin
 
 
         self.__get_observation_data__()
@@ -337,7 +338,7 @@ class PowerlawFitting(object):
         #        self.lowerTail.append(x)
         #        self.n_lowerTail += 1
 
-        print "size of the lower tail (unconstrained): ",self.n_lowerTail
+        #print "size of the lower tail (unconstrained): ",self.n_lowerTail
         #if self.n_lowerTail == 0:
         #    print self.degree_distribution
 
@@ -435,7 +436,7 @@ def generate_and_fit_network(input_tuple):
     attractiveness = input_tuple[5]
     onBoard = input_tuple[6]
 
-    print "initiating onboarding model"
+    # print "initiating onboarding model"
     cm = OnBoardingModel(m, attractiveness, networkSize, nu1, nu2, onBoard)
     cm.generate()
     degree_distribution = cm.get_degree_distribution()
@@ -444,14 +445,14 @@ def generate_and_fit_network(input_tuple):
     #cm.generate_tulip()
     #print "generated, getting degree distribution"
     #degree_distribution = cm.get_degree_distribution_tulip()
-    print 'Network generated '
+    #print 'Network generated '
 
     pf = PowerlawFitting(degree_distribution, m, attractiveness, nb_runs)
     pf.fit_to_powerLaw()
     return ';'.join(map(lambda x: str(x), [pf.alpha_constrained, pf.sigma_constrained, pf.p_value_constrained, pf.alpha, pf.sigma, pf.p_value, pf.xmin, cm.get_raw_degree_distribution()]))
 
 
-single_test = True
+single_test = False
 pack = False
 if single_test:
     m = 1
@@ -508,18 +509,18 @@ elif __name__ == '__main__':
     attractiveness = 1.0
     onBoard = False
     nb_runs = 100
-    #path = '/Users/albertocottica/Dropbox/PhD/Sunbelt paper/results/' # change this to your local path
-    #path = '/net/cremi/gmelanco/Alberto/' # change this to your local path
-    path = './results/'
-    nb_workers = 4 #24 # 100
+    # path = '/Users/albertocottica/Dropbox/PhD/Sunbelt paper/results/' # change this to your local path
+    path = '/net/cremi/gmelanco/Alberto/' # change this to your local path
+    # path = './results/'
+    nb_workers = 100
 
     if onBoard:
 
-        for nu1 in [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]:
-            for nu2 in [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]:
+        for nu1 in [float(sys.argv[1])]: #, 0.2, 0.4, 0.6, 0.8, 1.0]:
+            for nu2 in [float(sys.argv[2])]: #, 0.2, 0.4, 0.6, 0.8, 1.0]:
                 print 'Dealing with nu1 = ', nu1, ' and nu2 = ', nu2
 
-                filename = 'New_Fitting_statistics_' +  str(networkSize)  + '_' + str(m) + '_' + str(onBoard) + '_' + str(nu1) + '_' + str(nu2) + '_' + str(attractiveness)+'_' + str(nb_runs) + '.csv' # use a name with m and networkSize and trial number
+                filename = 'Fitting_02_2017/Fitting_statistics_' +  str(networkSize)  + '_' + str(m) + '_' + str(onBoard) + '_' + str(nu1) + '_' + str(nu2) + '_' + str(attractiveness)+'_' + str(nb_runs) + '.csv' # use a name with m and networkSize and trial number
 
                 print 'Set all variables'
 
