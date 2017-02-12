@@ -12,27 +12,38 @@ import math
 #csv = "res_wob.csv"
 
 folders = ["../Datasets/FittingData_02_2017/"]
+initiated = False
 
-def __drawCCDF(data_serie, table_y_label, plot_title, xmin=None, other=False):
+
+def __drawCCDF(data_serie, table_y_label, plot_title, xmin=None, other=False, legend=["pvalue=0", "pvalue!=0"]):
         #print 'Plotting PDF - ',plot_title
         global initiated
 
+        
+
+        # cosmetics setting
+        default_empiric = 'blue'
+        default_ccdf_linewidth = 1.0
+        default_ccdf_fit_linestyle = '--'
+        default_other = 'red'
+        default_fit = 'green'
+        default_otherfit = 'orange'
+
         if initiated == False:
-
-
-            # cosmetics setting
-            default_ccdf_color = '#e7298a'
-            default_ccdf_linewidth = 2.0
-            default_ccdf_fit_linestyle = '--'
-            default_ccdf_exponential_color = '#7570b3'
-            default_ccdf_powerlaw_color = '#d95f02'
-            default_ccdf_lognormal_color = '#1b9e77'
-
-            # now draws the CCDF against the powerlaw
+        # now draws the CCDF against the powerlaw
             plt.figure("PDF - " + plot_title)
             plt.title("PDF - " + plot_title)
             plt.xlabel(table_y_label)
             plt.grid()
+
+            empiric_rec = plt.Line2D((0,1),(0,0), color=default_empiric, linestyle='-')
+            fit_rec = plt.Line2D((0,1),(0,0), color=default_fit, linestyle='--')
+            other_rec = plt.Line2D((0,1),(0,0), color=default_other, linestyle='-')
+            otherfit_rec = plt.Line2D((0,1),(0,0), color=default_otherfit, linestyle='--')
+
+            # places the legend on the bottom left corner
+            first_legend = plt.legend([empiric_rec, fit_rec, other_rec, otherfit_rec],[legend[0], 'fit '+legend[0], legend[1], 'fit '+legend[1]], loc=3)
+            initiated = True
 
 
         # do different fits (should be optional in the future)
@@ -42,11 +53,11 @@ def __drawCCDF(data_serie, table_y_label, plot_title, xmin=None, other=False):
             fit = powerlaw.Fit(data_serie, discrete=True, xmin=xmin)
 
         if other == True:
-            default_ccdf_color = default_ccdf_exponential_color
-            default_ccdf_powerlaw_color = default_ccdf_lognormal_color
+            default_empiric = default_other
+            default_fit = default_otherfit
 
 
-        plot1 = fit.plot_pdf(color=default_ccdf_color, \
+        plot1 = fit.plot_pdf(color=default_empiric, \
                                 linewidth=default_ccdf_linewidth,\
                                 label='empirical', alpha=0.2)
 
@@ -55,7 +66,7 @@ def __drawCCDF(data_serie, table_y_label, plot_title, xmin=None, other=False):
         #                                   ls=default_ccdf_fit_linestyle, \
         #                                   label='exponential')
 
-        plot3 = fit.power_law.plot_pdf (color = default_ccdf_powerlaw_color, \
+        plot3 = fit.power_law.plot_pdf (color = default_fit, \
                                          linewidth=default_ccdf_linewidth, \
                                          ls=default_ccdf_fit_linestyle, \
                                          label='powerlaw', alpha=0.2)
@@ -65,21 +76,27 @@ def __drawCCDF(data_serie, table_y_label, plot_title, xmin=None, other=False):
         #                                 ls=default_ccdf_fit_linestyle, \
         #                                 label='lognormal')
 
-        # places the legend on the bottom left corner
-        #first_legend = plt.legend(handler_map={plot1: HandlerLine2D(numpoints=4)}, loc=3)
 
         # if we want the distances of fit, here they are
         # print fit.distribution_compare('power_law', 'lognormal', normalized_ratio=True)
         # maybe find a way to automatically extract the top n%
 
         # do not forget the grid!
-        
-        #plt.savefig(self.pictures_root_path+ "CCDF_" + plot_title.replace(' ', '_')+'.'+self.default_file_format,\
-        #            format=self.default_file_format,\
-        #            dpi=self.default_dpi)
 
 
-def __computeDegreeDistribution(degree_list, frequency=False, dict_form=False):
+def dumpPlot(plot_title):
+    global initiated        
+    plt.savefig('./images/'+ "PDF_" + plot_title.replace(' ', '_')+'.png',\
+                format="png",\
+                dpi=100)
+    plt.gcf().clear()
+    initiated = False
+
+
+def __computeDegreeDistribution(degree_list, frequency=False, dict_form=False, ma=True):
+    if ma:
+        degree_list = [d+1 for d in degree_list]
+
     counted = collections.Counter(sorted(degree_list))
     counter = collections.OrderedDict(sorted(counted.items()))
 
@@ -141,7 +158,8 @@ def __drawDistribution(data, table_x_label, table_y_label, plot_title, color="bl
         ax.set_yscale('log')
 
 
-def read_csv(lines, verbose=False):
+def read_csv(lines, nu1=None, nu2=None, WOB=True, verbose=False):
+    print nu1, nu2
     
     entries = [l.split(';') for l in lines]
     #print 'the entries are ', entries[0]
@@ -161,21 +179,24 @@ def read_csv(lines, verbose=False):
         #print e[2]
         distribution = eval(e[7])
         test = e[2]
-        test = e[5]
+        #test = e[5]
+        legend = ["pv_unconst=0","pv_unconst!=0"]
 
-        if float(test) == 1.0:# and float(test) != 1.0:
+        if float(test) == 0.0:# and float(test) != 1.0:
             #print "p_value is null"
             distribution = eval(e[7])
-            __drawDistribution(__computeDegreeDistribution(distribution), "indegree", "count", "fit")
-            __drawCCDF(distribution, "indegree", "fit")
+            #__drawDistribution(__computeDegreeDistribution(distribution), "indegree", "count", "fit")
+            __drawCCDF(distribution, "indegree", "fit nu1=%.2f nu2=%.2f wob=%s %s"%(nu1,nu2,WOB,legend[0]), legend=legend)
         else:
-            __drawCCDF(distribution, "indegree", "fit", other=True)
-            __drawDistribution(__computeDegreeDistribution(distribution), "indegree", "count", "fit", "red")
+            __drawCCDF(distribution, "indegree", "fit nu1=%.2f nu2=%.2f wob=%s %s"%(nu1,nu2,WOB,legend[0]), other=True, legend=legend)
+            #__drawDistribution(__computeDegreeDistribution(distribution), "indegree", "count", "fit", "red")
 
+
+    dumpPlot("fit nu1=%.2f nu2=%.2f wob=%s %s"%(nu1,nu2,WOB,legend[0]))
         #if float(test) == 1.0:
         #    print "p-value is one"
 
-    plt.show()
+    #plt.show()
 
     '''
 
@@ -248,8 +269,11 @@ for c in sorted(classToFiles):
 
             total_lines += text.split('\n')
 
-
-    results = read_csv(total_lines) 
+    entries = c.split('_')
+    nu1 = float(entries[3])
+    nu2 = float(entries[4])
+    wob = entries[2] == 'True'
+    results = read_csv(total_lines, nu1, nu2, wob) 
     #print c, 'unconstrained: ',results['unconstrained']['p-value'], 'constrained: ',results['constrained']['p-value']
 #plt.show()
     
