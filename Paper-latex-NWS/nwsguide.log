@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.19)  26 JAN 2017 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.19)  14 FEB 2017 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -447,8 +447,7 @@ Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 l.70 	\item A
              merican IT service company Geek Squad shelved their elaborate i...
 
-? s
-OK, entering \scrollmode...
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -603,12 +602,7 @@ Overfull \vbox (634.49802pt too high) has occurred while \output is active []
                                                   \fi \hfil 
 l.100 
       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -767,12 +761,8 @@ Overfull \vbox (634.49802pt too high) has occurred while \output is active []
                                                   \fi \hfil 
 l.131 \item \emph
                  {Edgeryders} is a community of (mostly) European citizens, ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -782,26 +772,26 @@ Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 LaTeX Warning: Citation `milgram1967small' on page 7 undefined on input line 14
 9.
 
-<./Pictures/innovatoripa_01.jpg, id=27, 736.7525pt x 734.745pt>
-File: ./Pictures/innovatoripa_01.jpg Graphic file (type jpg)
+<../Pictures/innovatoripa_01.jpg, id=27, 736.7525pt x 734.745pt>
+File: ../Pictures/innovatoripa_01.jpg Graphic file (type jpg)
 
-<use ./Pictures/innovatoripa_01.jpg>
-Package pdftex.def Info: ./Pictures/innovatoripa_01.jpg used on input line 167.
-
+<use ../Pictures/innovatoripa_01.jpg>
+Package pdftex.def Info: ../Pictures/innovatoripa_01.jpg used on input line 167
+.
 (pdftex.def)             Requested size: 216.0022pt x 215.41374pt.
 
-<./Pictures/edgeryders_02.jpg, id=28, 739.76375pt x 734.745pt>
-File: ./Pictures/edgeryders_02.jpg Graphic file (type jpg)
+<../Pictures/edgeryders_02.jpg, id=28, 739.76375pt x 734.745pt>
+File: ../Pictures/edgeryders_02.jpg Graphic file (type jpg)
 
-<use ./Pictures/edgeryders_02.jpg>
-Package pdftex.def Info: ./Pictures/edgeryders_02.jpg used on input line 168.
+<use ../Pictures/edgeryders_02.jpg>
+Package pdftex.def Info: ../Pictures/edgeryders_02.jpg used on input line 168.
 (pdftex.def)             Requested size: 216.0022pt x 214.53926pt.
 
-<./Pictures/matera2019_01.jpg, id=29, 737.75626pt x 734.745pt>
-File: ./Pictures/matera2019_01.jpg Graphic file (type jpg)
+<../Pictures/matera2019_01.jpg, id=29, 737.75626pt x 734.745pt>
+File: ../Pictures/matera2019_01.jpg Graphic file (type jpg)
 
-<use ./Pictures/matera2019_01.jpg>
-Package pdftex.def Info: ./Pictures/matera2019_01.jpg used on input line 169.
+<use ../Pictures/matera2019_01.jpg>
+Package pdftex.def Info: ../Pictures/matera2019_01.jpg used on input line 169.
 (pdftex.def)             Requested size: 216.0022pt x 215.11104pt.
 
 
@@ -881,49 +871,43 @@ Overfull \vbox (634.49802pt too high) has occurred while \output is active []
                                                   \fi \hfil 
 l.181 \end{enumerate}
                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
 
-[8 <./Pictures/innovatoripa_01.jpg> <./Pictures/edgeryders_02.jpg> <./Pictures/
-matera2019_01.jpg>]
-<./Pictures/PDF_fit_innovatoriPA.png, id=40, 519.6213pt x 414.8298pt>
-File: ./Pictures/PDF_fit_innovatoriPA.png Graphic file (type png)
+[8 <../Pictures/innovatoripa_01.jpg> <../Pictures/edgeryders_02.jpg> <../Pictur
+es/matera2019_01.jpg>]
+<../Pictures/PDF_fit_innovatoriPA.png, id=40, 519.6213pt x 414.8298pt>
+File: ../Pictures/PDF_fit_innovatoriPA.png Graphic file (type png)
 
-<use ./Pictures/PDF_fit_innovatoriPA.png>
-Package pdftex.def Info: ./Pictures/PDF_fit_innovatoriPA.png used on input line
- 185.
+<use ../Pictures/PDF_fit_innovatoriPA.png>
+Package pdftex.def Info: ../Pictures/PDF_fit_innovatoriPA.png used on input lin
+e 185.
 (pdftex.def)             Requested size: 161.9989pt x 129.33015pt.
 
-<./Pictures/YES_PDF_fit_no_onboarding_178.png, id=42, 519.6213pt x 414.8298pt>
-File: ./Pictures/YES_PDF_fit_no_onboarding_178.png Graphic file (type png)
-
-<use ./Pictures/YES_PDF_fit_no_onboarding_178.png>
-Package pdftex.def Info: ./Pictures/YES_PDF_fit_no_onboarding_178.png used on i
-nput line 186.
+<../Pictures/YES_PDF_fit_no_onboarding_178.png, id=42, 519.6213pt x 414.8298pt>
+File: ../Pictures/YES_PDF_fit_no_onboarding_178.png Graphic file (type png)
+<use ../Pictures/YES_PDF_fit_no_onboarding_178.png>
+Package pdftex.def Info: ../Pictures/YES_PDF_fit_no_onboarding_178.png used on 
+input line 186.
 (pdftex.def)             Requested size: 161.9989pt x 129.33015pt.
 
-<./Pictures/PDF_fit_edgeryders.png, id=43, 519.6213pt x 414.8298pt>
-File: ./Pictures/PDF_fit_edgeryders.png Graphic file (type png)
+<../Pictures/PDF_fit_edgeryders.png, id=43, 519.6213pt x 414.8298pt>
+File: ../Pictures/PDF_fit_edgeryders.png Graphic file (type png)
 
-<use ./Pictures/PDF_fit_edgeryders.png>
-Package pdftex.def Info: ./Pictures/PDF_fit_edgeryders.png used on input line 1
-87.
+<use ../Pictures/PDF_fit_edgeryders.png>
+Package pdftex.def Info: ../Pictures/PDF_fit_edgeryders.png used on input line 
+187.
 (pdftex.def)             Requested size: 161.9989pt x 129.33015pt.
 
-<./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png, id=44, 519.6213pt x 414.829
-8pt>
-File: ./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png Graphic file (type png)
-
- <use ./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png>
-Package pdftex.def Info: ./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png used
- on input line 188.
+<../Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png, id=44, 519.6213pt x 414.82
+98pt>
+File: ../Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png Graphic file (type png
+)
+ <use ../Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png>
+Package pdftex.def Info: ../Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png use
+d on input line 188.
 (pdftex.def)             Requested size: 161.9989pt x 129.33015pt.
 
 
@@ -974,9 +958,9 @@ Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
 
-[9 <./Pictures/PDF_fit_innovatoriPA.png> <./Pictures/YES_PDF_fit_no_onboarding_
-178.png> <./Pictures/PDF_fit_edgeryders.png> <./Pictures/YES-PDF_fit_onboarding
-_nu_1_1__429.png>]
+[9 <../Pictures/PDF_fit_innovatoriPA.png> <../Pictures/YES_PDF_fit_no_onboardin
+g_178.png> <../Pictures/PDF_fit_edgeryders.png> <../Pictures/YES-PDF_fit_onboar
+ding_nu_1_1__429.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1012,12 +996,7 @@ Overfull \vbox (634.49802pt too high) has occurred while \output is active []
                                                   \fi \hfil 
 l.242 
       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -1036,14 +1015,18 @@ Overfull \hbox (47.82657pt too wide) in paragraph at lines 249--250
  []
 
 
+LaTeX Warning: Citation `dorogovtsev2002evolution' on page 11 undefined on inpu
+t line 261.
+
+
 LaTeX Warning: Citation `clauset2009power' on page 11 undefined on input line 2
-61.
+63.
 
 Missing character: There is no Â in font ptmr7t!
 Missing character: There is no · in font ptmr7t!
 
 LaTeX Warning: Citation `dorogovtsev2002evolution' on page 11 undefined on inpu
-t line 276.
+t line 278.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1082,11 +1065,11 @@ Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 [11]
 
 LaTeX Warning: Citation `dorogovtsev2002evolution' on page 12 undefined on inpu
-t line 280.
+t line 282.
 
 
 LaTeX Warning: Citation `dorogovtsev2002evolution' on page 12 undefined on inpu
-t line 280.
+t line 282.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1119,17 +1102,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 
 
-./nwsguide.tex:290: Undefined control sequence.
+./nwsguide.tex:292: Undefined control sequence.
 \@thehead ...revmark }\else \itshape \@authormark 
                                                   \fi \hfil 
-l.290 \end{itemize}
+l.292 \end{itemize}
                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -1138,18 +1116,18 @@ Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Pictures/CDF_pva_nu1.png, id=61, 879.285pt x 639.38875pt>
-File: ./Pictures/CDF_pva_nu1.png Graphic file (type png)
+<../Pictures/CDF_pva_nu1.png, id=61, 879.285pt x 639.38875pt>
+File: ../Pictures/CDF_pva_nu1.png Graphic file (type png)
 
-<use ./Pictures/CDF_pva_nu1.png>
-Package pdftex.def Info: ./Pictures/CDF_pva_nu1.png used on input line 365.
+<use ../Pictures/CDF_pva_nu1.png>
+Package pdftex.def Info: ../Pictures/CDF_pva_nu1.png used on input line 367.
 (pdftex.def)             Requested size: 270.0pt x 196.33525pt.
 
-<./Pictures/CDF_pva_nu2.png, id=62, 879.285pt x 639.38875pt>
-File: ./Pictures/CDF_pva_nu2.png Graphic file (type png)
+<../Pictures/CDF_pva_nu2.png, id=62, 879.285pt x 639.38875pt>
+File: ../Pictures/CDF_pva_nu2.png Graphic file (type png)
 
-<use ./Pictures/CDF_pva_nu2.png>
-Package pdftex.def Info: ./Pictures/CDF_pva_nu2.png used on input line 366.
+<use ../Pictures/CDF_pva_nu2.png>
+Package pdftex.def Info: ../Pictures/CDF_pva_nu2.png used on input line 368.
 (pdftex.def)             Requested size: 270.0pt x 196.33525pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1186,7 +1164,7 @@ Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
 
 [13]
-Overfull \hbox (7.76683pt too wide) in paragraph at lines 373--374
+Overfull \hbox (7.76683pt too wide) in paragraph at lines 375--376
 \OT1/ptm/m/n/10 degree dis-tri-bu-tions in dif-fer-ent ways. In-creas-ing $\OML
 /ztmcm/m/it/10 ^^W[]$ \OT1/ptm/m/n/10 pushes av-er-age p-values of the goodness
 -
@@ -1223,17 +1201,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 
 
-./nwsguide.tex:389: Undefined control sequence.
+./nwsguide.tex:391: Undefined control sequence.
 \@thehead ...revmark }\else \itshape \@authormark 
                                                   \fi \hfil 
-l.389 
+l.391 
       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -1279,23 +1252,23 @@ Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
 
-[15 <./Pictures/CDF_pva_nu1.png> <./Pictures/CDF_pva_nu2.png>]
-Overfull \hbox (13.72853pt too wide) in alignment at lines 425--444
+[15 <../Pictures/CDF_pva_nu1.png> <../Pictures/CDF_pva_nu2.png>]
+Overfull \hbox (13.72853pt too wide) in alignment at lines 427--446
  [] [] [] [] [] [] [] 
  []
 
-<./Pictures/CDF_kmin_nu1.png, id=75, 879.285pt x 639.38875pt>
-File: ./Pictures/CDF_kmin_nu1.png Graphic file (type png)
+<../Pictures/CDF_kmin_nu1.png, id=75, 879.285pt x 639.38875pt>
+File: ../Pictures/CDF_kmin_nu1.png Graphic file (type png)
 
-<use ./Pictures/CDF_kmin_nu1.png>
-Package pdftex.def Info: ./Pictures/CDF_kmin_nu1.png used on input line 450.
+<use ../Pictures/CDF_kmin_nu1.png>
+Package pdftex.def Info: ../Pictures/CDF_kmin_nu1.png used on input line 452.
 (pdftex.def)             Requested size: 270.0pt x 196.33525pt.
 
-<./Pictures/CDF_kmin_nu2.png, id=76, 879.285pt x 639.38875pt>
-File: ./Pictures/CDF_kmin_nu2.png Graphic file (type png)
+<../Pictures/CDF_kmin_nu2.png, id=76, 879.285pt x 639.38875pt>
+File: ../Pictures/CDF_kmin_nu2.png Graphic file (type png)
 
-<use ./Pictures/CDF_kmin_nu2.png>
-Package pdftex.def Info: ./Pictures/CDF_kmin_nu2.png used on input line 451.
+<use ../Pictures/CDF_kmin_nu2.png>
+Package pdftex.def Info: ../Pictures/CDF_kmin_nu2.png used on input line 453.
 (pdftex.def)             Requested size: 270.0pt x 196.33525pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1328,17 +1301,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 
 
-./nwsguide.tex:463: Undefined control sequence.
+./nwsguide.tex:465: Undefined control sequence.
 \@thehead ...revmark }\else \itshape \@authormark 
                                                   \fi \hfil 
-l.463 \item C
+l.465 \item C
              oefficients on predictors corresponding to different values of ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -1377,10 +1346,10 @@ Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
 
-[17 <./Pictures/CDF_kmin_nu1.png> <./Pictures/CDF_kmin_nu2.png>]
+[17 <../Pictures/CDF_kmin_nu1.png> <../Pictures/CDF_kmin_nu2.png>]
 
 LaTeX Warning: Citation `dorogovtsev2002evolution' on page 18 undefined on inpu
-t line 475.
+t line 477.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1416,17 +1385,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 
 
-./nwsguide.tex:532: Undefined control sequence.
+./nwsguide.tex:534: Undefined control sequence.
 \@thehead ...revmark }\else \itshape \@authormark 
                                                   \fi \hfil 
-l.532 
+l.534 
       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -1499,17 +1463,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 
 
-./nwsguide.tex:560: Undefined control sequence.
+./nwsguide.tex:562: Undefined control sequence.
 \@thehead ...revmark }\else \itshape \@authormark 
                                                   \fi \hfil 
-l.560 \subsection
+l.562 \subsection
                  {Limitations}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -1517,7 +1476,7 @@ Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 [20]
 
 LaTeX Warning: Citation `dorogovtsev2002evolution' on page 21 undefined on inpu
-t line 570.
+t line 572.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1556,7 +1515,7 @@ Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 [21]
 
 LaTeX Warning: Citation `bianconi2001competition' on page 22 undefined on input
- line 572.
+ line 574.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1589,25 +1548,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 
 
-./nwsguide.tex:587: Undefined control sequence.
+./nwsguide.tex:589: Undefined control sequence.
 \@thehead ...revmark }\else \itshape \@authormark 
                                                   \fi \hfil 
-l.587 
+l.589 
       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
 
 [22]
 
-LaTeX Warning: Citation `clauset2009power' on page 23 undefined on input line 5
-98.
+LaTeX Warning: Citation `clauset2009power' on page 23 undefined on input line 6
+00.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1646,7 +1600,7 @@ Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 [23]
 
 LaTeX Warning: Citation `dorogovtsev2002evolution' on page 24 undefined on inpu
-t line 613.
+t line 615.
 
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no „ in font ptmr7t!
@@ -1683,17 +1637,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 
 
-./nwsguide.tex:627: Undefined control sequence.
+./nwsguide.tex:629: Undefined control sequence.
 \@thehead ...revmark }\else \itshape \@authormark 
                                                   \fi \hfil 
-l.627 \subsection
+l.629 \subsection
                  *{A.4 Regression analyses}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -1713,10 +1662,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: Citation `alstott2014powerlaw' on page 25 undefined on input lin
-e 1035.
+e 1037.
 
 
-Overfull \hbox (44.1457pt too wide) in paragraph at lines 1036--1037
+Overfull \hbox (44.1457pt too wide) in paragraph at lines 1038--1039
 []\OT1/ptm/m/n/10 The net-work vi-su-al-iza-tions were drawn with Edge-sense: h
 ttps://github.com/Wikitalia/edgesense 
  []
@@ -1787,17 +1736,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 
 
-./nwsguide.tex:1050: Undefined control sequence.
+./nwsguide.tex:1052: Undefined control sequence.
 \@thehead ...revmark }\else \itshape \@authormark 
                                                   \fi \hfil 
-l.1050 \end{document}
+l.1052 \end{document}
                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -1867,17 +1811,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (634.49802pt too high) has occurred while \output is active []
 
 
-./nwsguide.tex:1050: Undefined control sequence.
+./nwsguide.tex:1052: Undefined control sequence.
 \@thehead ...revmark }\else \itshape \@authormark 
                                                   \fi \hfil 
-l.1050 \end{document}
+l.1052 \end{document}
                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+? 
 
 Overfull \vbox (1.50186pt too high) has occurred while \output is active []
 
@@ -1958,9 +1897,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2469 strings out of 493089
- 34379 string characters out of 6134842
- 160438 words of memory out of 5000000
+ 2470 strings out of 493089
+ 34435 string characters out of 6134842
+ 160439 words of memory out of 5000000
  5862 multiletter control sequences out of 15000+600000
  51540 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1975,7 +1914,7 @@ ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
 rw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/
 utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on nwsguide.pdf (30 pages, 931475 bytes).
+Output written on nwsguide.pdf (30 pages, 931679 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  96 compressed objects within 1 object stream

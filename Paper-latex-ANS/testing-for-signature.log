@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.19)  27 JAN 2017 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.19)  14 FEB 2017 19:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -673,66 +673,77 @@ LaTeX Warning: Citation `clauset2009power' on page 5 undefined on input line 22
 [5]
 
 LaTeX Warning: Citation `dorogovtsev2002evolution' on page 6 undefined on input
- line 274.
+ line 275.
 
 
 LaTeX Warning: Citation `clauset2009power' on page 6 undefined on input line 27
-6.
+7.
 
-[6] [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
+[6]
+Overfull \hbox (1.50494pt too wide) in paragraph at lines 323--336
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation `clauset2009power' on page 7 undefined on input line 34
+3.
+
+[7] [8]
+
+LaTeX Warning: Citation `clauset2009power' on page 9 undefined on input line 36
+2.
+
+
+LaTeX Warning: Reference `fig:NetViz' on page 9 undefined on input line 372.
+
+
+LaTeX Warning: Citation `dorogovtsev2002evolution' on page 9 undefined on input
+ line 378.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 399.
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 399.
  (./testing-for-signature.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 399.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 399.
+Package rerunfilecheck Info: File `testing-for-signature.out' has not changed.
+(rerunfilecheck)             Checksum: 448685AC67E39AC64F35812D9BB955FD;562.
 
-
-Package rerunfilecheck Warning: File `testing-for-signature.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `testing-for-signature.out':
-(rerunfilecheck)             Before: 42B9837ADB63C2786DCB5F86B38A512D;565
-(rerunfilecheck)             After:  26EC237DB138EBA33BC929ABAB78FA1F;495.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 399.
  ) 
 Here is how much of TeX's memory you used:
- 9377 strings out of 493089
- 145141 string characters out of 6134842
- 274989 words of memory out of 5000000
- 12410 multiletter control sequences out of 15000+600000
- 73520 words of font info for 307 fonts, out of 8000000 for 9000
+ 9397 strings out of 493089
+ 145328 string characters out of 6134842
+ 276695 words of memory out of 5000000
+ 12413 multiletter control sequences out of 15000+600000
+ 75942 words of font info for 321 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,11n,43p,1524b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/pa
-latino/uplri8a.pfb>
-Output written on testing-for-signature.pdf (8 pages, 139206 bytes).
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
+palatino/uplri8a.pfb>
+Output written on testing-for-signature.pdf (9 pages, 148097 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
+ 159 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  32 named destinations out of 1000 (max. 500000)
- 61009 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 61001 words of extra memory for PDF output out of 61914 (max. 10000000)
 
