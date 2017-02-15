@@ -26,9 +26,9 @@ def count_rejects(dataset, control, writeCsv):
         print ('Control group')
     else:
         print ('nu1 = ' + str (nu1) + ', nu2 = ' + str(nu2))
-    print ('Rejects for k > 1: ' + str(rejectsC))
+    # print ('Rejects for k > 1: ' + str(rejectsC))
     print ('Rejects for k > kmin: ' + str(rejectsU))
-    print ('pvc > pvu: ' + str(dubious))
+    # print ('pvc > pvu: ' + str(dubious))
 
 
        
@@ -69,8 +69,8 @@ def average_pvalues(dataset, control, writeCsv):
         print ('Control group')
     else:
         print ('nu1 = ' + str (nu1) + ', nu2 = ' + str(nu2))
-    print ('Average pvalue for k > 1: ' + str(sum_pvc/denominator))
-    #print ('Average pvalue for k >= kmin: ' + str(sum_pvu/denominator))
+    #print ('Average pvalue for k > 1: ' + str(sum_pvc/denominator))
+    print ('Average pvalue for k >= kmin: ' + str(sum_pvu/denominator))
     
     if writeCsv == True:
         if control == False:

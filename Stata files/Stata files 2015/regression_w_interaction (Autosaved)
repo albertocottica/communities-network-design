@@ -1,6 +1,6 @@
 egen Nu1=group(nu1)
 egen Nu2=group(nu2)
-reg pvc i.Nu1##i.Nu2
+reg pvc i.Nu1##i.Nu2 if type == "treatment"
 testparm i.Nu1
 testparm i.Nu2
 testparm i.Nu1#i.Nu2
