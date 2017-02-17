@@ -319,13 +319,14 @@ class PowerlawFitting(object):
         #lowerTail = [x for x in self.degree_distribution if x < fit_object.xmin]
 
         self.lowerTail = []
+        n_degree_distribution = len(self.degree_distribution)
         for item in self.degree_distribution:
             if item < self.xmin:
                 self.lowerTail.append(item)
         self.n_lowerTail = len(self.lowerTail)
-        self.nTail = self.n_lowerTail - self.n_lowerTail
+        self.nTail = n_degree_distribution - self.n_lowerTail
         # now compute probabilities to generate nodes in the upper vs. lower tail
-        self.probUpperTail = float(self.nTail)/len(self.degree_distribution)
+        self.probUpperTail = float(self.nTail)/n_degree_distribution
 
 
         #self.lowerTail = []
@@ -404,7 +405,7 @@ class PowerlawFitting(object):
 
                     newDatapoint = self.xmin - 1
                     while newDatapoint < self.xmin:
-                        newDatapoint = self.fit.power_law.generate_random(1)[0]
+                        newDatapoint = self.fit.power_law.generate_random(1, estimate_discrete=False)[0]
                         #print "newDatapoint:", newDatapoint 
                 else:
                     newDatapoint = rd.choice(self.lowerTail)
@@ -413,7 +414,7 @@ class PowerlawFitting(object):
 
         else:
 
-            syntheticData = self.fit_constrained.power_law.generate_random(self.n_observations)
+            syntheticData = self.fit_constrained.power_law.generate_random(self.n_observations, estimate_discrete=False)
 
 
         return syntheticData
@@ -576,4 +577,3 @@ elif __name__ == '__main__':
         fp.close()
 
         print 'The whole thing took ', time.time()-start, ' seconds'
-
