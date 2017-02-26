@@ -289,7 +289,7 @@ class PowerlawFitting(object):
             synthD = synthFit.power_law.D
             if synthD > self.D:
                 synth_more_distant += 1
-        self.p_value = float(synth_more_distant) / nb_runs
+        self.p_value = float(synth_more_distant) / self.nb_runs
 
         # compute p_value for whole distribution, that is force xmin = 1
         synth_more_distant = 0
@@ -302,8 +302,8 @@ class PowerlawFitting(object):
             if synthD > self.D_constrained:
                 synth_more_distant += 1
             #average_distance += synthD - self.D_constrained
-        self.p_value_constrained = float(synth_more_distant) / nb_runs
-        #average_distance /= nb_runs
+        self.p_value_constrained = float(synth_more_distant) / self.nb_runs
+        #average_distance /= self.nb_runs
         #print "the average constrained distance: ",average_distance
 
     def __get_observation_data__(self):
@@ -509,11 +509,11 @@ elif __name__ == '__main__':
     networkSize = 2000 # nb steps to iterate node addition, pref attach and on-boarding
     attractiveness = 1.0
     onBoard = False
-    nb_runs = 100
+    nb_runs = 2500 # 100
     # path = '/Users/albertocottica/Dropbox/PhD/Sunbelt paper/results/' # change this to your local path
     path = '/net/cremi/gmelanco/Alberto/' # change this to your local path
     # path = './results/'
-    nb_workers = 100
+    nb_workers = 16
 
     if onBoard:
 
@@ -552,7 +552,7 @@ elif __name__ == '__main__':
 
         print 'Dealing with onBoard = ', onBoard
 
-        filename = 'Fitting_statistics_' +  str(networkSize)  + '_' + str(m) + '_' + str(onBoard) + '_' + str(attractiveness)+'_' + str(nb_runs) + '.csv'
+        filename = 'Fitting_02_2017/Fitting_statistics_' +  str(networkSize)  + '_' + str(m) + '_' + str(onBoard) + '_' + str(attractiveness)+'_' + str(nb_runs) + '.csv'
 
         # Real work starts here
         start = time.time()
