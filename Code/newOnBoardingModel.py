@@ -508,12 +508,12 @@ elif __name__ == '__main__':
     m = 1
     networkSize = 2000 # nb steps to iterate node addition, pref attach and on-boarding
     attractiveness = 1.0
-    onBoard = False
+    onBoard = True
     nb_runs = 2500 # 100
     # path = '/Users/albertocottica/Dropbox/PhD/Sunbelt paper/results/' # change this to your local path
     path = '/net/cremi/gmelanco/Alberto/' # change this to your local path
     # path = './results/'
-    nb_workers = 16
+    nb_workers = 100
 
     if onBoard:
 
