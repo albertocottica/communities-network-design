@@ -1,13 +1,13 @@
-## build a file with: run number (1 to 100), control/treatment, nu1/nu2, pvalues
+## build a file with: run number (1 to 100), control/treatment, nu1/nu2, pvalue constrained, pvalue unconstrained
 
 import csv
 
-dirPath = '/Users/albertocottica/github/local/communities-network-design/Datasets/FittingData_02_2017/'
+dirPath = '/Users/albertocottica/github/local/communities-network-design/Datasets/Fitting_02_2017/'
 dirPathWrite = '/Users/albertocottica/github/local/communities-network-design/Stata files/Stata files 2017/'
 
 def load_control_group():
     distroData = []
-    with open(dirPath + 'Fitting_statistics_2000_1_False_1.0_100.csv', 'rU') as csvfile:
+    with open(dirPath + 'Fitting_statistics_2000_1_False_1.0_2500.csv', 'rU') as csvfile:
         distroReader = csv.DictReader(csvfile, delimiter = ';')
         runCounter = 0 
         for row in distroReader:
@@ -19,24 +19,26 @@ def load_control_group():
                     oneObs[key] = row[key]            
             distroData.append(oneObs)
             runCounter += 1
-            
-    # copy the generated observations 16 times, assigning them different combinations of nu1 and nu2
+
     expandedData = []
     for i in [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]:
         for j in [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]:
-            for row in distroData:
-                row['nu1'] = i
-                row['nu2'] = j
-                expandedData.append(row)
+            for item in distroData:
+                newItem = {}
+                for key in item:
+                    newItem[key] = item[key]
+                    newItem['nu1'] = i
+                    newItem['nu2'] = j
+                expandedData.append(newItem)
     return expandedData
     
 def load_treatment_group():
-    values = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+    values = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0] 
     enrichedData = []
     for nu1 in values:
         for nu2 in values:
 
-            with open(dirPath + 'Fitting_statistics_2000_1_True_'+ str(nu1) + '_' + str(nu2) + '_1.0_100.csv', 'rU') as csvfile:
+            with open(dirPath + 'Fitting_statistics_2000_1_True_'+ str(nu1) + '_' + str(nu2) + '_1.0_2500.csv', 'rU') as csvfile:
                 distroReader = csv.DictReader(csvfile, delimiter = ';')
                 runCounter = 0 
                 for row in distroReader:

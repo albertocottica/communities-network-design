@@ -1,14 +1,15 @@
-myl = [{'one':'two'},{'three':'four'}]
+myl = [{'one':'two'}, {'five':'six'}]
 newl = []
 
-
-for item in myl:
-    newitem ={}
-    for key in item:
-        newitem[key] = item[key]
-        for i in range (3):
-            newitem ['fee'] = i
-            newl.append(newitem)
-            print i
-            print newitem
-            print newl
+for i in range (2):
+    print ( 'i = ' + str(i))
+    for item in myl:
+        newItem = {}
+        print ('item = ' + str (item))
+        for key in item:
+            newItem[key] = item[key]
+            newItem['fee'] = i
+            print ('newItem = ' + str (newItem))
+        newl.append(newItem)
+    print newl
+        

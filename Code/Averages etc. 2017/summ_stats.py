@@ -26,9 +26,9 @@ def count_rejects(dataset, control, writeCsv):
         print ('Control group')
     else:
         print ('nu1 = ' + str (nu1) + ', nu2 = ' + str(nu2))
-    # print ('Rejects for k > 1: ' + str(rejectsC))
+    print ('Rejects for k > 1: ' + str(rejectsC))
     print ('Rejects for k > kmin: ' + str(rejectsU))
-    # print ('pvc > pvu: ' + str(dubious))
+    print ('pvc > pvu: ' + str(dubious))
 
 
        
@@ -69,7 +69,7 @@ def average_pvalues(dataset, control, writeCsv):
         print ('Control group')
     else:
         print ('nu1 = ' + str (nu1) + ', nu2 = ' + str(nu2))
-    #print ('Average pvalue for k > 1: ' + str(sum_pvc/denominator))
+    print ('Average pvalue for k > 1: ' + str(sum_pvc/denominator))
     print ('Average pvalue for k >= kmin: ' + str(sum_pvu/denominator))
     
     if writeCsv == True:
@@ -85,20 +85,22 @@ def average_pvalues(dataset, control, writeCsv):
                 writer.writerow(run)
 
         
-dirPath = '/Users/albertocottica/github/local/communities-network-design/Datasets/FittingData_02_2017/'
+dirPath = '/Users/albertocottica/github/local/communities-network-design/Datasets/Fitting_02_2017/'
 dirPathWrite = '/Users/albertocottica/github/local/communities-network-design/Stata files/Stata files 2017/'
 writeCsv = False
 
 distroData = []
 control = True
-with open(dirPath + 'Fitting_statistics_2000_1_False_1.0_100.csv', 'rU') as csvfile:
+with open(dirPath + 'Fitting_statistics_2000_1_False_1.0_2500.csv', 'rU') as csvfile:
     distroReader = csv.DictReader(csvfile, delimiter = ';')
     for row in distroReader:
         distroData.append(row)
     
     
-# count_rejects(distroData, control, writeCsv)
+count_rejects(distroData, control, writeCsv)
+print ('==========================================')
 average_pvalues(distroData, control, writeCsv)
+print ('==========================================')
 
 values = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
 
@@ -106,14 +108,15 @@ for nu1 in values:
     for nu2 in values:
         distroData = []
         control = False
-        with open(dirPath + 'Fitting_statistics_2000_1_True_'+ str(nu1) + '_' + str(nu2) + '_1.0_100.csv', 'rU') as csvfile:
+        with open(dirPath + 'Fitting_statistics_2000_1_True_'+ str(nu1) + '_' + str(nu2) + '_1.0_2500.csv', 'rU') as csvfile:
             distroReader = csv.DictReader(csvfile, delimiter = ';')
             for row in distroReader:
                 distroData.append(row)
-        # count_rejects(distroData, control, writeCsv)
+        count_rejects(distroData, control, writeCsv)
         average_pvalues(distroData, control, writeCsv)
+        print ('=========================================')
     print ('=========================================')
-      
+
 
 
 
