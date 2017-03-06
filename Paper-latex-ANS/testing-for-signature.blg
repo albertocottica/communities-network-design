@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: testing-for-signature.aux
+The style file: apa.bst
+Database file #1: bibliography.bib
+Warning--entry type for "slegg2014facebook" isn't style-file defined
+--line 68 of file bibliography.bib
+Warning--empty school in nick2013toward
+You've used 26 entries,
+            1940 wiz_defined-function locations,
+            623 strings with 8113 characters,
+and the built_in function-call counts, 10643 in all, are:
+= -- 1048
+> -- 409
+< -- 20
++ -- 146
+- -- 136
+* -- 907
+:= -- 1806
+add.period$ -- 83
+call.type$ -- 26
+change.case$ -- 193
+chr.to.int$ -- 26
+cite$ -- 27
+duplicate$ -- 429
+empty$ -- 757
+format.name$ -- 172
+if$ -- 2102
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 28
+newline$ -- 132
+num.names$ -- 78
+pop$ -- 196
+preamble$ -- 1
+purify$ -- 198
+quote$ -- 0
+skip$ -- 321
+stack$ -- 0
+substring$ -- 725
+swap$ -- 97
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 148
+warning$ -- 1
+while$ -- 89
+width$ -- 0
+write$ -- 335
+(There were 2 warnings)

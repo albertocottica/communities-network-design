@@ -1,0 +1,639 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/albertocottica/github/local/communities-network-design/Stata files/Stata files 2017/Ttests_kmin.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 6 Mar 2017, 11:18:51
+
+{com}. do "/var/folders/n8/szbcd5613wg9bk3r40lyrdlr0000gn/T//SD13426.000000"
+{txt}
+{com}. forvalues i = 0.0 (0.2) 1.0     {c -(}
+{txt}  2{com}.         forvalues j = 0.0 (0.2) 1.0             {c -(}
+{txt}  3{com}.                 ttest x_min if nu1 < `i' + .05 & nu1 > `i' - .05 & nu2 > `j' - .05 & nu2 < `j' + .05, by (type)
+{txt}  4{com}.                 // the above is needed because Stata recodes "0.2" as "0.2000001", etc.
+.                 {c )-}
+{txt}  5{com}.         {c )-}
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.23{col 34} .0885974{col 46} .8859738{col 58} 3.054204{col 70} 3.405796
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.05{col 34}  .066025{col 46} .9337341{col 58} 2.919802{col 70} 3.180198
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.36{col 34} .1298873{col 58}  -.61614{col 70}  -.10386
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -2.7716
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0031         {txt}Pr(|T| > |t|) = {res}0.0061          {txt}Pr(T > t) = {res}0.9969
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}      3.3{col 34} .1087115{col 46} 1.087115{col 58} 3.084293{col 70} 3.515707
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.085{col 34} .0735932{col 46} 1.040765{col 58} 2.939877{col 70} 3.230123
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.43{col 34} .1443586{col 58}-.7146776{col 70}-.1453224
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -2.9787
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0016         {txt}Pr(|T| > |t|) = {res}0.0033          {txt}Pr(T > t) = {res}0.9984
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.38{col 34} .1152774{col 46} 1.152774{col 58} 3.151265{col 70} 3.608735
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.125{col 34} .0766567{col 46}  1.08409{col 58} 2.973836{col 70} 3.276164
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.51{col 34} .1493657{col 58}-.8045517{col 70}-.2154483
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -3.4144
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0004         {txt}Pr(|T| > |t|) = {res}0.0008          {txt}Pr(T > t) = {res}0.9996
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.33{col 34} .0910711{col 46} .9107107{col 58} 3.149295{col 70} 3.510705
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}      3.1{col 34}  .067623{col 46}  .956333{col 58}  2.96665{col 70}  3.23335
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.46{col 34}  .131587{col 58} -.719492{col 70} -.200508
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -3.4958
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0003         {txt}Pr(|T| > |t|) = {res}0.0006          {txt}Pr(T > t) = {res}0.9997
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.48{col 34} .1029661{col 46} 1.029661{col 58} 3.275693{col 70} 3.684307
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.175{col 34} .0731342{col 46} 1.034274{col 58} 3.030782{col 70} 3.319218
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.61{col 34} .1400829{col 58} -.886246{col 70} -.333754
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.3546
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.34{col 34} .1036895{col 46} 1.036895{col 58} 3.134258{col 70} 3.545742
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.105{col 34} .0720823{col 46} 1.019397{col 58} 2.962857{col 70} 3.247143
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.47{col 34} .1406155{col 58}-.7472963{col 70}-.1927037
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -3.3424
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0005         {txt}Pr(|T| > |t|) = {res}0.0010          {txt}Pr(T > t) = {res}0.9995
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.42{col 34} .1120786{col 46} 1.120786{col 58} 3.197612{col 70} 3.642388
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.145{col 34} .0758196{col 46} 1.072252{col 58} 2.995487{col 70} 3.294513
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.55{col 34}  .146911{col 58} -.839711{col 70} -.260289
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -3.7438
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0001         {txt}Pr(|T| > |t|) = {res}0.0002          {txt}Pr(T > t) = {res}0.9999
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.45{col 34} .1085953{col 46} 1.085953{col 58} 3.234523{col 70} 3.665477
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.16{col 34} .0748331{col 46} 1.058301{col 58} 3.012432{col 70} 3.307568
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.58{col 34} .1442711{col 58}-.8645051{col 70}-.2954949
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.0202
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0001          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.46{col 34}  .104852{col 46}  1.04852{col 58} 3.251951{col 70} 3.668049
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.165{col 34} .0735932{col 46} 1.040765{col 58} 3.019877{col 70} 3.310123
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.59{col 34} .1414749{col 58} -.868991{col 70} -.311009
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.1704
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.36{col 34} .1150494{col 46} 1.150494{col 58} 3.131717{col 70} 3.588283
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.115{col 34} .0764072{col 46} 1.080561{col 58} 2.964328{col 70} 3.265672
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.49{col 34} .1491897{col 58}-.7842048{col 70}-.1957952
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -3.2844
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0006         {txt}Pr(|T| > |t|) = {res}0.0012          {txt}Pr(T > t) = {res}0.9994
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.33{col 34} .1044998{col 46} 1.044998{col 58}  3.12265{col 70}  3.53735
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}      3.1{col 34}  .072292{col 46} 1.022363{col 58} 2.957443{col 70} 3.242557
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.46{col 34} .1412141{col 58}-.7384766{col 70}-.1815234
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -3.2575
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0007         {txt}Pr(|T| > |t|) = {res}0.0013          {txt}Pr(T > t) = {res}0.9993
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}      3.3{col 34} .1159066{col 46} 1.159066{col 58} 3.070016{col 70} 3.529984
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.085{col 34} .0762756{col 46}   1.0787{col 58} 2.934588{col 70} 3.235412
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.43{col 34} .1498518{col 58}-.7255103{col 70}-.1344897
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -2.8695
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0023         {txt}Pr(|T| > |t|) = {res}0.0046          {txt}Pr(T > t) = {res}0.9977
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.51{col 34} .1201808{col 46} 1.201808{col 58} 3.271535{col 70} 3.748465
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.19{col 34} .0796948{col 46} 1.127054{col 58} 3.032845{col 70} 3.347155
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.64{col 34} .1531817{col 58}-.9420771{col 70}-.3379229
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.1780
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.68{col 34} .1062492{col 46} 1.062492{col 58} 3.469179{col 70} 3.890821
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.275{col 34} .0766567{col 46}  1.08409{col 58} 3.123836{col 70} 3.426164
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.81{col 34} .1425135{col 58}-1.091039{col 70}-.5289609
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -5.6837
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.44{col 34} .0956847{col 46} .9568467{col 58} 3.250141{col 70} 3.629859
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.155{col 34} .0702106{col 46} .9929272{col 58} 3.016548{col 70} 3.293452
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.57{col 34} .1348212{col 58}-.8358698{col 70}-.3041302
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.2278
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.27{col 34} .1135782{col 46} 1.135782{col 58} 3.044636{col 70} 3.495364
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.07{col 34} .0751915{col 46} 1.063369{col 58} 2.921726{col 70} 3.218274
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}      -.4{col 34} .1480581{col 58}-.6919732{col 70}-.1080268
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -2.7016
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0037         {txt}Pr(|T| > |t|) = {res}0.0075          {txt}Pr(T > t) = {res}0.9963
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.49{col 34} .1201808{col 46} 1.201808{col 58} 3.251535{col 70} 3.728465
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.18{col 34} .0794959{col 46} 1.124242{col 58} 3.023238{col 70} 3.336762
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.62{col 34} .1531817{col 58}-.9220771{col 70}-.3179229
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.0475
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0001          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.59{col 34} .1101835{col 46} 1.101835{col 58} 3.371372{col 70} 3.808628
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.23{col 34} .0769095{col 46} 1.087665{col 58} 3.078338{col 70} 3.381662
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.72{col 34} .1454703{col 58} -1.00687{col 70}  -.43313
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.9495
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.42{col 34} .1084137{col 46} 1.084137{col 58} 3.204884{col 70} 3.635116
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.145{col 34} .0744823{col 46} 1.053339{col 58} 2.998124{col 70} 3.291876
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.55{col 34} .1441345{col 58}-.8342357{col 70}-.2657643
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -3.8159
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0001         {txt}Pr(|T| > |t|) = {res}0.0002          {txt}Pr(T > t) = {res}0.9999
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.35{col 34} .1140397{col 46} 1.140397{col 58} 3.123721{col 70} 3.576279
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.11{col 34} .0759496{col 46}  1.07409{col 58} 2.960231{col 70} 3.259769
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.48{col 34} .1484125{col 58} -.772672{col 70} -.187328
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -3.2342
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0007         {txt}Pr(|T| > |t|) = {res}0.0014          {txt}Pr(T > t) = {res}0.9993
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.63{col 34} .1134002{col 46} 1.134002{col 58} 3.404989{col 70} 3.855011
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.25{col 34} .0785388{col 46} 1.110706{col 58} 3.095125{col 70} 3.404875
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.76{col 34} .1479216{col 58}-1.051704{col 70} -.468296
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -5.1379
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}      3.5{col 34} .1087115{col 46} 1.087115{col 58} 3.284293{col 70} 3.715707
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.185{col 34} .0753809{col 46} 1.066048{col 58} 3.036352{col 70} 3.333648
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.63{col 34} .1443586{col 58}-.9146776{col 70}-.3453224
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.3641
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.53{col 34} .1184538{col 46} 1.184538{col 58} 3.294962{col 70} 3.765038
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}      3.2{col 34} .0792553{col 46}  1.12084{col 58} 3.043712{col 70} 3.356288
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.66{col 34} .1518306{col 58}-.9594126{col 70}-.3605874
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.3470
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.65{col 34} .1217507{col 46} 1.217507{col 58}  3.40842{col 70}  3.89158
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.26{col 34} .0818259{col 46} 1.157193{col 58} 3.098643{col 70} 3.421357
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.78{col 34} .1544165{col 58}-1.084512{col 70} -.475488
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -5.0513
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.44{col 34} .1233538{col 46} 1.233538{col 58} 3.195239{col 70} 3.684761
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.155{col 34} .0802313{col 46} 1.134642{col 58} 2.996787{col 70} 3.313213
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.57{col 34} .1556836{col 58}-.8770107{col 70}-.2629893
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -3.6613
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0002         {txt}Pr(|T| > |t|) = {res}0.0003          {txt}Pr(T > t) = {res}0.9998
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.54{col 34} .1140795{col 46} 1.140795{col 58} 3.313641{col 70} 3.766359
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.205{col 34} .0777502{col 46} 1.099555{col 58}  3.05168{col 70}  3.35832
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.67{col 34} .1484431{col 58}-.9627324{col 70}-.3772676
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.5135
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.49{col 34} .1150274{col 46} 1.150274{col 58} 3.261761{col 70} 3.718239
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.18{col 34} .0775764{col 46} 1.097095{col 58} 3.027023{col 70} 3.332977
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.62{col 34} .1491728{col 58}-.9141714{col 70}-.3258286
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.1563
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.34{col 34} .0997168{col 46} .9971677{col 58}  3.14214{col 70}  3.53786
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.105{col 34} .0706742{col 46} .9994848{col 58} 2.965633{col 70} 3.244367
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.47{col 34} .1377122{col 58}-.7415708{col 70}-.1984292
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -3.4129
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0004         {txt}Pr(|T| > |t|) = {res}0.0008          {txt}Pr(T > t) = {res}0.9996
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.26{col 34} .1069504{col 46} 1.069504{col 58} 3.047787{col 70} 3.472213
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.065{col 34} .0726655{col 46} 1.027646{col 58} 2.921707{col 70} 3.208293
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.39{col 34}  .143037{col 58}-.6720716{col 70}-.1079284
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -2.7266
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0035         {txt}Pr(|T| > |t|) = {res}0.0070          {txt}Pr(T > t) = {res}0.9965
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.56{col 34} .0988009{col 46} .9880089{col 58} 3.363958{col 70} 3.756042
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.215{col 34} .0725963{col 46} 1.026667{col 58} 3.071843{col 70} 3.358157
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.69{col 34} .1370505{col 58}-.9602659{col 70}-.4197341
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -5.0346
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.55{col 34} .1209182{col 46} 1.209182{col 58} 3.310072{col 70} 3.789928
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.21{col 34} .0803854{col 46} 1.136821{col 58} 3.051484{col 70} 3.368516
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.68{col 34} .1537609{col 58}-.9832192{col 70}-.3767808
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.4224
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.52{col 34} .1096183{col 46} 1.096183{col 58} 3.302494{col 70} 3.737506
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.195{col 34}  .075919{col 46} 1.073657{col 58} 3.045291{col 70} 3.344709
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.65{col 34} .1450427{col 58}-.9360267{col 70}-.3639733
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.4814
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.66{col 34}  .113012{col 46}  1.13012{col 58}  3.43576{col 70}  3.88424
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.265{col 34} .0787712{col 46} 1.113993{col 58} 3.109667{col 70} 3.420333
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.79{col 34} .1476243{col 58}-1.081118{col 70}-.4988823
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -5.3514
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.58{col 34} .1164977{col 46} 1.164977{col 58} 3.348843{col 70} 3.811157
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.225{col 34} .0790768{col 46} 1.118315{col 58} 3.069064{col 70} 3.380936
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.71{col 34} .1503094{col 58}-1.006413{col 70}-.4135871
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.7236
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}      3.5{col 34} .1058873{col 46} 1.058873{col 58} 3.289897{col 70} 3.710103
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}    3.185{col 34} .0743743{col 46} 1.051811{col 58} 3.038337{col 70} 3.331663
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.63{col 34} .1422439{col 58}-.9105075{col 70}-.3494925
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.4290
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+
+{txt}Two-sample t test with equal variances
+{hline 9}{c TT}{hline 68}
+   Group{col 10}{c |}{col 16}Obs{col 27}Mean{col 35}Std. Err.{col 47}Std. Dev.{col 59}[95% Conf. Interval]
+{hline 9}{c +}{hline 68}
+ control {c |}{res}{col 12}    100{col 22}     2.87{col 34} .0949801{col 46} .9498006{col 58} 2.681539{col 70} 3.058461
+{txt}treatmen {c |}{res}{col 12}    100{col 22}     3.49{col 34} .1114596{col 46} 1.114596{col 58}  3.26884{col 70}  3.71116
+{txt}{hline 9}{c +}{hline 68}
+combined {c |}{res}{col 12}    200{col 22}     3.18{col 34} .0762698{col 46} 1.078618{col 58} 3.029599{col 70} 3.330401
+{txt}{hline 9}{c +}{hline 68}
+    diff {c |}{res}{col 22}     -.62{col 34} .1464392{col 58}-.9087807{col 70}-.3312193
+{txt}{hline 9}{c BT}{hline 68}
+    diff = mean({res}control{txt}) - mean({res}treatmen{txt})                         t = {res} -4.2338
+{txt}Ho: diff = 0                                     degrees of freedom = {res}     198
+
+    {txt}Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = {res}0.0000         {txt}Pr(|T| > |t|) = {res}0.0000          {txt}Pr(T > t) = {res}1.0000
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/albertocottica/github/local/communities-network-design/Stata files/Stata files 2017/Ttests_kmin.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 6 Mar 2017, 11:36:08
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

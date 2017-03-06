@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.19)  6 MAR 2017 00:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.19)  6 MAR 2017 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -24,31 +24,6 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/blindtext/blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-\c@blindtext=\count87
-\c@Blindtext=\count88
-\c@blind@countparstart=\count89
-\blind@countxx=\count90
-\blindtext@numBlindtext=\count91
-\blind@countyy=\count92
-\c@blindlist=\count93
-\c@blindlistlevel=\count94
-\c@blindlist@level=\count95
-\blind@listitem=\count96
-\c@blind@listcount=\count97
-\c@blind@levelcount=\count98
-\blind@mathformula=\count99
-\blind@Mathformula=\count100
-\c@blind@randomcount=\count101
-\c@blind@randommax=\count102
-\c@blind@pangramcount=\count103
-\c@blind@pangrammax=\count104
-)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
@@ -68,11 +43,11 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 \MT@toks=\toks15
-\MT@count=\count105
+\MT@count=\count87
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen103
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count106
+\MT@listname@count=\count88
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
@@ -94,7 +69,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2014/09/25 3.9l Babel common definitions
-\babel@savecnt=\count107
+\babel@savecnt=\count89
 \U@D=\dimen104
 )
 \l@canadian = a dialect from \language\l@american 
@@ -115,9 +90,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count108
-\Gm@cntv=\count109
-\c@Gm@tempcnt=\count110
+\Gm@cnth=\count90
+\Gm@cntv=\count91
+\c@Gm@tempcnt=\count92
 \Gm@bindingoffset=\dimen105
 \Gm@wd@mp=\dimen106
 \Gm@odd@mp=\dimen107
@@ -142,7 +117,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen118
 \caption@hangindent=\dimen119
 )
-\c@ContinuedFloat=\count111
+\c@ContinuedFloat=\count93
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
@@ -156,26 +131,26 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen127
 \cmidrulekern=\dimen128
 \defaultaddspace=\dimen129
-\@cmidla=\count112
-\@cmidlb=\count113
+\@cmidla=\count94
+\@cmidlb=\count95
 \@aboverulesep=\dimen130
 \@belowrulesep=\dimen131
-\@thisruleclass=\count114
-\@lastruleclass=\count115
+\@thisruleclass=\count96
+\@lastruleclass=\count97
 \@thisrulewidth=\dimen132
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2015/02/16 v1.8 (Daniel Flipo)
-\c@DefaultLines=\count116
-\c@DefaultDepth=\count117
+\c@DefaultLines=\count98
+\c@DefaultDepth=\count99
 \DefaultFindent=\dimen133
 \DefaultNindent=\dimen134
 \DefaultSlope=\dimen135
 \DiscardVskip=\dimen136
 \L@lbox=\box26
 \L@tbox=\box27
-\c@L@lines=\count118
-\c@L@depth=\count119
+\c@L@lines=\count100
+\c@L@depth=\count101
 \L@Pindent=\dimen137
 \L@Findent=\dimen138
 \L@Nindent=\dimen139
@@ -197,7 +172,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen149
 \enit@toks=\toks17
 \enit@inbox=\box28
-\enitdp@description=\count120
+\enitdp@description=\count102
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/abstract/abstract.sty
 Package: abstract 2009/06/08 v1.2a configurable abstracts
@@ -296,13 +271,13 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen155
-\Hy@linkcounter=\count121
-\Hy@pagecounter=\count122
+\Hy@linkcounter=\count103
+\Hy@pagecounter=\count104
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count123
+\Hy@SavedSpaceFactor=\count105
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -314,7 +289,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count124
+\c@Hy@tempcnt=\count106
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
@@ -322,7 +297,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen156
-\Fld@menulength=\count125
+\Fld@menulength=\count107
 \Field@Width=\dimen157
 \Fld@charsize=\dimen158
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -334,17 +309,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count126
-\c@Item=\count127
-\c@Hfootnote=\count128
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count129
-\c@bookmark@seq@number=\count130
+\Fld@listcount=\count111
+\c@bookmark@seq@number=\count112
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -369,51 +344,51 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count131
+\Gread@gobject=\count113
 ))
 \Gin@req@height=\dimen159
 \Gin@req@width=\dimen160
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count132
+\c@KVtest=\count114
 \sf@farskip=\skip65
 \sf@captopadj=\dimen161
 \sf@capskip=\skip66
 \sf@nearskip=\skip67
-\c@subfigure=\count133
-\c@subfigure@save=\count134
-\c@lofdepth=\count135
-\c@subtable=\count136
-\c@subtable@save=\count137
-\c@lotdepth=\count138
+\c@subfigure=\count115
+\c@subfigure@save=\count116
+\c@lofdepth=\count117
+\c@subtable=\count118
+\c@subtable@save=\count119
+\c@lotdepth=\count120
 \sf@top=\skip68
 \sf@bottom=\skip69
 )
 (./testing-for-signature.aux)
 \openout1 = `testing-for-signature.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 96.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 95.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
 \big@size=\dimen162
-LaTeX Info: Redefining \microtypecontext on input line 96.
+LaTeX Info: Redefining \microtypecontext on input line 95.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -467,18 +442,18 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 96.
+Package hyperref Info: Link coloring OFF on input line 95.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count139
+\c@section@level=\count121
 )
-LaTeX Info: Redefining \ref on input line 96.
-LaTeX Info: Redefining \pageref on input line 96.
-LaTeX Info: Redefining \nameref on input line 96.
+LaTeX Info: Redefining \ref on input line 95.
+LaTeX Info: Redefining \pageref on input line 95.
+LaTeX Info: Redefining \nameref on input line 95.
 
 (./testing-for-signature.out) (./testing-for-signature.out)
 \@outlinefile=\write3
@@ -487,16 +462,16 @@ LaTeX Info: Redefining \nameref on input line 96.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
+\scratchcounter=\count122
 \scratchdimen=\dimen163
 \scratchbox=\box31
-\nofMPsegments=\count141
-\nofMParguments=\count142
+\nofMPsegments=\count123
+\nofMParguments=\count124
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count143
+\MPscratchCnt=\count125
 \MPscratchDim=\dimen164
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks20
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -514,33 +489,33 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 100.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 100
-.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 99.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 99.
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 100
-.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 99.
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 100
-.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 99.
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 100
-.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 99.
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 100
-.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 99.
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -552,377 +527,1009 @@ Package microtype Info: Loading generic settings for font family
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 100
-.
-LaTeX Font Info:    No file OMSpplx.fd. on input line 100.
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 99.
+
+LaTeX Font Info:    No file OMSpplx.fd. on input line 99.
 
 
 LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 100.
+(Font)              for symbol `textasteriskcentered' on input line 99.
 
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 100.
-
-LaTeX Warning: Citation `rheingold1993virtual' on page 1 undefined on input lin
-e 107.
-
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 99.
+./testing-for-signature.tex:105: Undefined control sequence.
+<argument> \astroncite 
+                       {Cottica et~al.}{2016}
+l.105 ...016 conference (\cite{cottica2016testing}
+                                                  )
+? r
+OK, entering \nonstopmode...
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+./testing-for-signature.tex:113: Undefined control sequence.
+<argument> \astroncite 
+                       {Rheingold}{1993}
+l.113 ...ving conflict \cite{rheingold1993virtual}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Citation `tapscott2008wikinomics' on page 2 undefined on input l
-ine 115.
+./testing-for-signature.tex:121: Undefined control sequence.
+<argument> \astroncite 
+                       {Tapscott and Williams}{2008}
+l.121 ...literature (\cite{tapscott2008wikinomics}
+                                                  ,\cite{slegg2014facebook}).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
+./testing-for-signature.tex:121: Undefined control sequence.
+<argument> \astroncite 
+                       {Slegg}{2014}
+l.121 ...t2008wikinomics},\cite{slegg2014facebook}
+                                                  ).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Citation `slegg2014facebook' on page 2 undefined on input line 1
-15.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <8> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 124.
 
-
-LaTeX Warning: Citation `rheingold1993virtual' on page 2 undefined on input lin
-e 127.
-
-
-LaTeX Warning: Citation `shirky2008here' on page 2 undefined on input line 127.
-
+LaTeX Warning: Citation `snijders1996stochastic' on page 2 undefined on input l
+ine 124.
 
 [2]
-
-LaTeX Warning: Citation `dorogovtsev2002evolution' on page 3 undefined on input
- line 133.
-
-
-LaTeX Warning: Citation `pierre1997collective' on page 3 undefined on input lin
-e 141.
-
-
-LaTeX Warning: Citation `shum2003roots' on page 3 undefined on input line 141.
-
-
-LaTeX Warning: Citation `klein2012enabling' on page 3 undefined on input line 1
-41.
-
-
-LaTeX Warning: Citation `diplaris2011emerging' on page 3 undefined on input lin
-e 143.
-
-
-LaTeX Warning: Citation `shum2003roots' on page 3 undefined on input line 143.
-
-
-LaTeX Warning: Citation `de2012contested' on page 3 undefined on input line 143
-.
-
-
-LaTeX Warning: Citation `borgatti2009network' on page 3 undefined on input line
- 145.
-
-
-LaTeX Warning: Citation `burt2009structural' on page 3 undefined on input line 
-145.
-
-
-LaTeX Warning: Citation `lewis2008tastes' on page 3 undefined on input line 145
-.
-
-
-LaTeX Warning: Citation `nick2013toward' on page 3 undefined on input line 145.
-
-
-
-LaTeX Warning: Citation `kunegis2013preferential' on page 3 undefined on input 
-line 145.
-
-
-LaTeX Warning: Citation `java2007we' on page 3 undefined on input line 145.
-
-
-LaTeX Warning: Citation `hodas2014simple' on page 3 undefined on input line 145
-.
-
-
-LaTeX Warning: Citation `hodas2014simple' on page 3 undefined on input line 145
-.
-
-
-LaTeX Warning: Citation `laniado2011wikipedians' on page 3 undefined on input l
-ine 145.
-
-
-LaTeX Warning: Citation `zhang2007expertise' on page 3 undefined on input line 
-145.
-
-
-LaTeX Warning: Citation `zanetti2012quantitative' on page 3 undefined on input 
-line 145.
-
-
-LaTeX Warning: Citation `borgatti2009network' on page 3 undefined on input line
- 147.
-
-
-LaTeX Warning: Citation `burt2009structural' on page 3 undefined on input line 
-147.
-
-
-LaTeX Warning: Citation `lewis2008tastes' on page 3 undefined on input line 147
-.
-
-
-LaTeX Warning: Citation `nick2013toward' on page 3 undefined on input line 147.
-
-
-
-LaTeX Warning: Citation `kunegis2013preferential' on page 3 undefined on input 
-line 147.
-
-
-LaTeX Warning: Citation `java2007we' on page 3 undefined on input line 147.
-
-
-LaTeX Warning: Citation `hodas2014simple' on page 3 undefined on input line 147
-.
-
-
-LaTeX Warning: Citation `hodas2014simple' on page 3 undefined on input line 147
-.
-
-
-LaTeX Warning: Citation `laniado2011wikipedians' on page 3 undefined on input l
-ine 147.
-
-
-LaTeX Warning: Citation `zhang2007expertise' on page 3 undefined on input line 
-147.
-
-
-LaTeX Warning: Citation `zanetti2012quantitative' on page 3 undefined on input 
-line 147.
-
-
-LaTeX Warning: Citation `barabasi1999emergence' on page 3 undefined on input li
-ne 150.
-
-
-LaTeX Warning: Citation `barabasi2005origin' on page 3 undefined on input line 
-150.
-
-
-LaTeX Warning: Citation `barabasi1999mean' on page 3 undefined on input line 15
-0.
-
-
-LaTeX Warning: Citation `dorogovtsev2002evolution' on page 3 undefined on input
- line 151.
+./testing-for-signature.tex:133: Undefined control sequence.
+<argument> \astroncite 
+                       {Rheingold}{1993}
+l.133 ...ite{rheingold1993virtual, shirky2008here}
+                                                  . As a new participant bec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:133: Undefined control sequence.
+<argument> \astroncite 
+                       {Shirky}{2008}
+l.133 ...ite{rheingold1993virtual, shirky2008here}
+                                                  . As a new participant bec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:139: Undefined control sequence.
+<argument> \astroncite 
+                       {Dorogovtsev and Mendes}{2002}
+l.139 ...ent model \cite{dorogovtsev2002evolution}
+                                                  , we simulate the growth o...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:147: Undefined control sequence.
+<argument> \astroncite 
+                       {Pierre}{1997}
+l.147 ...Pierre L\'evy \cite{pierre1997collective}
+                                                  . This name was adopted by...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:147: Undefined control sequence.
+<argument> \astroncite 
+                       {Shum}{2003}
+l.147 ...dundancy eliminated) \cite{shum2003roots}
+                                                   and attention-mediation m...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:147: Undefined control sequence.
+<argument> \astroncite 
+                       {Klein}{2012}
+l.147 ...one such metric) \cite{klein2012enabling}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:149: Undefined control sequence.
+<argument> \astroncite 
+                       {Diplaris et~al.}{2011}
+l.149 ...ystematize it \cite{diplaris2011emerging}
+                                                   and produce technological...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:149: Undefined control sequence.
+<argument> \astroncite 
+                       {Shum}{2003}
+l.149 ... it \cite{shum2003roots, de2012contested}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:149: Undefined control sequence.
+<argument> \astroncite 
+                       {De~Liddo et~al.}{2012}
+l.149 ... it \cite{shum2003roots, de2012contested}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Borgatti et~al.}{2009}
+l.151 ...{borgatti2009network, burt2009structural}
+                                                  , for which  easily availa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Burt}{2009}
+l.151 ...{borgatti2009network, burt2009structural}
+                                                  , for which  easily availa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Lewis et~al.}{2008}
+l.151 ...ok \cite{lewis2008tastes, nick2013toward}
+                                                  , following/retweet/mentio...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Nick}{2013}
+l.151 ...ok \cite{lewis2008tastes, nick2013toward}
+                                                  , following/retweet/mentio...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Kunegis et~al.}{2013}
+l.151 ...referential, java2007we, hodas2014simple}
+                                                  , or vote and comments in ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Java et~al.}{2007}
+l.151 ...referential, java2007we, hodas2014simple}
+                                                  , or vote and comments in ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Hodas and Lerman}{2014}
+l.151 ...referential, java2007we, hodas2014simple}
+                                                  , or vote and comments in ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Hodas and Lerman}{2014}
+l.151 ...ng2007expertise, zanetti2012quantitative}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Laniado et~al.}{2011}
+l.151 ...ng2007expertise, zanetti2012quantitative}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Zhang et~al.}{2007}
+l.151 ...ng2007expertise, zanetti2012quantitative}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:151: Undefined control sequence.
+<argument> \astroncite 
+                       {Zanetti et~al.}{2012}
+l.151 ...ng2007expertise, zanetti2012quantitative}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [3]
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Borgatti et~al.}{2009}
+l.153 ...{borgatti2009network, burt2009structural}
+                                                  . As new datasets encoding...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Reference `table:empiricalData' on page 4 undefined on input lin
-e 166.
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Burt}{2009}
+l.153 ...{borgatti2009network, burt2009structural}
+                                                  . As new datasets encoding...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Lewis et~al.}{2008}
+l.153 ...ok \cite{lewis2008tastes, nick2013toward}
+                                                  ; microblogging platform l...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Nick}{2013}
+l.153 ...ok \cite{lewis2008tastes, nick2013toward}
+                                                  ; microblogging platform l...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Kunegis et~al.}{2013}
+l.153 ...referential, java2007we, hodas2014simple}
+                                                  ; news-sharing services li...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Java et~al.}{2007}
+l.153 ...referential, java2007we, hodas2014simple}
+                                                  ; news-sharing services li...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Hodas and Lerman}{2014}
+l.153 ...referential, java2007we, hodas2014simple}
+                                                  ; news-sharing services li...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Hodas and Lerman}{2014}
+l.153 ...services like Digg \cite{hodas2014simple}
+                                                  ; collaborative editing pr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Laniado et~al.}{2011}
+l.153 ...e Wikipedia \cite{laniado2011wikipedians}
+                                                  ; discussion forums like t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Zhang et~al.}{2007}
+l.153 ... the Java forum \cite{zhang2007expertise}
+                                                  ; and bug reporting servic...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:153: Undefined control sequence.
+<argument> \astroncite 
+                       {Zanetti et~al.}{2012}
+l.153 ...e Bugzilla \cite{zanetti2012quantitative}
+                                                  . Generally, such networks...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (5.06335pt too wide) in paragraph at lines 153--154
+[]\T1/pplx/m/n/10 (-20) , []]; news-sharing ser-vices like Digg [[]];
+ []
+
+./testing-for-signature.tex:156: Undefined control sequence.
+<argument> \astroncite 
+                       {Barab{\'a}si and Albert}{1999}
+l.156 ...i and Albert \cite{barabasi1999emergence}
+                                                   showing that the assumpti...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:156: Undefined control sequence.
+<argument> \astroncite 
+                       {Barabasi}{2005}
+l.156 ...ite{barabasi2005origin, barabasi1999mean}
+                                                  ). The model was later gen...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:156: Undefined control sequence.
+<argument> \astroncite 
+                       {Barab{\'a}si et~al.}{1999}
+l.156 ...ite{barabasi2005origin, barabasi1999mean}
+                                                  ). The model was later gen...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:157: Undefined control sequence.
+<argument> \astroncite 
+                       {Dorogovtsev and Mendes}{2002}
+l.157 \cite{dorogovtsev2002evolution}
+                                     .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 205.
-
-LaTeX Warning: Reference `table:empiricalData' on page 4 undefined on input lin
-e 209.
-
-
-LaTeX Warning: Reference `fig:NetViz' on page 4 undefined on input line 209.
-
-<./Pictures/innovatoripa_01.jpg, id=36, 736.7525pt x 734.745pt>
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 212.
+ <./Pictures/innovatoripa_01.jpg, id=166, 736.7525pt x 734.745pt>
 File: ./Pictures/innovatoripa_01.jpg Graphic file (type jpg)
 
 <use ./Pictures/innovatoripa_01.jpg>
-Package pdftex.def Info: ./Pictures/innovatoripa_01.jpg used on input line 213.
+Package pdftex.def Info: ./Pictures/innovatoripa_01.jpg used on input line 220.
 
 (pdftex.def)             Requested size: 137.60461pt x 137.2262pt.
 
-<./Pictures/edgeryders_02.jpg, id=37, 739.76375pt x 734.745pt>
+<./Pictures/edgeryders_02.jpg, id=167, 739.76375pt x 734.745pt>
 File: ./Pictures/edgeryders_02.jpg Graphic file (type jpg)
 
 <use ./Pictures/edgeryders_02.jpg>
-Package pdftex.def Info: ./Pictures/edgeryders_02.jpg used on input line 214.
+Package pdftex.def Info: ./Pictures/edgeryders_02.jpg used on input line 221.
 (pdftex.def)             Requested size: 137.60461pt x 136.66563pt.
 
-<./Pictures/matera2019_01.jpg, id=38, 737.75626pt x 734.745pt>
+<./Pictures/matera2019_01.jpg, id=168, 737.75626pt x 734.745pt>
 File: ./Pictures/matera2019_01.jpg Graphic file (type jpg)
 
 <use ./Pictures/matera2019_01.jpg>
-Package pdftex.def Info: ./Pictures/matera2019_01.jpg used on input line 215.
+Package pdftex.def Info: ./Pictures/matera2019_01.jpg used on input line 222.
 (pdftex.def)             Requested size: 137.60461pt x 137.03561pt.
 
+./testing-for-signature.tex:227: Undefined control sequence.
+<argument> \astroncite 
+                       {Dorogovtsev and Mendes}{2002}
+l.227 ...dicted by \cite{dorogovtsev2002evolution}
+                                                  . To do so, we first fitte...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Citation `dorogovtsev2002evolution' on page 4 undefined on input
- line 220.
+./testing-for-signature.tex:229: Undefined control sequence.
+<argument> \astroncite 
+                       {Dorogovtsev and Mendes}{2002}
+l.229 }
+       . We next fitted power functions to the right tail of each in-degree ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <8> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 222.
+[5]
+./testing-for-signature.tex:233: Undefined control sequence.
+<argument> \astroncite 
+                       {Clauset et~al.}{2009}
+l.233 ...uset \emph{et al} \cite{clauset2009power}
+                                                  . The null hypothesis test...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Citation `dorogovtsev2002evolution' on page 4 undefined on input
- line 222.
-
-[4]
-
-LaTeX Warning: Citation `clauset2009power' on page 5 undefined on input line 22
-4.
-
-
-LaTeX Warning: Reference `table:empiricalData' on page 5 undefined on input lin
-e 224.
-
-<./Pictures/PDF_fit_innovatoriPA.png, id=46, 519.6213pt x 414.8298pt>
+<./Pictures/PDF_fit_innovatoriPA.png, id=182, 519.6213pt x 414.8298pt>
 File: ./Pictures/PDF_fit_innovatoriPA.png Graphic file (type png)
 
 <use ./Pictures/PDF_fit_innovatoriPA.png>
 Package pdftex.def Info: ./Pictures/PDF_fit_innovatoriPA.png used on input line
- 234.
+ 245.
 (pdftex.def)             Requested size: 215.00452pt x 113.80952pt.
 
-<./Pictures/YES_PDF_fit_no_onboarding_178.png, id=48, 519.6213pt x 414.8298pt>
+<./Pictures/YES_PDF_fit_no_onboarding_178.png, id=184, 519.6213pt x 414.8298pt>
 File: ./Pictures/YES_PDF_fit_no_onboarding_178.png Graphic file (type png)
-
 <use ./Pictures/YES_PDF_fit_no_onboarding_178.png>
 Package pdftex.def Info: ./Pictures/YES_PDF_fit_no_onboarding_178.png used on i
-nput line 234.
+nput line 245.
 (pdftex.def)             Requested size: 215.00452pt x 113.80952pt.
 
-<./Pictures/PDF_fit_edgeryders.png, id=49, 519.6213pt x 414.8298pt>
+<./Pictures/PDF_fit_edgeryders.png, id=185, 519.6213pt x 414.8298pt>
 File: ./Pictures/PDF_fit_edgeryders.png Graphic file (type png)
 
 <use ./Pictures/PDF_fit_edgeryders.png>
 Package pdftex.def Info: ./Pictures/PDF_fit_edgeryders.png used on input line 2
-43.
+54.
 (pdftex.def)             Requested size: 215.00452pt x 113.80952pt.
 
-<./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png, id=50, 519.6213pt x 414.829
-8pt>
+<./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png, id=186, 519.6213pt x 414.82
+98pt>
 File: ./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png Graphic file (type png)
 
  <use ./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png>
 Package pdftex.def Info: ./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png used
- on input line 243.
+ on input line 254.
 (pdftex.def)             Requested size: 215.00452pt x 113.80952pt.
- [5] [6 <./Pictures/innovatoripa_01.jpg> <./Pictures/edgeryders_02.jpg> <./Pict
-ures/matera2019_01.jpg>] [7 <./Pictures/PDF_fit_innovatoriPA.png> <./Pictures/Y
-ES_PDF_fit_no_onboarding_178.png> <./Pictures/PDF_fit_edgeryders.png> <./Pictur
-es/YES-PDF_fit_onboarding_nu_1_1__429.png>]
+ [6 <./Pictures/innovatoripa_01.jpg> <./Pictures/edgeryders_02.jpg> <./Pictures
+/matera2019_01.jpg>] [7 <./Pictures/PDF_fit_innovatoriPA.png> <./Pictures/YES_P
+DF_fit_no_onboarding_178.png> <./Pictures/PDF_fit_edgeryders.png> <./Pictures/Y
+ES-PDF_fit_onboarding_nu_1_1__429.png>]
+./testing-for-signature.tex:291: Undefined control sequence.
+<argument> \astroncite 
+                       {Dorogovtsev and Mendes}{2002}
+l.291 ...g at the lower tail of the distribution.}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Citation `dorogovtsev2002evolution' on page 8 undefined on input
- line 285.
+./testing-for-signature.tex:295: Undefined control sequence.
+<argument> \astroncite 
+                       {Dorogovtsev and Mendes}{2002}
+l.295 ...hments in \cite{dorogovtsev2002evolution}
+                                                  . The result holds even if...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
+./testing-for-signature.tex:297: Undefined control sequence.
+<argument> \astroncite 
+                       {Clauset et~al.}{2009}
+l.297 ...by Clauset et.al. \cite{clauset2009power}
+                                                   and illustrated in detail...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Citation `clauset2009power' on page 8 undefined on input line 28
-7.
-
-
-LaTeX Warning: Reference `ss:experiment_protocol' on page 8 undefined on input 
-line 303.
-
-
-LaTeX Warning: Reference `table:GOF1' on page 8 undefined on input line 303.
-
-
-LaTeX Warning: Reference `table:AvgPvall' on page 8 undefined on input line 304
-.
-
+[8]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `table:GOF1' on page 8 undefined on input line 325.
-
-
-LaTeX Warning: Reference `table:AvgPvc' on page 8 undefined on input line 327.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `fig:CDFpvcnu_1nu_2' on page 8 undefined on input line
- 350.
-
-[8] <./Pictures/CDF_pvc_nu1.png, id=87, 1197.47375pt x 870.25125pt>
+<./Pictures/CDF_pvc_nu1.png, id=225, 1197.47375pt x 870.25125pt>
 File: ./Pictures/CDF_pvc_nu1.png Graphic file (type png)
 
 <use ./Pictures/CDF_pvc_nu1.png>
-Package pdftex.def Info: ./Pictures/CDF_pvc_nu1.png used on input line 355.
+Package pdftex.def Info: ./Pictures/CDF_pvc_nu1.png used on input line 365.
 (pdftex.def)             Requested size: 322.50346pt x 234.37343pt.
 
-<./Pictures/CDF_pvc_nu2.png, id=88, 1197.47375pt x 870.25125pt>
+<./Pictures/CDF_pvc_nu2.png, id=226, 1197.47375pt x 870.25125pt>
 File: ./Pictures/CDF_pvc_nu2.png Graphic file (type png)
 
 <use ./Pictures/CDF_pvc_nu2.png>
-Package pdftex.def Info: ./Pictures/CDF_pvc_nu2.png used on input line 356.
+Package pdftex.def Info: ./Pictures/CDF_pvc_nu2.png used on input line 366.
 (pdftex.def)             Requested size: 322.50346pt x 234.37343pt.
-
-
-LaTeX Warning: Reference `fig:CDFpvcnu_1nu_2' on page 9 undefined on input line
- 365.
-
-[9]
-
-LaTeX Warning: Reference `eq:tIDD' on page 10 undefined on input line 378.
-
-
-LaTeX Warning: Reference `table:rejectsUnconstrained' on page 10 undefined on i
-nput line 378.
-
-
-LaTeX Warning: Reference `table:AvgPvu' on page 10 undefined on input line 399.
-
-
-
-LaTeX Warning: Reference `table:rejectsUnconstrained' on page 10 undefined on i
-nput line 401.
-
-
-LaTeX Warning: Reference `table:AvgPvu' on page 10 undefined on input line 401.
-
-
-
-LaTeX Warning: Reference `table:rejectsUnconstrained' on page 10 undefined on i
-nput line 401.
-
-
-LaTeX Warning: Reference `table:AvgPvu' on page 10 undefined on input line 401.
-
-
+ [9]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation `clauset2009power' on page 10 undefined on input line 4
-33.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10]
+Overfull \hbox (75.21545pt too wide) in paragraph at lines 441--454
+ [][] 
+ []
 
-LaTeX Warning: Citation `clauset2009power' on page 11 undefined on input line 4
-52.
+<./Pictures/CDF_kmin_nu1.png, id=253, 1197.47375pt x 870.25125pt>
+File: ./Pictures/CDF_kmin_nu1.png Graphic file (type png)
 
-[11]
+<use ./Pictures/CDF_kmin_nu1.png>
+Package pdftex.def Info: ./Pictures/CDF_kmin_nu1.png used on input line 461.
+(pdftex.def)             Requested size: 322.50346pt x 234.37343pt.
 
-LaTeX Warning: Reference `fig:NetViz' on page 12 undefined on input line 462.
+<./Pictures/CDF_kmin_nu2.png, id=254, 1197.47375pt x 870.25125pt>
+File: ./Pictures/CDF_kmin_nu2.png Graphic file (type png)
+
+<use ./Pictures/CDF_kmin_nu2.png>
+Package pdftex.def Info: ./Pictures/CDF_kmin_nu2.png used on input line 462.
+(pdftex.def)             Requested size: 322.50346pt x 234.37343pt.
+ [11]
+./testing-for-signature.tex:472: Undefined control sequence.
+<argument> \astroncite 
+                       {Dorogovtsev and Mendes}{2002}
+l.472 ...nd Mendes \cite{dorogovtsev2002evolution}
+                                                  , who proved that introduc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `dorogovtsev2002evolution' on page 12 undefined on inpu
-t line 468.
+Overfull \hbox (45.21545pt too wide) in paragraph at lines 480--493
+ [][] 
+ []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
-[12] [13 <./Pictures/CDF_pvc_nu1.png> <./Pictures/CDF_pvc_nu2.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12] [13] [14]
+./testing-for-signature.tex:557: Undefined control sequence.
+<argument> \astroncite 
+                       {Dorogovtsev and Mendes}{2002}
+l.557 ...s results \cite{dorogovtsev2002evolution}
+                                                  ; it would be useful to te...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:559: Undefined control sequence.
+<argument> \astroncite 
+                       {Bianconi and Barab{\'a}si}{2001}
+l.559 ...ltiscaling \cite{bianconi2001competition}
+                                                  ). Secondly, we could intr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `snijders1996stochastic' on page 15 undefined on input 
+line 559.
+
+[15]
+./testing-for-signature.tex:569: Undefined control sequence.
+<argument> \astroncite 
+                       {Clauset et~al.}{2009}
+l.569 ...Newman \cite[pp. 15-18]{clauset2009power}
+                                                  . What follows summarizes ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[16]
+./testing-for-signature.tex:588: Undefined control sequence.
+<argument> \astroncite 
+                       {Clauset et~al.}{2009}
+l.588 ...s. Again based on \cite{clauset2009power}
+                                                   we make the following dec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.tex:604: Undefined control sequence.
+<argument> \astroncite 
+                       {Dorogovtsev and Mendes}{2002}
+l.604 ...al to $k$ \cite{dorogovtsev2002evolution}
+                                                  ; this contrasts with Bara...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[17] (./testing-for-signature.bbl
+./testing-for-signature.bbl:3: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Barabasi}{2005}
+l.3 ...oncite{Barabasi}{2005}]{barabasi2005origin}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:9: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Barab{\'a}si and Albert}{1999}
+l.9   Albert}{1999}]{barabasi1999emergence}
+                                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:14: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Barab{\'a}si et~al.}{1999}
+l.14 ...ab{\'a}si et~al.}{1999}]{barabasi1999mean}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:21: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Bianconi and Barab{\'a}si}{2001}
+l.21 ...ab{\'a}si}{2001}]{bianconi2001competition}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:26: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Borgatti et~al.}{2009}
+l.26 ...rgatti et~al.}{2009}]{borgatti2009network}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:31: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Burt}{2009}
+l.31 ...stroncite{Burt}{2009}]{burt2009structural}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:36: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Clauset et~al.}{2009}
+l.36 ...e{Clauset et~al.}{2009}]{clauset2009power}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:41: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Cottica et~al.}{2016}
+l.41 ...Cottica et~al.}{2016}]{cottica2016testing}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:47: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {De~Liddo et~al.}{2012}
+l.47 ...e{De~Liddo et~al.}{2012}]{de2012contested}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:53: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Diplaris et~al.}{2011}
+l.53 ...laris et~al.}{2011}]{diplaris2011emerging}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:62: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Dorogovtsev and Mendes}{2002}
+l.62   Mendes}{2002}]{dorogovtsev2002evolution}
+                                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:67: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Hodas and Lerman}{2014}
+l.67 ...{Hodas and Lerman}{2014}]{hodas2014simple}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:72: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Java et~al.}{2007}
+l.72 ...astroncite{Java et~al.}{2007}]{java2007we}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:78: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Klein}{2012}
+l.78 ...stroncite{Klein}{2012}]{klein2012enabling}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[18]
+./testing-for-signature.bbl:83: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Kunegis et~al.}{2013}
+l.83 ...is et~al.}{2013}]{kunegis2013preferential}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:90: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Laniado et~al.}{2011}
+l.90 ...ado et~al.}{2011}]{laniado2011wikipedians}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:96: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Lewis et~al.}{2008}
+l.96 ...cite{Lewis et~al.}{2008}]{lewis2008tastes}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:102: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Nick}{2013}
+l.102 ...t\astroncite{Nick}{2013}]{nick2013toward}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:107: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Pierre}{1997}
+l.107 ...cite{Pierre}{1997}]{pierre1997collective}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:112: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Rheingold}{1993}
+l.112 ...e{Rheingold}{1993}]{rheingold1993virtual}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:117: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Shirky}{2008}
+l.117 ...astroncite{Shirky}{2008}]{shirky2008here}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:123: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Shum}{2003}
+l.123 ...ct\astroncite{Shum}{2003}]{shum2003roots}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:128: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Slegg}{2014}
+l.128 ...troncite{Slegg}{2014}]{slegg2014facebook}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:134: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Tapscott and Williams}{2008}
+l.134   Williams}{2008}]{tapscott2008wikinomics}
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:139: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Zanetti et~al.}{2012}
+l.139 ...i et~al.}{2012}]{zanetti2012quantitative}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./testing-for-signature.bbl:146: Undefined control sequence.
+<argument> \protect \astroncite 
+                                {Zhang et~al.}{2007}
+l.146 ...{Zhang et~al.}{2007}]{zhang2007expertise}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 617.
+ [19] [20 <./Pictures/CDF_pvc_nu1.png> <./Pictures/CDF_pvc_nu2.png>] [21 <./Pic
+tures/CDF_kmin_nu1.png> <./Pictures/CDF_kmin_nu2.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 617.
 
 (./testing-for-signature.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 617.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 617.
+Package rerunfilecheck Info: File `testing-for-signature.out' has not changed.
+(rerunfilecheck)             Checksum: B7DA286837770F7793038E25D1F7A25F;1010.
 
-
-Package rerunfilecheck Warning: File `testing-for-signature.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `testing-for-signature.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  448685AC67E39AC64F35812D9BB955FD;562.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -932,16 +1539,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 489.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 617.
  ) 
 Here is how much of TeX's memory you used:
- 10483 strings out of 493089
- 161672 string characters out of 6134842
- 291735 words of memory out of 5000000
- 13390 multiletter control sequences out of 15000+600000
- 81036 words of font info for 348 fonts, out of 8000000 for 9000
+ 10496 strings out of 493089
+ 161194 string characters out of 6134842
+ 299101 words of memory out of 5000000
+ 13262 multiletter control sequences out of 15000+600000
+ 86791 words of font info for 417 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,11n,52p,1524b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,11n,52p,2040b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
@@ -954,10 +1561,10 @@ exmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2015/texmf
 nts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on testing-for-signature.pdf (13 pages, 869108 bytes).
+Output written on testing-for-signature.pdf (21 pages, 1105793 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
- 63022 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 405 PDF objects out of 1000 (max. 8388607)
+ 348 compressed objects within 4 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 63152 words of extra memory for PDF output out of 74296 (max. 10000000)
 

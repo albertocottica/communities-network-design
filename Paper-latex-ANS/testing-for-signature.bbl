@@ -1,0 +1,152 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Barabasi}{2005}]{barabasi2005origin}
+Barabasi, A.-L. (2005).
+\newblock The origin of bursts and heavy tails in human dynamics.
+\newblock {\em Nature}, 435(7039):207--211.
+
+\bibitem[\protect\astroncite{Barab{\'a}si and
+  Albert}{1999}]{barabasi1999emergence}
+Barab{\'a}si, A.-L. and Albert, R. (1999).
+\newblock Emergence of scaling in random networks.
+\newblock {\em science}, 286(5439):509--512.
+
+\bibitem[\protect\astroncite{Barab{\'a}si et~al.}{1999}]{barabasi1999mean}
+Barab{\'a}si, A.-L., Albert, R., and Jeong, H. (1999).
+\newblock Mean-field theory for scale-free random networks.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  272(1):173--187.
+
+\bibitem[\protect\astroncite{Bianconi and
+  Barab{\'a}si}{2001}]{bianconi2001competition}
+Bianconi, G. and Barab{\'a}si, A.-L. (2001).
+\newblock Competition and multiscaling in evolving networks.
+\newblock {\em EPL (Europhysics Letters)}, 54(4):436.
+
+\bibitem[\protect\astroncite{Borgatti et~al.}{2009}]{borgatti2009network}
+Borgatti, S.~P., Mehra, A., Brass, D.~J., and Labianca, G. (2009).
+\newblock Network analysis in the social sciences.
+\newblock {\em science}, 323(5916):892--895.
+
+\bibitem[\protect\astroncite{Burt}{2009}]{burt2009structural}
+Burt, R.~S. (2009).
+\newblock {\em Structural holes: The social structure of competition}.
+\newblock Harvard university press.
+
+\bibitem[\protect\astroncite{Clauset et~al.}{2009}]{clauset2009power}
+Clauset, A., Shalizi, C.~R., and Newman, M.~E. (2009).
+\newblock Power-law distributions in empirical data.
+\newblock {\em SIAM review}, 51(4):661--703.
+
+\bibitem[\protect\astroncite{Cottica et~al.}{2016}]{cottica2016testing}
+Cottica, A., Melan{\c{c}}on, G., and Renoust, B. (2016).
+\newblock Testing for the signature of policy in online communities.
+\newblock In {\em International Workshop on Complex Networks and their
+  Applications}, pages 41--54. Springer.
+
+\bibitem[\protect\astroncite{De~Liddo et~al.}{2012}]{de2012contested}
+De~Liddo, A., S{\'a}ndor, {\'A}., and Shum, S.~B. (2012).
+\newblock Contested collective intelligence: Rationale, technologies, and a
+  human-machine annotation study.
+\newblock {\em Computer Supported Cooperative Work (CSCW)}, 21(4-5):417--448.
+
+\bibitem[\protect\astroncite{Diplaris et~al.}{2011}]{diplaris2011emerging}
+Diplaris, S., Sonnenbichler, A., Kaczanowski, T., Mylonas, P., Scherp, A.,
+  Janik, M., Papadopoulos, S., Ovelgoenne, M., and Kompatsiaris, Y. (2011).
+\newblock Emerging, collective intelligence for personal, organisational and
+  social use.
+\newblock In {\em Next generation data technologies for collective
+  computational intelligence}, pages 527--573. Springer.
+
+\bibitem[\protect\astroncite{Dorogovtsev and
+  Mendes}{2002}]{dorogovtsev2002evolution}
+Dorogovtsev, S.~N. and Mendes, J.~F. (2002).
+\newblock Evolution of networks.
+\newblock {\em Advances in physics}, 51(4):1079--1187.
+
+\bibitem[\protect\astroncite{Hodas and Lerman}{2014}]{hodas2014simple}
+Hodas, N.~O. and Lerman, K. (2014).
+\newblock The simple rules of social contagion.
+\newblock {\em Scientific reports}, 4.
+
+\bibitem[\protect\astroncite{Java et~al.}{2007}]{java2007we}
+Java, A., Song, X., Finin, T., and Tseng, B. (2007).
+\newblock Why we twitter: understanding microblogging usage and communities.
+\newblock In {\em Proceedings of the 9th WebKDD and 1st SNA-KDD 2007 workshop
+  on Web mining and social network analysis}, pages 56--65. ACM.
+
+\bibitem[\protect\astroncite{Klein}{2012}]{klein2012enabling}
+Klein, M. (2012).
+\newblock Enabling large-scale deliberation using attention-mediation metrics.
+\newblock {\em Computer Supported Cooperative Work (CSCW)}, 21(4-5):449--473.
+
+\bibitem[\protect\astroncite{Kunegis et~al.}{2013}]{kunegis2013preferential}
+Kunegis, J., Blattner, M., and Moser, C. (2013).
+\newblock Preferential attachment in online networks: measurement and
+  explanations.
+\newblock In {\em Proceedings of the 5th Annual ACM Web Science Conference},
+  pages 205--214. ACM.
+
+\bibitem[\protect\astroncite{Laniado et~al.}{2011}]{laniado2011wikipedians}
+Laniado, D., Tasso, R., Volkovich, Y., and Kaltenbrunner, A. (2011).
+\newblock When the wikipedians talk: Network and tree structure of wikipedia
+  discussion pages.
+\newblock In {\em ICWSM}.
+
+\bibitem[\protect\astroncite{Lewis et~al.}{2008}]{lewis2008tastes}
+Lewis, K., Kaufman, J., Gonzalez, M., Wimmer, A., and Christakis, N. (2008).
+\newblock Tastes, ties, and time: A new social network dataset using facebook.
+  com.
+\newblock {\em Social networks}, 30(4):330--342.
+
+\bibitem[\protect\astroncite{Nick}{2013}]{nick2013toward}
+Nick, B. (2013).
+\newblock {\em Toward a Better Understanding of Evolving Social Networks}.
+\newblock PhD thesis.
+
+\bibitem[\protect\astroncite{Pierre}{1997}]{pierre1997collective}
+Pierre, L. (1997).
+\newblock Collective intelligence: Mankinds emerging world in cyberspace.
+\newblock {\em Cambrigde, Mass.: Perseus Books}.
+
+\bibitem[\protect\astroncite{Rheingold}{1993}]{rheingold1993virtual}
+Rheingold, H. (1993).
+\newblock {\em The virtual community: Homesteading on the electronic frontier}.
+\newblock MIT press.
+
+\bibitem[\protect\astroncite{Shirky}{2008}]{shirky2008here}
+Shirky, C. (2008).
+\newblock {\em Here comes everybody: The power of organizing without
+  organizations}.
+\newblock Penguin.
+
+\bibitem[\protect\astroncite{Shum}{2003}]{shum2003roots}
+Shum, S.~B. (2003).
+\newblock The roots of computer supported argument visualization.
+\newblock In {\em Visualizing argumentation}, pages 3--24. Springer.
+
+\bibitem[\protect\astroncite{Slegg}{2014}]{slegg2014facebook}
+Slegg, J. (2014).
+\newblock Facebook news feed algorithm change reduces visibility of page
+  updates.
+
+\bibitem[\protect\astroncite{Tapscott and
+  Williams}{2008}]{tapscott2008wikinomics}
+Tapscott, D. and Williams, A.~D. (2008).
+\newblock {\em Wikinomics: How mass collaboration changes everything}.
+\newblock Penguin.
+
+\bibitem[\protect\astroncite{Zanetti et~al.}{2012}]{zanetti2012quantitative}
+Zanetti, M.~S., Sarigol, E., Scholtes, I., Tessone, C.~J., and Schweitzer, F.
+  (2012).
+\newblock A quantitative study of social organisation in open source software
+  communities.
+\newblock {\em arXiv preprint arXiv:1208.4289}.
+
+\bibitem[\protect\astroncite{Zhang et~al.}{2007}]{zhang2007expertise}
+Zhang, J., Ackerman, M.~S., and Adamic, L. (2007).
+\newblock Expertise networks in online communities: structure and algorithms.
+\newblock In {\em Proceedings of the 16th international conference on World
+  Wide Web}, pages 221--230. ACM.
+
+\end{thebibliography}
