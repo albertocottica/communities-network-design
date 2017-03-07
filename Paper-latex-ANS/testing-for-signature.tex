@@ -82,7 +82,7 @@
 \date{} % Leave empty to omit a date
 \renewcommand{\maketitlehookd}{%
 \begin{abstract}
-Online communities are used across several fields of human activities, as environments for large-scale collaboration. Most successful ones employ professionals, sometimes called "community managers'" or "moderators'', for tasks including onboarding new participants, mediating conflict, and policing unwanted behaviour. Network scientists routinely model interaction across participants in online communities as social networks. We interpret the activity of community managers as (social) network design: they take action oriented at shaping the network of interactions in a way conducive to their community's goals. It follows that, if such action is successful, we should be able to detect its signature in the network itself. 
+Online communities are used across several fields of human activities, as environments for large-scale collaboration. Most successful ones employ professionals, sometimes called ``community managers'' or ``moderators'', for tasks including onboarding new participants, mediating conflict, and policing unwanted behaviour. Network scientists routinely model interaction across participants in online communities as social networks. We interpret the activity of community managers as (social) network design: they take action oriented at shaping the network of interactions in a way conducive to their community's goals. It follows that, if such action is successful, we should be able to detect its signature in the network itself. 
 
 Growing networks where links are allocated by a preferential attachment mechanism are known to converge to networks displaying a power law degree distribution. Growth and preferential attachment are both reasonable first-approximation assumptions to describe interaction networks in online communities. Our main hypothesis is that managed online communities are characterised by in-degree distributions that deviate from the power law form; such deviation constitutes the signature of successful community management. Our secondary hypothesis is that said deviation happens in a predictable way, once community management practices are accounted for. If true, these hypotheses would give us a simple test for the effectiveness of community management practices. 
 
@@ -102,7 +102,7 @@ We investigate the issue using (1) empirical data on three small online communit
 %----------------------------------------------------------------------------------------
 
 \section*{Acknowledgements}
-\noindent This paper is based on an earlier version, presented at the Complex Networks 2016 conference (\cite{cottica2016testing})
+\noindent This paper is based on an earlier version, presented at the Complex Networks 2016 conference \cite{cottica2016testing}
 
 \noindent The authors gratefully acknowledge the invaluable contributions of Giovanni Ponti, Raffaele Miniaci, Noemi Salantiu, Lee-Sean Huang, the faculty and students at University of Alicante and everybody at Masters of Networks 3.
 
@@ -118,10 +118,10 @@ Putting in place policies for online communities is costly, in terms of communit
 \begin{enumerate}
 \item We model online communities as social networks of interactions across participants. 
 \item We assume that organisations can be modelled as economic agents maximizing some objective function. The target variable being maximised can be profit (for online communities run by commercial companies); or welfare (for online communities run by governments or other nonprofit entities); or some combination of the two. 
-\item We assume that the topology of the interaction network characteristic of online communities affects their ability to contribute to the maximisation of the target variable. Indications that this assumption might be reasonable are not difficult to find in the literature (\cite{tapscott2008wikinomics},\cite{slegg2014facebook}).
+\item We assume that the topology of the interaction network characteristic of online communities affects their ability to contribute to the maximisation of the target variable. Indications that this assumption might be reasonable are not difficult to find in the literature \cite{tapscott2008wikinomics},\cite{slegg2014facebook}.
 \item We assume that such organisations choose their policies as follows: 
     \begin{itemize} 
-	\item Solve their maximisation problem over network topology. This yields a vector of desired network characteristics, where ``desired'' means that those characteristics define a maximum of the objective function. These solutions will be statements with the form ``In order to best meet our ultimate [profit or welfare] goals, the interaction network in our online community should be in state $\Theta_D$'', where $\Theta$ is a vector of topology-related parameters\footnote{The literature on stochastic actor-oriented models goes several steps further, and models interaction in a social network assuming that all participants pursue goals with respect to their position in the network (\cite{snijders1996stochastic}). We do not explore this direction in the present paper because such models require the assumption of invariant network size ? or, in our context, a zero-growth online community. We reject such an assumption as too unrealistic.}.
+	\item Solve their maximisation problem over network topology. This yields a vector of desired network characteristics, where ``desired'' means that those characteristics define a maximum of the objective function. These solutions will be statements with the form ``In order to best meet our ultimate [profit or welfare] goals, the interaction network in our online community should be in state $\Theta_D$'', where $\Theta$ is a vector of topology-related parameters\footnote{The literature on stochastic actor-oriented models goes several steps further, and models interaction in a social network assuming that all participants pursue goals with respect to their position in the network \cite{snijders1996stochastic}. We do not explore this direction in the present paper because such models require the assumption of invariant network size ? or, in our context, a zero-growth online community. We reject such an assumption as too unrealistic.}.
 	\item Derive a course of action that community managers could take to change the network away from its present state $\Theta_0$ to the desired state $\Theta_D$.
 	\item Encode such course of action in a set of simple instructions for community managers to execute. Computer scientists might think of such instructions as algorithms; economists call them mechanisms; professional online community managers call them policies. In this paper we use this third term. 
     \end{itemize}
@@ -163,13 +163,13 @@ The most important difficulty with this method is the absence of a counterfactua
 %------------------------------------------------
 
 \section{Materials and methods}
-
+\label{sec:materials}
 In this section we introduce the empirical data, the experiment protocol and the simulation model we use in the experiment. 
 
 \subsection{Empirical data}
 \label{sec:empirical_data}
 
-We examine data from three real-world online communities. All three use the same software (Drupal 7), are roughly comparable in size and are used by practitioners and interested citizens to publicly discuss issues that have a collective dimension. They are modelled as interaction networks, in which nodes are registered users and edges represent comments. The presence of an edge from Alice to Bob indicates that Alice has commented content authored by Bob at least once. The resulting graphs are directed ("Alice comments Bob'' is not equivalent to "Bob comments Alice'') and weighted (Alice can write multiple comments to Bob's content; the edge's weight is equal to the number of comments written). Table \ref{table:empiricalData} presents some descriptive statistics about them. 
+We examine data from three real-world online communities. All three use the same software (Drupal 7), are roughly comparable in size and are used by practitioners and interested citizens to publicly discuss issues that have a collective dimension. They are modelled as interaction networks, in which nodes are registered users and edges represent comments. The presence of an edge from Alice to Bob indicates that Alice has commented content authored by Bob at least once. The resulting graphs are directed (``Alice comments Bob'' is not equivalent to ``Bob comments Alice'') and weighted (Alice can write multiple comments to Bob's content; the edge's weight is equal to the number of comments written). Table \ref{table:empiricalData} presents some descriptive statistics about them. 
 
 \begin{itemize}
 \item InnovatoriPA is a community of (mostly) Italian civil servants discussing how to introduce and foster innovation in the public sector. It does not employ any special onboarding or moderation policy. 
@@ -209,7 +209,7 @@ exponent & 1.834 & 2.250 & 2.817 \\
 $p$-value & 0.76 & 0.45 & 0.94 \\
 \hline
 \end{tabular}
-\caption{Comparing interaction networks of the three online communities and testing for goodness-of-fit of power functions to degree distributions. "Exponent" refers to the power law's scaling parameter. "$p$-value" to the result of the test that the degree distribution of the community was generated by a power law with that exponent. \vspace{-0 cm}}
+\caption{Comparing interaction networks of the three online communities and testing for goodness-of-fit of power functions to degree distributions. ``Exponent'' refers to the power law's scaling parameter. ``$p$-value'' to the result of the test that the degree distribution of the community was generated by a power law with that exponent. \vspace{-0 cm}}
 \label{table:empiricalData}
 \end{table*}
 
@@ -225,7 +225,7 @@ The communities are modeled as interaction networks (summarized in Table \ref{ta
 \end{figure}
 
 We fitted power laws in-degree distributions of these three online communities, as of early December 2014. Next, we tested the hypothesis that degree distributions follow a power law, as predicted by \cite{dorogovtsev2002evolution}. To do so, we first fitted power functions to the entire support of each in-degree distribution\footnote{We emphasize in-degree, as opposed to out-degree, 
-because directedness is implicit in the idea of preferential attachment, and because the in-degree distribution is the one to follow a power law in online conversation networks (\cite{dorogovtsev2002evolution}).
+because directedness is implicit in the idea of preferential attachment, and because the in-degree distribution is the one to follow a power law in online conversation networks \cite{dorogovtsev2002evolution}.
 }. We next fitted power functions to the right tail of each in-degree distribution, \emph{i.e.} for any degree $k(n) \geq k_{min}$, where $q_{min}$ is the in-degree that minimizes the Kolmogorov-Smirnov distance (hereafter denoted as $D$) between the fitted function and the data with in-degree $k \geq k_{min}$. 
 
 % the above: same thing. k should be constrained to k > 1
@@ -240,7 +240,7 @@ Finally, we ran goodness-of-fit (hereafter $GoF$) tests for each in-degree distr
 	\includegraphics[width=.5\linewidth]{./Pictures/PDF_innovatoriPA}\label{fig:fit_innovatoriPA}
 }
 \subfloat[fig:_fit_no_onboarding][]{
-\includegraphics[width=.5\linewidth]{./Pictures/PDF_fit_no_onboarding_0034}\label{fig:fit_no_onboarding}
+\includegraphics[width=.5\linewidth]{./Pictures/PDF_fit_no_onboarding_0049}\label{fig:fit_no_onboarding}
 }
 }
 \\
@@ -249,10 +249,10 @@ Finally, we ran goodness-of-fit (hereafter $GoF$) tests for each in-degree distr
 	\includegraphics[width=.5\linewidth]{./Pictures/PDF_edgeryders}\label{fig:fit_edgeryders}
 }
 \subfloat[fig:_fit_nu_1_1][]{
-	\includegraphics[width=.5\linewidth]{./Pictures/PDF_fit_nu1_1_nu2_1_wob_True_0023}\label{fig:fit_nu_1_1}
+	\includegraphics[width=.5\linewidth]{./Pictures/PDF_fit_nu1_1_nu2_1_wob_True_0049}\label{fig:fit_nu_1_1}
 }
 }
-\caption{($\log$ - $\log$) Probability density function from the degree distributions of: (a) the Innovatori PA network without onboarding policy in place versus (b) a simulated network with preferential attachment and no onboarding.
+\caption{($\log$ - $\log$) Probability density function from the transformed degree distributions of: (a) the Innovatori PA network without onboarding policy in place versus (b) a simulated network with preferential attachment and no onboarding.
 (c) The Edgeryders network with onboarding and preferential attachment versus (d) a simulated network with preferential attachment and fully effective onboarding ($\nu_1 = \nu_2 = 1$).\vspace{-.5cm}}
  \label{fig:PDFViz}
 \end{figure*}
@@ -306,11 +306,11 @@ Finally, we test Hypothesis 1 and 2 on each of the 3700 in-degree distributions 
 %-------------------------------------------------
 
 \section{Results}\label{sec:results}
-Following the protocol outlined above, we evolved 100 networks for each of the 37 variants of the model. For all networks, we set network size to 2000 nodes; $A = 1$; and $m = 1$. These choices are discussed in the appendix.
+Following the protocol outlined above, we evolved 100 networks for each of the 37 variants of the model. For all networks, we set network size to 2000 nodes; $A = 1$; and $m = 1$. These choices are discussed in the Appendix.
 
 \subsection{Goodness-of-fit of the power-law model} \label{ssec:GOF of power law}
 
-For each network evolved we computed two best-fit power-law models, one for $k > 1$ and the other for $k\geq k_{min}$ where $k_{min}$ is the in-degree the minimizes the Kolmogorov-Smirnov distance between the fitted function and the data over $k \geq k_{min}$. On each of these models, we ran a goodness-of-fit test as described in section \ref{ss:experiment_protocol}. This resulted in two distributions of p-values for our control group, plus two more for each of our six treatment groups. Table \ref{table:GOF1}
+For each network evolved we computed two best-fit power-law models, one for $k > 1$ and the other for $k\geq k_{min}$ where $k_{min}$ is the in-degree the minimizes the Kolmogorov-Smirnov distance between the fitted function and the data over $k \geq k_{min}$. On each of these models, we ran a goodness-of-fit test as described in Section \ref{ss:experiment_protocol}. This resulted in two distributions of $p$-values for our control group, plus two more for each of our six treatment groups. Table \ref{table:GOF1}
  and \ref{table:AvgPvc} report descriptive statistics for these distributions.
 
 \begin{table}[h] 
@@ -332,19 +332,19 @@ For each network evolved we computed two best-fit power-law models, one for $k >
 \end{tabular}
 \end{table}
 
-From Table \ref{table:GOF1}, we conclude that onboarding seems to have some effect on the goodness-of-fit of the generated data to their respective best-fit power-law models when $k > 1$. The effect goes in the direction of reducing the p-values and increasing the number of rejects to almost 100\%.  
+From Table \ref{table:GOF1}, we conclude that onboarding seems to have some effect on the goodness-of-fit of the generated data to their respective best-fit power-law models when $k > 1$. The effect goes in the direction of reducing the $p$-values and increasing the number of rejects to almost 100\%.  
 
-It is worth looking at the average p-values generated by each combination of $\nu_1$ and $\nu_2$. These are shown in Table \ref{table:AvgPvc}.
+It is worth looking at the average $p$-values generated by each combination of $\nu_1$ and $\nu_2$. These are shown in Table \ref{table:AvgPvc}.
 
 \begin{table}[h]
 \centering
-\caption{Average p-values for goodness-of-fit tests of power-law models to in-degree distributions of interaction networks in online communities, with no onboarding (control group) and with onboarding. Power-law models are estimated over all nodes with degree $k > 1$}
+\caption{Average $p$-values for goodness-of-fit tests of power-law models to in-degree distributions of interaction networks in online communities, with no onboarding (control group) and with onboarding. Power-law models are estimated over all nodes with degree $k > 1$}
 \label{table:AvgPvc}
 \begin{tabular}{lllllll}
 \hline
 \multicolumn{7}{c} {Control group: 0.183}\\
 \hline
-Average p-value \quad & \quad $\nu_2$ = 0.0 \quad & \quad $\nu_2$ = 0.2 \quad & \quad $\nu_2$ = 0.4 \quad & \quad $\nu_2$ = 0.6 \quad & \quad $\nu_2$ = 0.8 \quad & \quad $\nu_2$ = 1  \quad \\
+Average $p$-value \quad & \quad $\nu_2$ = 0.0 \quad & \quad $\nu_2$ = 0.2 \quad & \quad $\nu_2$ = 0.4 \quad & \quad $\nu_2$ = 0.6 \quad & \quad $\nu_2$ = 0.8 \quad & \quad $\nu_2$ = 1  \quad \\
 \quad $\nu_1$ = 0.0       \quad & \quad 0.005  \quad & \quad 0.010  \quad & \quad 0.005   \quad & \quad 0.007  \quad & \quad 0.006  \quad & \quad 0.007 \quad \\
 \quad $\nu_1$ = 0.2       \quad & \quad 0.005  \quad & \quad 0.006  \quad & \quad 0.009  \quad & \quad 0.011  \quad & \quad 0.014  \quad & \quad 0.012 \quad \\
 \quad $\nu_1$ = 0.4       \quad & \quad 0.009  \quad & \quad 0.009     \quad & \quad 0.015  \quad & \quad 0.005  \quad & \quad 0.006  \quad & \quad 0.008  \quad \\
@@ -355,9 +355,9 @@ Average p-value \quad & \quad $\nu_2$ = 0.0 \quad & \quad $\nu_2$ = 0.2 \quad & 
 \end{tabular}
 \end{table} 
 
-We run t-tests of the null hypothesis that the average p-value in the control group is equal to the average p-values in each ofthe different treatment groups. This results in a strong rejection of the null for any combination of $\nu_1$ and $\nu_2$ ($6.5 < T < 7.5$ in all cases). It seems unquestionable that introducing onboarding to an online community has a measurable negative impact on the probability of a power-law model to be a good fit for its interaction network's in-degree distribution.
+We run $t$-tests of the null hypothesis that the average $p$-value in the control group is equal to the average $p$-values in each ofthe different treatment groups. This results in a strong rejection of the null for any combination of $\nu_1$ and $\nu_2$ ($6.5 < T < 7.5$ in all cases). It seems unquestionable that introducing onboarding to an online community has a measurable negative impact on the probability of a power-law model to be a good fit for its interaction network's in-degree distribution.
 
-We now turn to the question of the role played by $\nu_1$ and $\nu_2$ within the treatment group. Figure \ref{fig:CDFpvcnu_1nu_2} show the cumulate density functions of the p-values in the control and treatment groups as $\nu_1$ and $\nu_2$ vary. 
+We now turn to the question of the role played by $\nu_1$ and $\nu_2$ within the treatment group. Figure \ref{fig:CDFpvcnu_1nu_2} show the cumulate density functions of the $p$-values in the control and treatment groups as $\nu_1$ and $\nu_2$ vary. 
 
 \begin{figure}[thb]
 \centering
@@ -366,22 +366,22 @@ We now turn to the question of the role played by $\nu_1$ and $\nu_2$ within the
 	\includegraphics[width=.75\linewidth]{./Pictures/CDF_pvc_nu2.png}\label{fig:CDFnu_2}
   %\subfloat[][]{}
   %\subfloat[][]{}
-  \caption{Cumulate Density Functions of p-values returned by goodness-of-fit tests to the (best-fit) power-law models for in-degree distributions of the interaction networks in the control and treatment groups. 60\% of the networks evolved without onboarding (dark blue) have degree distributions that test negatively for H1. When onboarding is introduced, that percentage rises to almost 100\%. Above, the treatment group interaction networks have been grouped according to the value taken by $\nu_1$; below, they have been grouped according to the value taken by $\nu_2$ } 
+  \caption{Cumulate Density Functions of $p$-values returned by goodness-of-fit tests to the (best-fit) power-law models for in-degree distributions of the interaction networks in the control and treatment groups. 60\% of the networks evolved without onboarding (dark blue) have degree distributions that test negatively for H1. When onboarding is introduced, that percentage rises to almost 100\%. Above, the treatment group interaction networks have been grouped according to the value taken by $\nu_1$; below, they have been grouped according to the value taken by $\nu_2$ } 
  \label{fig:CDFpvcnu_1nu_2}
 \end{figure}
 
 Onboarding effectiveness $\nu_1$ and community responsiveness $\nu_2$ do not seem seem to affect the goodness-of-fit to power law of in-degree distributions much. This is likely to be simply an effect of the large impact of onboarding: the percentage of non-power law distributions is already close to 100\% and cannot increase any further.
 
-Regression analysis confirms the intuition from Figure \ref{fig:CDFpvcnu_1nu_2}. We generated 6 dummy variables, each taking value 1 when $\nu_1 =  c$ and 0 otherwise, with $c \in \{0.0, 0.2, 0.4, 0.6, 0.8, 1\}$; next we generated 6 more dummy variables for the same vaules of $\nu_2$ . We then estimated a linear regression model with the p-value of our goodness-of-fit test (computed for $k >1$) as the dependent variable and the 12 dummy variables as its predictors. The results are:
+Regression analysis confirms the intuition from Figure \ref{fig:CDFpvcnu_1nu_2}. We generated 6 dummy variables, each taking value 1 when $\nu_1 =  c$ and 0 otherwise, with $c \in \{0.0, 0.2, 0.4, 0.6, 0.8, 1\}$; next we generated 6 more dummy variables for the same vaules of $\nu_2$ . We then estimated a linear regression model with the $p$-value of our goodness-of-fit test (computed for $k >1$) as the dependent variable and the 12 dummy variables as its predictors. The results are:
 
 \begin{enumerate}
-\item Coefficients on predictors corresponding to different values of $\nu_1$ are positive, but generally non-significant. The coefficient on the variable corresponding to $\nu_1 = 0.4$ is weakly significant (p-value: 0.026).
+\item Coefficients on predictors corresponding to different values of $\nu_1$ are positive, but generally non-significant. The coefficient on the variable corresponding to $\nu_1 = 0.4$ is weakly significant ($p$-value: 0.026).
 \item Coefficients on predictors corresponding to different values of $\nu_2$ are also  positive and non-significant. 
 \item Coefficients on several interaction terms between $\nu_1$ and $\nu_2$ are not significant. 
-\item We ran F-tests of joint significance of the group of predictors corresponding to different values of $\nu_1$; different values of $\nu_2$; and the interaction terms thereof. The null hypothesis of non-significance was not rejected by any of the tests. 
+\item We ran $F$-tests of joint significance of the group of predictors corresponding to different values of $\nu_1$; different values of $\nu_2$; and the interaction terms thereof. The null hypothesis of non-significance was not rejected by any of the tests. 
 \end{enumerate}
 
-Similar results hold when p-values are computed for $k > k_{min}$. 
+Similar results hold when $p$-values are computed for $k > k_{min}$. 
 
 When we consider only the upper tail of the the distribution generated by equation \ref{eq:tIDD}, the effect of introducing onboarding on the goodness-of-fit is much less clear. In Table \ref{table:rejectsUnconstrained} we show what happens when we choose the scaling range so as to minimize the Kolmogorov-Smirnov distance between the degree distributions themselves and their best-fit power-law models. In the control group, the goodness-of-fit-to-power-law test fails in 13 of the 100 runs. In the treatment groups, rejections vary from 18 to 36, depending on the values of $\nu_1$ and $\nu_2$.  
 
@@ -404,19 +404,19 @@ When we consider only the upper tail of the the distribution generated by equati
 \end{tabular}
 \end{table}
 
-Average p-values of goodness-of-fit tests when $k \geq k_{min}$ are shown in Table \ref{table:AvgPvu}. They are all well within the do-not-reject range. The control group has an average p-value which is \textit{lower} than that of the treatment group, which is somehow counterintuitive. 
+Average $p$-values of goodness-of-fit tests when $k \geq k_{min}$ are shown in Table \ref{table:AvgPvu}. They are all well within the do-not-reject range. The control group has an average $p$-value which is \textit{lower} than that of the treatment group, which is somehow counterintuitive. 
 
-Tables \ref{table:rejectsUnconstrained} and \ref{table:AvgPvu} tell two different stories. Table \ref{table:rejectsUnconstrained} is unconclusive: in both the control and the treatment groups, we do not reject Hypothesis 2 in the treatment group most of the time, as expected, but must still reject in a relatively large number of cases (13 in the control group, 18-36 in the treatment groups). Table \ref{table:AvgPvu} indicates that the average p-value in all groups is comfortably within the do-not-reject range, and in this sense behaves entirely according to Hypothesis 2. 
+Tables \ref{table:rejectsUnconstrained} and \ref{table:AvgPvu} tell two different stories. Table \ref{table:rejectsUnconstrained} is unconclusive: in both the control and the treatment groups, we do not reject Hypothesis 2 in the treatment group most of the time, as expected, but must still reject in a relatively large number of cases (13 in the control group, 18-36 in the treatment groups). Table \ref{table:AvgPvu} indicates that the average $p$-value in all groups is comfortably within the do-not-reject range, and in this sense behaves entirely according to Hypothesis 2. 
 
 \begin{table}[h]
 \centering
-\caption{Average p-values for goodness-of-fit tests of power-law models to in-degree distributions of interaction networks in online communities, with no onboarding (control group) and with onboarding. Power-law models are estimated over all observations with $k \geq k_{min}$}
+\caption{Average $p$-values for goodness-of-fit tests of power-law models to in-degree distributions of interaction networks in online communities, with no onboarding (control group) and with onboarding. Power-law models are estimated over all observations with $k \geq k_{min}$}
 \label{table:AvgPvu}
 \begin{tabular}{lllllll}
 \hline
 \multicolumn{7}{c} {Control group: 0.451}\\
 \hline
-Average p-value \quad & \quad $\nu_2$ = 0.0 \quad & \quad $\nu_2$ = 0.2 \quad & \quad $\nu_2$ = 0.4 \quad & \quad $\nu_2$ = 0.6 \quad & \quad $\nu_2$ = 0.8 \quad & \quad $\nu_2$ = 1  \quad \\
+Average $p$-value \quad & \quad $\nu_2$ = 0.0 \quad & \quad $\nu_2$ = 0.2 \quad & \quad $\nu_2$ = 0.4 \quad & \quad $\nu_2$ = 0.6 \quad & \quad $\nu_2$ = 0.8 \quad & \quad $\nu_2$ = 1  \quad \\
 \quad $\nu_1$ = 0.0       \quad & \quad 0.341  \quad & \quad 0.341  \quad & \quad 0.345   \quad & \quad 0.368  \quad & \quad 0.411  \quad & \quad 0.355 \quad \\
 \quad $\nu_1$ = 0.2       \quad & \quad 0.328  \quad & \quad 0.399  \quad & \quad 0.364  \quad & \quad 0.339  \quad & \quad 0.324  \quad & \quad 0.381 \quad \\
 \quad $\nu_1$ = 0.4       \quad & \quad 0.382  \quad & \quad 0.408     \quad & \quad 0.367  \quad & \quad 0.341  \quad & \quad 0.414  \quad & \quad 0.372  \quad \\
@@ -429,14 +429,14 @@ Average p-value \quad & \quad $\nu_2$ = 0.0 \quad & \quad $\nu_2$ = 0.2 \quad & 
 
 \subsection{Lower bounds} \label {ssec:lower bounds}
 
-Our results show a limited, albeit statistically significant, effect of onboarding on the value of $k_{min}$, the value of $k$ that minimizes the Kolmogorov-Smirnov distance between the data generated by the computer simulation and the best-fit power-law model. Table \ref {table:ttestkMin} illustrates, for each value of  $\nu_1$ and $\nu_2$, the average value of $k_{min}$, and the result (expressed in p-value) of a t-test on the null hypothesis that such average value is the same as the corresponding statistics in the control group, against the alternative hypothesis that the former is greater than the latter. 
+Our results show a limited, albeit statistically significant, effect of onboarding on the value of $k_{min}$, the value of $k$ that minimizes the Kolmogorov-Smirnov distance between the data generated by the computer simulation and the best-fit power-law model. Table \ref {table:ttestkMin} illustrates, for each value of  $\nu_1$ and $\nu_2$, the average value of $k_{min}$, and the result (expressed in $p$-value) of a $t$-test on the null hypothesis that such average value is the same as the corresponding statistics in the control group, against the alternative hypothesis that the former is greater than the latter. 
 
 
 % Heads up!  xmin in the powerlaw package refers to qmin in the sense of equation (1), not to k_min. Since q = k + ma = k + 1, a value of xmin of 3 is equivalent to a k_min of 2. I manually rescaled all the xmins in the table below.
 
 \begin{table}[h]
 \centering
-\caption{Average values of $k_{min}$ in the control group and in the treatment group by values of $\nu_1$ and $\nu_2$. The number in parenthesis is the p-value associated to a t-test that  $k_{min}(treatment) = k_{min}(control)$. }
+\caption{Average values of $k_{min}$ in the control group and in the treatment group by values of $\nu_1$ and $\nu_2$. The number in parenthesis is the $p$-value associated to a $t$-test that  $k_{min}(treatment) = k_{min}(control)$. }
 \label{table:ttestkMin}
 \begin{tabular}{lllllll}
 \hline
@@ -466,16 +466,16 @@ Our results show a limited, albeit statistically significant, effect of onboardi
  \label{fig:CDFkmin_nu_1nu_2}
 \end{figure}
 
-A glance at figure \ref{fig:CDFkmin_nu_1nu_2} shows that over 80\% of the in-degree distributions from interaction networks in the control group, vis-a-vis only 50 to 60\% of those in the treatment group, fit a power-law model best for $k_{min} \leq 2$. Within the treatment group, no significant variability seems to be associated to the increase of either $\nu_1$ or $\nu_2$. Regression analysis confirms this.
+A glance at Figure \ref{fig:CDFkmin_nu_1nu_2} shows that over 80\% of the in-degree distributions from interaction networks in the control group, vis-a-vis only 50 to 60\% of those in the treatment group, fit a power-law model best for $k_{min} \leq 2$. Within the treatment group, no significant variability seems to be associated to the increase of either $\nu_1$ or $\nu_2$. Regression analysis confirms this.
 
 \subsection{Exponents} \label{ssec:exponents}
 We find that introducing onboarding to an online community has a positive and significant effect on the value of the exponent of the best-fit power-law model for the in-degree distribution of its interaction network, as computed on $k > 1$. This is consistent with the theoretical results by Dorogovtsev and Mendes \cite{dorogovtsev2002evolution}, who proved that introducing a fraction of non-preferential attachment edges in evolving networks with preferential attachment does not suppress the power-law dependence of its degree distribution, but only increases the scaling exponent thereof. 
 
-This result holds when the best-fit power-law models is computed over $k \geq k_{min}$, where $k_{min}$ is, as usual, the value of $k$ that minimizes the Kolmogorov-Smirnov distance between the simulated in-degree distribution and its best-fit power-law model. When it is computed over the whole support of the in-degree distribution ($k \geq  1$), it also holds, except for $\nu_1 = 1$; in this case, the null hypothesis that the values of the exponents in the control and in the treatment groups are not statistically distinguishable. Tables \ref {table:ttestExpA} and \ref {table:ttestExp} illustrate, for each value of  $\nu_1$ and $\nu_2$, the average value of the scaling parameter $\alpha$, and the result (expressed in p-value) of a t-test on the null hypothesis that such average value is the same as the corresponding statistics in the control group, against the alternative hypothesis that the former is greater than the latter. Table \ref{table:ttestExpA} refers to $k \geq  1$, whereas Table \ref{table:ttestExp} refers to $k_{min}$.
+This result holds when the best-fit power-law models is computed over $k \geq k_{min}$, where $k_{min}$ is, as usual, the value of $k$ that minimizes the Kolmogorov-Smirnov distance between the simulated in-degree distribution and its best-fit power-law model. When it is computed over the whole support of the in-degree distribution ($k \geq  1$), it also holds, except for $\nu_1 = 1$; in this case, the null hypothesis that the values of the exponents in the control and in the treatment groups are not statistically distinguishable. Tables \ref {table:ttestExpA} and \ref {table:ttestExp} illustrate, for each value of  $\nu_1$ and $\nu_2$, the average value of the scaling parameter $\alpha$, and the result (expressed in $p$-value) of a $t$-test on the null hypothesis that such average value is the same as the corresponding statistics in the control group, against the alternative hypothesis that the former is greater than the latter. Table \ref{table:ttestExpA} refers to $k \geq  1$, whereas Table \ref{table:ttestExp} refers to $k_{min}$.
 
 \begin{table}[h]
 \centering
-\caption{Average values of the power-law model's exponent $\alpha$ in the control group and in the treatment group by values of $\nu_1$ and $\nu_2$, computed over $k > 1$. The number in parenthesis is the p-value associated to a t-test that  $\alpha(treatment) = \alpha(control)$. We only show p-values greater it the difference is non-significant at the 0.01 level. }
+\caption{Average values of the power-law model's exponent $\alpha$ in the control group and in the treatment group by values of $\nu_1$ and $\nu_2$, computed over $k > 1$. The number in parenthesis is the $p$-value associated to a $t$-test that  $\alpha(treatment) = \alpha(control)$. We only show $p$-values greater it the difference is non-significant at the 0.01 level. }
 \label{table:ttestExpA}
 \begin{tabular}{lllllll}
 \hline
@@ -494,7 +494,7 @@ This result holds when the best-fit power-law models is computed over $k \geq k_
 
 \begin{table}[h]
 \centering
-\caption{Average values of the power-law model's exponent $\alpha$ in the control group and in the treatment group by values of $\nu_1$ and $\nu_2$, computed over$k \geq k_{min}$. We omit the p-values associated to a t-test that  $\alpha_{treatment} = \alpha_{control}$, as they are smaller than 0.01 in all cases. }
+\caption{Average values of the power-law model's exponent $\alpha$ in the control group and in the treatment group by values of $\nu_1$ and $\nu_2$, computed over$k \geq k_{min}$. We omit the $p$-values associated to a $t$-test that  $\alpha_{treatment} = \alpha_{control}$, as they are smaller than 0.01 in all cases. }
 \label{table:ttestExp}
 \begin{tabular}{lllllll}
 \hline
@@ -511,15 +511,15 @@ This result holds when the best-fit power-law models is computed over $k \geq k_
 \end{tabular}
 \end{table}
 
-We inspect further the impact of parameters $\nu_1$ and $\nu_2$ via regression analysis. It shows that the former has a significant impact, whereas the latter does not. To prove this, we proceed analogously to section \ref{ssec:GOF of power law}: we estimate two linear regression models with the 12 dummy variables as its predictors. In the first one, the dependent variable is the value of the power-law model's exponent $\alpha$ when the model is estimated over $k > 1$ for each interaction network. In the second one, the dependent variable is power-law model's exponent $\alpha$ when the model is estimated over $k \geq k_{min}$. The results for both models are very similar.
+We inspect further the impact of parameters $\nu_1$ and $\nu_2$ via regression analysis. It shows that the former has a significant impact, whereas the latter does not. To prove this, we proceed analogously to Section \ref{ssec:GOF of power law}: we estimate two linear regression models with the 12 dummy variables as its predictors. In the first one, the dependent variable is the value of the power-law model's exponent $\alpha$ when the model is estimated over $k > 1$ for each interaction network. In the second one, the dependent variable is power-law model's exponent $\alpha$ when the model is estimated over $k \geq k_{min}$. The results for both models are very similar.
 
 \begin{enumerate}
 \item Coefficients on predictors corresponding to different values of $\nu_1$ are negative and highly significant, though small.
 \item Coefficients on predictors corresponding to different values of $\nu_2$ are non-significant.
 \item Coefficients on interaction terms between $\nu_1$ and $\nu_2$ are non-significant.
-\item A F-test of joint significance of the group of predictors corresponding to different values of $\nu_1$ strongly rejects the null hypothesis of non-significance. 
-\item A F-test of joint significance of the group of predictors corresponding to different values of $\nu_2$ does not reject the null hypothesis of non-significance.
-\item A F-test of joint significance of the interaction terms does not reject the null hypothesis of non-significance.
+\item A $F$-test of joint significance of the group of predictors corresponding to different values of $\nu_1$ strongly rejects the null hypothesis of non-significance. 
+\item A $F$-test of joint significance of the group of predictors corresponding to different values of $\nu_2$ does not reject the null hypothesis of non-significance.
+\item A $F$-test of joint significance of the interaction terms does not reject the null hypothesis of non-significance.
 \end{enumerate}.
 
 \section{Discussion}
@@ -530,17 +530,17 @@ Our simulation model incorporates two forces. The first one is preferential atta
 
 The direct action of the moderators creates edges pointing to nodes not selected by preferential attachment. What (non-moderator) participants in the online community do as a result of moderator activity is not as clear-cut. In our simulation model, successful onboarding ($\nu_1, \nu_2 > 0$) results in extra edges, some of which point to nodes selected by preferential attachment, others to nodes selected otherwise. 
 
-Also, onboarding always targets newcomers to online communities. It is concerned with weakly connected participants in the community: moderators have no need to engage with very active, strongly connected participants, who clearly need no help in getting a conversation going. By doing so, moderators hope to help shy newcomers turn into active community members. Once this process is under way moderators have no reason to continue to engage with the same individuals. In terms of our model, this means that newcomers, after having being onboarded, are going to receive new edges by preferential attachment only. It is therefore reasonable to expect that the degree distributions generated by our model display a heavy tail, with the frequency of highly connected nodes following a reasonable approximation of a power law. At the same time, power law behaviour is "drowned out" by non-preferential attachment edges being created at low levels of $k$. This is indeed what we observe. The overall result of onboarding, then, is an in-degree distribution with power-law behavior for high values of in-degree $k$ and non-power law behavior for low (close to 1) values of $k$. 
+Also, onboarding always targets newcomers to online communities. It is concerned with weakly connected participants in the community: moderators have no need to engage with very active, strongly connected participants, who clearly need no help in getting a conversation going. By doing so, moderators hope to help shy newcomers turn into active community members. Once this process is under way moderators have no reason to continue to engage with the same individuals. In terms of our model, this means that newcomers, after having being onboarded, are going to receive new edges by preferential attachment only. It is therefore reasonable to expect that the degree distributions generated by our model display a heavy tail, with the frequency of highly connected nodes following a reasonable approximation of a power law. At the same time, power law behaviour is ``drowned out'' by non-preferential attachment edges being created at low levels of $k$. This is indeed what we observe. The overall result of onboarding, then, is an in-degree distribution with power-law behavior for high values of in-degree $k$ and non-power law behavior for low (close to 1) values of $k$. 
 
 Onboarding policies lead to a poorer fit of power-law models to the in-degree distributions of the interaction networks of online communities. This effect shows in the three key parameters that describe power law models. When onboarding is enacted:
 
 \begin {enumerate}
-\item p-values of the bets-fit power low models are lower. 
+\item $p$-values of the bets-fit power low models are lower. 
 \item The values of $k$ that minimise the Kolmogorov-Smirnov distance between the best-fit power-law models and the observed data are greater. 
 \item Scaling parameters are greater: onboarding makes the allocation of incoming edges more equal. 
 \end{enumerate}
 
-Our specification of the model accounts for an apparent paradox: the deviation of the observed networks' degree distributions from power-law behaviour is \emph{greater} when onboarding is ineffective than when it is effective. This is clearest as we examine the effect of increasing table \ref{table:ttestExpA}. When onboarding is fully effective ($\nu_1 = 1$), the difference between the average exponent with respect to the control group disappears. Ineffective onboarding only adds edges directly created by moderators, none of which are allocated across existing nodes by preferential attachment. As onboarding gets more effective, even more edges are added; some are allocated by preferential attachment, and drive the degree distribution back towards a more pure power-law behavior. 
+Our specification of the model accounts for an apparent paradox: the deviation of the observed networks' degree distributions from power-law behaviour is \emph{greater} when onboarding is ineffective than when it is effective. This is clearest as we examine the effect of increasing Table \ref{table:ttestExpA}. When onboarding is fully effective ($\nu_1 = 1$), the difference between the average exponent with respect to the control group disappears. Ineffective onboarding only adds edges directly created by moderators, none of which are allocated across existing nodes by preferential attachment. As onboarding gets more effective, even more edges are added; some are allocated by preferential attachment, and drive the degree distribution back towards a more pure power-law behavior. 
 
 The community responsiveness parameter in our model does not appear to impact the shape of the in-degree distribution. This is somewhat surprising: using the control group as a benchmark, executing the onboarding policy adds, at each time step, one edge whose target is not allocated by preferential attachment, and this one edge seems to have a significant impact in pulling the shape of the in-degree distribution away from a good fit with a power-law model for weakly connected nodes. Yet, when we add a second non-preferential attachment allocated edge (via community response to the newcomer reaching out), this does not appear to have any additional impact\footnote{This statement concerns only the shape of the in-degree distribution, the focus of this paper. Other characteristics of the interaction networks are naturally influenced by community responsiveness; higher values of the responsiveness parameter leads to a greater number of edges, and therefore, all other things being equal, to higher connectivity, lower average distance and so on. }.
 
@@ -556,7 +556,7 @@ Even simple detection of onboarding is problematic. In this study, we simulate a
 
 There are three obvious directions in which our work could be taken further. The first is a full and systematic exploration of the parameter space, with the goal of assessing our results' robustness with respect to model specification. In this paper we restrict ourselves to the presence and effectiveness of the onboarding action in a baseline model which is closely modeled on Dorogovtsev's and Mendes's results \cite{dorogovtsev2002evolution}; it would be useful to test for how these results carry through as we alter other parameters of the model, such as the number of edges $m$ created at each time step, and the additional attractiveness parameter $A$. 
 
-A second direction for further research is to attempt to make the model into a more realistic description of a real-world online community. Such an attempt would draw attention onto how some real-world phenomena, when incorporated in the model, influence its results. It would also carry the advantage of allowing online community management professional to more easily interact with the model and critique it. Several issues that could be investigated in this vein come to mind. For example, we could relax the assumption that the additional attractiveness parameter $A_s$ is identical for all nodes, allowing for different nodes in the network to attract incoming edges at different rates (a phenomenon known as multiscaling \cite{bianconi2001competition}). Secondly, we could introduce a relationship between out-degree and in-degree: this would reflect the fact that, in an online community, reaching out to others (which translates in increasing one's own out-degree in the interaction network) is a good way to get noticed and attract incoming comments (which translates in increasing one's in-degree)\footnote{This would mean taking an approach conceptually (but not mathematically) similar to stochastic actor-oriented modelling (\cite{snijders1996stochastic}).}. Thirdly, we could work with online community manager professionals to model more precisely the action of online community managers: in this paper we assume that community managers recommend newcomers to reach out to existing participants, targeting with higher probability those with higher in-degrees; alternatives could be considered, for example uniformly random allocation or, in a model with multiscaling, targeting with higher probability participants with higher attractiveness. Finally, we could extend the model to consider not only onboarding, but other community management policies as well. Again, this would both require and result in closer cooperation with online community management professionals.
+A second direction for further research is to attempt to make the model into a more realistic description of a real-world online community. Such an attempt would draw attention onto how some real-world phenomena, when incorporated in the model, influence its results. It would also carry the advantage of allowing online community management professional to more easily interact with the model and critique it. Several issues that could be investigated in this vein come to mind. For example, we could relax the assumption that the additional attractiveness parameter $A_s$ is identical for all nodes, allowing for different nodes in the network to attract incoming edges at different rates (a phenomenon known as multiscaling \cite{bianconi2001competition}). Secondly, we could introduce a relationship between out-degree and in-degree: this would reflect the fact that, in an online community, reaching out to others (which translates in increasing one's own out-degree in the interaction network) is a good way to get noticed and attract incoming comments (which translates in increasing one's in-degree)\footnote{This would mean taking an approach conceptually (but not mathematically) similar to stochastic actor-oriented modelling \cite{snijders1996stochastic}.}. Thirdly, we could work with online community manager professionals to model more precisely the action of online community managers: in this paper we assume that community managers recommend newcomers to reach out to existing participants, targeting with higher probability those with higher in-degrees; alternatives could be considered, for example uniformly random allocation or, in a model with multiscaling, targeting with higher probability participants with higher attractiveness. Finally, we could extend the model to consider not only onboarding, but other community management policies as well. Again, this would both require and result in closer cooperation with online community management professionals.
 
 A third direction for further research would attempt to gauge the influence of onboarding and other community management policies on network topology by indicators other than the shape of its degree distribution, such as the presence of subcommunities. 
 
@@ -575,7 +575,7 @@ $$D = \max_{k \geq k_{min}} | S(k) - P(k) |$$
 
 Here, $S(k)$ is the cumulative density function of the data for the observations with value at least $k_{min}$, and $P(k)$ is the cumulative density function for the power-law model that best fits the data in the region $k \geq k_{min}$. The value of $k_{min}$ that minimizes the function $D$ is the estimate for the model's lower bound.
 
-Next, we generate a large number of power-law distributed synthetic datasets with the same scaling parameter, standard deviation and lower bound as those of the distribution that best fits the empirical data. We fit each of these synthetic datasets to its own power-law model and calculate the $D$ statistics of each one relative to its own model. Finally, we count what fraction of the values of $D$ thus computed is larger than the value of $D$ computed for the empirical data. This fraction is interpretable as a p-value: the probability that data generated by our estimated best-fit power-law model will be more distant from the model than our empirical data (``distant'' in the Kolmogorov-Smirnov sense). A p-value close to zero indicates that it is quite unlikely that the estimated power-law model would generate empirical data so distant from the fitted power function; a p-value close to one, on the contrary, indicates that the estimated power model is quite likely to generate empirical data that are further away from the fitted power function than the ones we collected. 
+Next, we generate a large number of power-law distributed synthetic datasets with the same scaling parameter, standard deviation and lower bound as those of the distribution that best fits the empirical data. We fit each of these synthetic datasets to its own power-law model and calculate the $D$ statistics of each one relative to its own model. Finally, we count what fraction of the values of $D$ thus computed is larger than the value of $D$ computed for the empirical data. This fraction is interpretable as a $p$-value: the probability that data generated by our estimated best-fit power-law model will be more distant from the model than our empirical data (``distant'' in the Kolmogorov-Smirnov sense). A $p$-value close to zero indicates that it is quite unlikely that the estimated power-law model would generate empirical data so distant from the fitted power function; a $p$-value close to one, on the contrary, indicates that the estimated power model is quite likely to generate empirical data that are further away from the fitted power function than the ones we collected. 
 
 Generating artificial datasets requires a treatment for the region below $k_{min}$  that differs from that of the one above it. We proceed as follows. Assume that our observed dataset has $n$ observations total and $n_{tail}$ observations such that $k \geq k_{min}$. To generate a synthetic datasets with $n$ observations, we repeat the following procedure $n$ times:
 \begin{itemize}
@@ -595,13 +595,13 @@ This test requires we decide how many synthetic datasets to generate for each te
 \subsection*{A2. Choosing parameter values}
 
 The simulation's computational intensity prevented us from conducting a thorough exploration of its behaviour across the whole parameter space. It follows we had to pick values from some parameters. In this section we discuss briefly our choice of parameter values.
-The choice of $m=1$ implies that the number of edges in the networks in our control group will be equal to the number of nodes; we initialize the network with two nodes connected by two edges (one in each direction), then add one node and one edge at each time step. A glance at  Fig.\,\ref{fig:NetViz} shows that this is unrealistic. The real-world online communities described in section 3.1 all display a number of edges with is a multiple of the number of nodes. 
+The choice of $m=1$ implies that the number of edges in the networks in our control group will be equal to the number of nodes; we initialize the network with two nodes connected by two edges (one in each direction), then add one node and one edge at each time step. A glance at  Fig.\,\ref{fig:NetViz} shows that this is unrealistic. The real-world online communities described in Section \ref{sec:empirical_data} all display a number of edges with is a multiple of the number of nodes. 
 
 We justify this choice as follows: we have no pretence at realism. Rather, we are interested in pitting against each other two phenomena, that of preferential attachment, that tends to generate rich-gets-richer dynamics; and that of onboarding, that tends to introduce a measure of equality. The way we modeled onboarding is by having one single incoming edge targeting the only newcomer to the community at each timestep; we therefore chose to have one single non-onboarding generated edge at each timestep. It seems reasonable that our choice would make  these two forces roughly equivalent to each other, and make the impact of onboarding on the in-degree distribution easier to detect. 
 
 % We still explored the behaviour of our simulation model for $m = 2$ and $m = 3$. The results of this exploration are in Appendix A3.
 
-The choice of $A=1$ follows from another, and more fundamental, modelling choice. We mimic Dorogovtsev's and Mendes's approach, where the network being modeled is directed and the probability of a new edge to target a node with in-degree $k$ is proportional to $k$ \cite{dorogovtsev2002evolution}; this contrasts with Barab\'asi's and Albert's approach, that models the network as undirected and assumes that the probability of a new edge to target a node is proportional to its total degree. In a Dorogovtsev-Mendes type model, new nodes have, by construction, in-degree zero, whereas in a Barab\'asi-Albert type model new nodes have total degree one. It follows that, in a Dorogovtsev-Mendes type model, the parameter $A$ tunes the "traction"ÃÃ¹ of preferential attachment: the higher its value, the weaker the grip of pure preferential attachment. For $A=0$ Dorogovtsev-Mendes type models degenerate into "multiple star networks", where the probability of newcomers to receive an edge is zero, and all edges target the nodes initially in the network for all time. 
+The choice of $A=1$ follows from another, and more fundamental, modelling choice. We mimic Dorogovtsev's and Mendes's approach, where the network being modeled is directed and the probability of a new edge to target a node with in-degree $k$ is proportional to $k$ \cite{dorogovtsev2002evolution}; this contrasts with Barab\'asi's and Albert's approach, that models the network as undirected and assumes that the probability of a new edge to target a node is proportional to its total degree. In a Dorogovtsev-Mendes type model, new nodes have, by construction, in-degree zero, whereas in a Barab\'asi-Albert type model new nodes have total degree one. It follows that, in a Dorogovtsev-Mendes type model, the parameter $A$ tunes the ``traction'' of preferential attachment: the higher its value, the weaker the grip of pure preferential attachment. For $A=0$ Dorogovtsev-Mendes type models degenerate into ``multiple star networks'', where the probability of newcomers to receive an edge is zero, and all edges target the nodes initially in the network for all time. 
 
 Setting $A = 1$ we make the probability of a newcomer to receive its first edge equal to one half that of an incumbent participant who already has one incoming edge to receive its second one, one third of that of an incumbent participant who already has two incoming edges to receive its third one and so on. One can check that this behaviour mimics that of the simplest, and best known, Barab\'asi-Albert type model. 
 
