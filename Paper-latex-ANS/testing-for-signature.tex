@@ -74,10 +74,10 @@
 \posttitle{\end{center}} % Article title closing formatting
 \title{Online community management as social network design: testing for the signature of management activities in online communities} % Article title
 \author{\textsc{Alberto Cottica}\thanks{Corresponding author} \\[1ex] \normalsize University of Alicante, Edgeryders \\ \normalsize \href{mailto:alberto@edgeryders.eu}{alberto@edgeryders.eu}\\
-\and \textsc{Guy Melan�on}\\
+\and \textsc{Guy Melançon}\\
 [1ex] \normalsize University of Bordeaux \\ 
 \and \textsc{Benjamin Renoust} \\[1ex] 
-\normalsize National Institute of Informatics, Tokyo \\ 
+\normalsize National Institute of Informatics \& JFLI CNRS UMI 3527, Tokyo \\ 
 }
 \date{} % Leave empty to omit a date
 \renewcommand{\maketitlehookd}{%
@@ -237,19 +237,19 @@ Finally, we ran goodness-of-fit (hereafter $GoF$) tests for each in-degree distr
 \begin{figure*}
 \makebox[\textwidth]{
 \subfloat[fig:_flow_example][]{
-	\includegraphics[width=.5\linewidth, height=4cm]{./Pictures/PDF_fit_innovatoriPA}\label{fig:fit_innovatoriPA}
+	\includegraphics[width=.5\linewidth]{./Pictures/PDF_innovatoriPA}\label{fig:fit_innovatoriPA}
 }
 \subfloat[fig:_fit_no_onboarding][]{
-\includegraphics[width=.5\linewidth, height=4cm]{./Pictures/YES_PDF_fit_no_onboarding_178}\label{fig:fit_no_onboarding}
+\includegraphics[width=.5\linewidth]{./Pictures/PDF_fit_no_onboarding_0034}\label{fig:fit_no_onboarding}
 }
 }
 \\
 \makebox[\textwidth]{
 \subfloat[fig:_fit_edgeryders][]{
-	\includegraphics[width=.5\linewidth, height=4cm]{./Pictures/PDF_fit_edgeryders}\label{fig:fit_edgeryders}
+	\includegraphics[width=.5\linewidth]{./Pictures/PDF_edgeryders}\label{fig:fit_edgeryders}
 }
 \subfloat[fig:_fit_nu_1_1][]{
-	\includegraphics[width=.5\linewidth, height=4cm]{./Pictures/YES-PDF_fit_onboarding_nu_1_1__429}\label{fig:fit_nu_1_1}
+	\includegraphics[width=.5\linewidth]{./Pictures/PDF_fit_nu1_1_nu2_1_wob_True_0023}\label{fig:fit_nu_1_1}
 }
 }
 \caption{($\log$ - $\log$) Probability density function from the degree distributions of: (a) the Innovatori PA network without onboarding policy in place versus (b) a simulated network with preferential attachment and no onboarding.
@@ -601,7 +601,7 @@ We justify this choice as follows: we have no pretence at realism. Rather, we ar
 
 % We still explored the behaviour of our simulation model for $m = 2$ and $m = 3$. The results of this exploration are in Appendix A3.
 
-The choice of $A=1$ follows from another, and more fundamental, modelling choice. We mimic Dorogovtsev's and Mendes's approach, where the network being modeled is directed and the probability of a new edge to target a node with in-degree $k$ is proportional to $k$ \cite{dorogovtsev2002evolution}; this contrasts with Barab\'asi's and Albert's approach, that models the network as undirected and assumes that the probability of a new edge to target a node is proportional to its total degree. In a Dorogovtsev-Mendes type model, new nodes have, by construction, in-degree zero, whereas in a Barab\'asi-Albert type model new nodes have total degree one. It follows that, in a Dorogovtsev-Mendes type model, the parameter $A$ tunes the "traction"Äù of preferential attachment: the higher its value, the weaker the grip of pure preferential attachment. For $A=0$ Dorogovtsev-Mendes type models degenerate into "multiple star networks", where the probability of newcomers to receive an edge is zero, and all edges target the nodes initially in the network for all time. 
+The choice of $A=1$ follows from another, and more fundamental, modelling choice. We mimic Dorogovtsev's and Mendes's approach, where the network being modeled is directed and the probability of a new edge to target a node with in-degree $k$ is proportional to $k$ \cite{dorogovtsev2002evolution}; this contrasts with Barab\'asi's and Albert's approach, that models the network as undirected and assumes that the probability of a new edge to target a node is proportional to its total degree. In a Dorogovtsev-Mendes type model, new nodes have, by construction, in-degree zero, whereas in a Barab\'asi-Albert type model new nodes have total degree one. It follows that, in a Dorogovtsev-Mendes type model, the parameter $A$ tunes the "traction"ÃÃ¹ of preferential attachment: the higher its value, the weaker the grip of pure preferential attachment. For $A=0$ Dorogovtsev-Mendes type models degenerate into "multiple star networks", where the probability of newcomers to receive an edge is zero, and all edges target the nodes initially in the network for all time. 
 
 Setting $A = 1$ we make the probability of a newcomer to receive its first edge equal to one half that of an incumbent participant who already has one incoming edge to receive its second one, one third of that of an incumbent participant who already has two incoming edges to receive its third one and so on. One can check that this behaviour mimics that of the simplest, and best known, Barab\'asi-Albert type model. 
 
