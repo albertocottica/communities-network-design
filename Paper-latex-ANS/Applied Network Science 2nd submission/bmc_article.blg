@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: bmc_article.aux
+The style file: bmc-mathphys.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bibliography.bib
+Repeated entry---line 434 of file bibliography.bib
+ : @article{hodas2014simple
+ :                         ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You can't pop an empty literal stack for entry slegg2014facebook
+while executing---line 2686 of file bmc-mathphys.bst
+Warning--empty school in nick2013toward
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 29 entries,
+            7128 wiz_defined-function locations,
+            1292 strings with 14418 characters,
+and the built_in function-call counts, 834897 in all, are:
+= -- 157933
+> -- 896
+< -- 521
++ -- 100411
+- -- 309
+* -- 18856
+:= -- 143280
+add.period$ -- 37
+call.type$ -- 29
+change.case$ -- 422
+chr.to.int$ -- 1076
+cite$ -- 30
+duplicate$ -- 2664
+empty$ -- 8282
+format.name$ -- 865
+if$ -- 215988
+int.to.chr$ -- 1
+int.to.str$ -- 76
+missing$ -- 967
+newline$ -- 828
+num.names$ -- 148
+pop$ -- 1241
+preamble$ -- 1
+purify$ -- 133
+quote$ -- 58
+skip$ -- 96444
+stack$ -- 0
+substring$ -- 78668
+swap$ -- 846
+text.length$ -- 533
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1210
+warning$ -- 1
+while$ -- 1043
+width$ -- 0
+write$ -- 1100
+(There were 2 error messages)

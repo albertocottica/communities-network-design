@@ -1,0 +1,864 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{29}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\textsf{#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem{rheingold1993virtual}
+\begin{bbook}
+\bauthor{\bsnm{Rheingold}, \binits{H.}}:
+\bbtitle{The Virtual Community: Homesteading on the Electronic Frontier}.
+\bpublisher{MIT press},
+\blocation{Cambridge}
+(\byear{1993})
+\end{bbook}
+\endbibitem
+
+%%% 2
+\bibitem{snijders1996stochastic}
+\begin{barticle}
+\bauthor{\bsnm{Snijders}, \binits{T.A.}}:
+\batitle{Stochastic actor-oriented models for network change}.
+\bjtitle{Journal of mathematical sociology}
+\bvolume{21}(\bissue{1-2}),
+\bfpage{149}--\blpage{172}
+(\byear{1996})
+\end{barticle}
+\endbibitem
+
+%%% 3
+\bibitem{tapscott2008wikinomics}
+\begin{bbook}
+\bauthor{\bsnm{Tapscott}, \binits{D.}},
+\bauthor{\bsnm{Williams}, \binits{A.D.}}:
+\bbtitle{Wikinomics: How Mass Collaboration Changes Everything}.
+\bpublisher{Penguin},
+\blocation{London}
+(\byear{2008})
+\end{bbook}
+\endbibitem
+
+%%% 4
+\bibitem{slegg2014facebook}
+\begin{botherref}
+\oauthor{\bsnm{Slegg}, \binits{J.}}:
+
+Facebook News Feed Algorithm Change Reduces Visibility of Page Updates.,
+2014.
+\url{http://searchenginewatch.com/sew/news/2324814/facebook-news-feed-algorithm-tweak-reduces-visibility-of-page-updates}
+\end{botherref}
+\endbibitem
+
+%%% 5
+\bibitem{shirky2008here}
+\begin{bbook}
+\bauthor{\bsnm{Shirky}, \binits{C.}}:
+\bbtitle{Here Comes Everybody: The Power of Organizing Without Organizations}.
+\bpublisher{Penguin},
+\blocation{London}
+(\byear{2008})
+\end{bbook}
+\endbibitem
+
+%%% 6
+\bibitem{dorogovtsev2002evolution}
+\begin{barticle}
+\bauthor{\bsnm{Dorogovtsev}, \binits{S.N.}},
+\bauthor{\bsnm{Mendes}, \binits{J.F.F.}}:
+\batitle{Evolution of networks}.
+\bjtitle{Advances in physics}
+\bvolume{51}(\bissue{4}),
+\bfpage{1079}--\blpage{1187}
+(\byear{2002})
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem{pierre1997collective}
+\begin{botherref}
+\oauthor{\bsnm{Pierre}, \binits{L.}}:
+Collective intelligence: Mankinds emerging world in cyberspace.
+Cambrigde, Mass.: Perseus Books
+(1997)
+\end{botherref}
+\endbibitem
+
+%%% 8
+\bibitem{shum2003roots}
+\begin{bchapter}
+\bauthor{\bsnm{Shum}, \binits{S.B.}}:
+\bctitle{The roots of computer supported argument visualization}.
+In: \bbtitle{Visualizing Argumentation},
+pp. \bfpage{3}--\blpage{24}.
+\bpublisher{Springer},
+\blocation{London}
+(\byear{2003})
+\end{bchapter}
+\endbibitem
+
+%%% 9
+\bibitem{klein2012enabling}
+\begin{barticle}
+\bauthor{\bsnm{Klein}, \binits{M.}}:
+\batitle{Enabling large-scale deliberation using attention-mediation metrics}.
+\bjtitle{Computer Supported Cooperative Work (CSCW)}
+\bvolume{21}(\bissue{4-5}),
+\bfpage{449}--\blpage{473}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem{kraut2012building}
+\begin{bbook}
+\bauthor{\bsnm{Kraut}, \binits{R.E.}},
+\bauthor{\bsnm{Resnick}, \binits{P.}},
+\bauthor{\bsnm{Kiesler}, \binits{S.}},
+\bauthor{\bsnm{Burke}, \binits{M.}},
+\bauthor{\bsnm{Chen}, \binits{Y.}},
+\bauthor{\bsnm{Kittur}, \binits{N.}},
+\bauthor{\bsnm{Konstan}, \binits{J.}},
+\bauthor{\bsnm{Ren}, \binits{Y.}},
+\bauthor{\bsnm{Riedl}, \binits{J.}}:
+\bbtitle{Building Successful Online Communities: Evidence-based Social Design}.
+\bpublisher{MIT Press},
+\blocation{Cambridge, Massachusetts, USA}
+(\byear{2012})
+\end{bbook}
+\endbibitem
+
+%%% 11
+\bibitem{diplaris2011emerging}
+\begin{bbook}
+\bauthor{\bsnm{Diplaris}, \binits{S.}},
+\bauthor{\bsnm{Sonnenbichler}, \binits{A.}},
+\bauthor{\bsnm{Kaczanowski}, \binits{T.}},
+\bauthor{\bsnm{Mylonas}, \binits{P.}},
+\bauthor{\bsnm{Scherp}, \binits{A.}},
+\bauthor{\bsnm{Janik}, \binits{M.}},
+\bauthor{\bsnm{Papadopoulos}, \binits{S.}},
+\bauthor{\bsnm{Ovelgoenne}, \binits{M.}},
+\bauthor{\bsnm{Kompatsiaris}, \binits{Y.}}:
+In: \beditor{\bsnm{Bessis}, \binits{N.}},
+\beditor{\bsnm{Xhafa}, \binits{F.}} (eds.)
+\bbtitle{Emerging, Collective Intelligence for Personal, Organisational and
+  Social Use},
+pp. \bfpage{527}--\blpage{573}.
+\bpublisher{Springer},
+\blocation{Berlin, Heidelberg}
+(\byear{2011})
+\end{bbook}
+\endbibitem
+
+%%% 12
+\bibitem{de2012contested}
+\begin{barticle}
+\bauthor{\bsnm{De~Liddo}, \binits{A.}},
+\bauthor{\bsnm{S{\'a}ndor}, \binits{{\'A}.}},
+\bauthor{\bsnm{Shum}, \binits{S.B.}}:
+\batitle{Contested collective intelligence: Rationale, technologies, and a
+  human-machine annotation study}.
+\bjtitle{Computer Supported Cooperative Work (CSCW)}
+\bvolume{21}(\bissue{4-5}),
+\bfpage{417}--\blpage{448}
+(\byear{2012})
+\end{barticle}
+\endbibitem
+
+%%% 13
+\bibitem{borgatti2009network}
+\begin{barticle}
+\bauthor{\bsnm{Borgatti}, \binits{S.P.}},
+\bauthor{\bsnm{Mehra}, \binits{A.}},
+\bauthor{\bsnm{Brass}, \binits{D.J.}},
+\bauthor{\bsnm{Labianca}, \binits{G.}}:
+\batitle{Network analysis in the social sciences}.
+\bjtitle{science}
+\bvolume{323}(\bissue{5916}),
+\bfpage{892}--\blpage{895}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem{burt2009structural}
+\begin{bbook}
+\bauthor{\bsnm{Burt}, \binits{R.S.}}:
+\bbtitle{Structural Holes: The Social Structure of Competition}.
+\bpublisher{Harvard university press},
+\blocation{Cambridge}
+(\byear{2009})
+\end{bbook}
+\endbibitem
+
+%%% 15
+\bibitem{lewis2008tastes}
+\begin{barticle}
+\bauthor{\bsnm{Lewis}, \binits{K.}},
+\bauthor{\bsnm{Kaufman}, \binits{J.}},
+\bauthor{\bsnm{Gonzalez}, \binits{M.}},
+\bauthor{\bsnm{Wimmer}, \binits{A.}},
+\bauthor{\bsnm{Christakis}, \binits{N.}}:
+\batitle{Tastes, ties, and time: A new social network dataset using facebook.
+  com}.
+\bjtitle{Social networks}
+\bvolume{30}(\bissue{4}),
+\bfpage{330}--\blpage{342}
+(\byear{2008})
+\end{barticle}
+\endbibitem
+
+%%% 16
+\bibitem{nick2013toward}
+\begin{botherref}
+\oauthor{\bsnm{Nick}, \binits{B.}}:
+Toward a better understanding of evolving social networks.
+PhD thesis
+(2013)
+\end{botherref}
+\endbibitem
+
+%%% 17
+\bibitem{kunegis2013preferential}
+\begin{bchapter}
+\bauthor{\bsnm{Kunegis}, \binits{J.}},
+\bauthor{\bsnm{Blattner}, \binits{M.}},
+\bauthor{\bsnm{Moser}, \binits{C.}}:
+\bctitle{Preferential attachment in online networks: measurement and
+  explanations}.
+In: \bbtitle{Proceedings of the 5th Annual ACM Web Science Conference},
+pp. \bfpage{205}--\blpage{214}
+(\byear{2013}).
+\bcomment{ACM}
+\end{bchapter}
+\endbibitem
+
+%%% 18
+\bibitem{java2007we}
+\begin{bchapter}
+\bauthor{\bsnm{Java}, \binits{A.}},
+\bauthor{\bsnm{Song}, \binits{X.}},
+\bauthor{\bsnm{Finin}, \binits{T.}},
+\bauthor{\bsnm{Tseng}, \binits{B.}}:
+\bctitle{Why we twitter: understanding microblogging usage and communities}.
+In: \bbtitle{Proceedings of the 9th WebKDD and 1st SNA-KDD 2007 Workshop on Web
+  Mining and Social Network Analysis},
+pp. \bfpage{56}--\blpage{65}
+(\byear{2007}).
+\bcomment{ACM}
+\end{bchapter}
+\endbibitem
+
+%%% 19
+\bibitem{hodas2014simple}
+\begin{botherref}
+\oauthor{\bsnm{Hodas}, \binits{N.O.}},
+\oauthor{\bsnm{Lerman}, \binits{K.}}:
+The simple rules of social contagion.
+Scientific reports
+\textbf{4}
+(2014)
+\end{botherref}
+\endbibitem
+
+%%% 20
+\bibitem{laniado2011wikipedians}
+\begin{bchapter}
+\bauthor{\bsnm{Laniado}, \binits{D.}},
+\bauthor{\bsnm{Tasso}, \binits{R.}},
+\bauthor{\bsnm{Volkovich}, \binits{Y.}},
+\bauthor{\bsnm{Kaltenbrunner}, \binits{A.}}:
+\bctitle{When the wikipedians talk: Network and tree structure of wikipedia
+  discussion pages.}
+In: \bbtitle{ICWSM}
+(\byear{2011})
+\end{bchapter}
+\endbibitem
+
+%%% 21
+\bibitem{zhang2007expertise}
+\begin{bchapter}
+\bauthor{\bsnm{Zhang}, \binits{J.}},
+\bauthor{\bsnm{Ackerman}, \binits{M.S.}},
+\bauthor{\bsnm{Adamic}, \binits{L.}}:
+\bctitle{Expertise networks in online communities: structure and algorithms}.
+In: \bbtitle{Proceedings of the 16th International Conference on World Wide
+  Web},
+pp. \bfpage{221}--\blpage{230}
+(\byear{2007}).
+\bcomment{ACM}
+\end{bchapter}
+\endbibitem
+
+%%% 22
+\bibitem{zanetti2012quantitative}
+\begin{botherref}
+\oauthor{\bsnm{Zanetti}, \binits{M.S.}},
+\oauthor{\bsnm{Sarigol}, \binits{E.}},
+\oauthor{\bsnm{Scholtes}, \binits{I.}},
+\oauthor{\bsnm{Tessone}, \binits{C.J.}},
+\oauthor{\bsnm{Schweitzer}, \binits{F.}}:
+A quantitative study of social organisation in open source software
+  communities.
+arXiv preprint arXiv:1208.4289
+(2012)
+\end{botherref}
+\endbibitem
+
+%%% 23
+\bibitem{barabasi1999emergence}
+\begin{barticle}
+\bauthor{\bsnm{Barab{\'a}si}, \binits{A.-L.}},
+\bauthor{\bsnm{Albert}, \binits{R.}}:
+\batitle{Emergence of scaling in random networks}.
+\bjtitle{science}
+\bvolume{286}(\bissue{5439}),
+\bfpage{509}--\blpage{512}
+(\byear{1999})
+\end{barticle}
+\endbibitem
+
+%%% 24
+\bibitem{barabasi2005origin}
+\begin{barticle}
+\bauthor{\bsnm{Barabasi}, \binits{A.-L.}}:
+\batitle{The origin of bursts and heavy tails in human dynamics}.
+\bjtitle{Nature}
+\bvolume{435}(\bissue{7039}),
+\bfpage{207}--\blpage{211}
+(\byear{2005})
+\end{barticle}
+\endbibitem
+
+%%% 25
+\bibitem{barabasi1999mean}
+\begin{barticle}
+\bauthor{\bsnm{Barab{\'a}si}, \binits{A.-L.}},
+\bauthor{\bsnm{Albert}, \binits{R.}},
+\bauthor{\bsnm{Jeong}, \binits{H.}}:
+\batitle{Mean-field theory for scale-free random networks}.
+\bjtitle{Physica A: Statistical Mechanics and its Applications}
+\bvolume{272}(\bissue{1}),
+\bfpage{173}--\blpage{187}
+(\byear{1999})
+\end{barticle}
+\endbibitem
+
+%%% 26
+\bibitem{leskovec2008planetary}
+\begin{bchapter}
+\bauthor{\bsnm{Leskovec}, \binits{J.}},
+\bauthor{\bsnm{Horvitz}, \binits{E.}}:
+\bctitle{Planetary-scale views on a large instant-messaging network}.
+In: \bbtitle{Proceedings of the 17th International Conference on World Wide
+  Web},
+pp. \bfpage{915}--\blpage{924}
+(\byear{2008}).
+\bcomment{ACM}
+\end{bchapter}
+\endbibitem
+
+%%% 27
+\bibitem{cottica2016testing}
+\begin{bchapter}
+\bauthor{\bsnm{Cottica}, \binits{A.}},
+\bauthor{\bsnm{Melan{\c{c}}on}, \binits{G.}},
+\bauthor{\bsnm{Renoust}, \binits{B.}}:
+\bctitle{Testing for the signature of policy in online communities}.
+In: \bbtitle{International Workshop on Complex Networks and Their
+  Applications},
+pp. \bfpage{41}--\blpage{54}
+(\byear{2016}).
+\bcomment{Springer}
+\end{bchapter}
+\endbibitem
+
+%%% 28
+\bibitem{grabowicz2013distinguishing}
+\begin{bchapter}
+\bauthor{\bsnm{Grabowicz}, \binits{P.A.}},
+\bauthor{\bsnm{Aiello}, \binits{L.M.}},
+\bauthor{\bsnm{Egu{\'\i}luz}, \binits{V.M.}},
+\bauthor{\bsnm{Jaimes}, \binits{A.}}:
+\bctitle{Distinguishing topical and social groups based on common identity and
+  bond theory}.
+In: \bbtitle{Proceedings of the Sixth ACM International Conference on Web
+  Search and Data Mining},
+pp. \bfpage{627}--\blpage{636}
+(\byear{2013}).
+\bcomment{ACM}
+\end{bchapter}
+\endbibitem
+
+%%% 29
+\bibitem{clauset2009power}
+\begin{barticle}
+\bauthor{\bsnm{Clauset}, \binits{A.}},
+\bauthor{\bsnm{Shalizi}, \binits{C.R.}},
+\bauthor{\bsnm{Newman}, \binits{M.E.}}:
+\batitle{Power-law distributions in empirical data}.
+\bjtitle{SIAM review}
+\bvolume{51}(\bissue{4}),
+\bfpage{661}--\blpage{703}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+\end{thebibliography}
+
+\newcommand{\BMCxmlcomment}[1]{}
+
+\BMCxmlcomment{
+
+<refgrp>
+
+<bibl id="B1">
+  <title><p>The virtual community: Homesteading on the electronic
+  frontier</p></title>
+  <aug>
+    <au><snm>Rheingold</snm><fnm>H</fnm></au>
+  </aug>
+  <publisher>Cambridge: MIT press</publisher>
+  <pubdate>1993</pubdate>
+</bibl>
+
+<bibl id="B2">
+  <title><p>Stochastic actor-oriented models for network change</p></title>
+  <aug>
+    <au><snm>Snijders</snm><fnm>TA</fnm></au>
+  </aug>
+  <source>Journal of mathematical sociology</source>
+  <publisher>Taylor \& Francis</publisher>
+  <pubdate>1996</pubdate>
+  <volume>21</volume>
+  <issue>1-2</issue>
+  <fpage>149</fpage>
+  <lpage>-172</lpage>
+</bibl>
+
+<bibl id="B3">
+  <title><p>Wikinomics: How mass collaboration changes everything</p></title>
+  <aug>
+    <au><snm>Tapscott</snm><fnm>D</fnm></au>
+    <au><snm>Williams</snm><fnm>AD</fnm></au>
+  </aug>
+  <publisher>London: Penguin</publisher>
+  <pubdate>2008</pubdate>
+</bibl>
+
+<bibl id="B4">
+  <title><p>Facebook News Feed Algorithm Change Reduces Visibility of Page
+  Updates</p></title>
+  <aug>
+    <au><snm>Slegg</snm><fnm>J</fnm></au>
+  </aug>
+  <pubdate>2014</pubdate>
+  <url>http://searchenginewatch.com/sew/news/2324814/facebook-news-feed-algorithm-tweak-reduces-visibility-of-page-updates</url>
+</bibl>
+
+<bibl id="B5">
+  <title><p>Here comes everybody: The power of organizing without
+  organizations</p></title>
+  <aug>
+    <au><snm>Shirky</snm><fnm>C</fnm></au>
+  </aug>
+  <publisher>London: Penguin</publisher>
+  <pubdate>2008</pubdate>
+</bibl>
+
+<bibl id="B6">
+  <title><p>Evolution of networks</p></title>
+  <aug>
+    <au><snm>Dorogovtsev</snm><fnm>SN</fnm></au>
+    <au><snm>Mendes</snm><fnm>JF</fnm></au>
+  </aug>
+  <source>Advances in physics</source>
+  <publisher>Taylor \& Francis</publisher>
+  <pubdate>2002</pubdate>
+  <volume>51</volume>
+  <issue>4</issue>
+  <fpage>1079</fpage>
+  <lpage>-1187</lpage>
+</bibl>
+
+<bibl id="B7">
+  <title><p>Collective Intelligence: Mankinds Emerging World in
+  Cyberspace</p></title>
+  <aug>
+    <au><snm>Pierre</snm><fnm>LEVY</fnm></au>
+  </aug>
+  <source>Cambrigde, Mass.: Perseus Books</source>
+  <pubdate>1997</pubdate>
+</bibl>
+
+<bibl id="B8">
+  <title><p>The roots of computer supported argument visualization</p></title>
+  <aug>
+    <au><snm>Shum</snm><fnm>SB</fnm></au>
+  </aug>
+  <source>Visualizing argumentation</source>
+  <publisher>London: Springer</publisher>
+  <pubdate>2003</pubdate>
+  <fpage>3</fpage>
+  <lpage>-24</lpage>
+</bibl>
+
+<bibl id="B9">
+  <title><p>Enabling large-scale deliberation using attention-mediation
+  metrics</p></title>
+  <aug>
+    <au><snm>Klein</snm><fnm>M</fnm></au>
+  </aug>
+  <source>Computer Supported Cooperative Work (CSCW)</source>
+  <publisher>Springer</publisher>
+  <pubdate>2012</pubdate>
+  <volume>21</volume>
+  <issue>4-5</issue>
+  <fpage>449</fpage>
+  <lpage>-473</lpage>
+</bibl>
+
+<bibl id="B10">
+  <title><p>Building successful online communities: Evidence-based social
+  design</p></title>
+  <aug>
+    <au><snm>Kraut</snm><fnm>RE</fnm></au>
+    <au><snm>Resnick</snm><fnm>P</fnm></au>
+    <au><snm>Kiesler</snm><fnm>S</fnm></au>
+    <au><snm>Burke</snm><fnm>M</fnm></au>
+    <au><snm>Chen</snm><fnm>Y</fnm></au>
+    <au><snm>Kittur</snm><fnm>N</fnm></au>
+    <au><snm>Konstan</snm><fnm>J</fnm></au>
+    <au><snm>Ren</snm><fnm>Y</fnm></au>
+    <au><snm>Riedl</snm><fnm>J</fnm></au>
+  </aug>
+  <publisher>Cambridge, Massachusetts, USA: MIT Press</publisher>
+  <pubdate>2012</pubdate>
+</bibl>
+
+<bibl id="B11">
+  <title><p>Emerging, Collective Intelligence for Personal, Organisational and
+  Social Use</p></title>
+  <aug>
+    <au><snm>Diplaris</snm><fnm>S</fnm></au>
+    <au><snm>Sonnenbichler</snm><fnm>A</fnm></au>
+    <au><snm>Kaczanowski</snm><fnm>T</fnm></au>
+    <au><snm>Mylonas</snm><fnm>P</fnm></au>
+    <au><snm>Scherp</snm><fnm>A</fnm></au>
+    <au><snm>Janik</snm><fnm>M</fnm></au>
+    <au><snm>Papadopoulos</snm><fnm>S</fnm></au>
+    <au><snm>Ovelgoenne</snm><fnm>M</fnm></au>
+    <au><snm>Kompatsiaris</snm><fnm>Y</fnm></au>
+  </aug>
+  <source>Next Generation Data Technologies for Collective Computational
+  Intelligence</source>
+  <publisher>Berlin, Heidelberg: Springer Berlin Heidelberg</publisher>
+  <editor>Bessis, Nik and Xhafa, Fatos</editor>
+  <pubdate>2011</pubdate>
+  <fpage>527</fpage>
+  <lpage>-573</lpage>
+</bibl>
+
+<bibl id="B12">
+  <title><p>Contested collective intelligence: Rationale, technologies, and a
+  human-machine annotation study</p></title>
+  <aug>
+    <au><snm>De Liddo</snm><fnm>A</fnm></au>
+    <au><snm>S{\'a}ndor</snm><fnm>{\'A}</fnm></au>
+    <au><snm>Shum</snm><fnm>SB</fnm></au>
+  </aug>
+  <source>Computer Supported Cooperative Work (CSCW)</source>
+  <publisher>Springer</publisher>
+  <pubdate>2012</pubdate>
+  <volume>21</volume>
+  <issue>4-5</issue>
+  <fpage>417</fpage>
+  <lpage>-448</lpage>
+</bibl>
+
+<bibl id="B13">
+  <title><p>Network analysis in the social sciences</p></title>
+  <aug>
+    <au><snm>Borgatti</snm><fnm>SP</fnm></au>
+    <au><snm>Mehra</snm><fnm>A</fnm></au>
+    <au><snm>Brass</snm><fnm>DJ</fnm></au>
+    <au><snm>Labianca</snm><fnm>G</fnm></au>
+  </aug>
+  <source>science</source>
+  <publisher>American Association for the Advancement of Science</publisher>
+  <pubdate>2009</pubdate>
+  <volume>323</volume>
+  <issue>5916</issue>
+  <fpage>892</fpage>
+  <lpage>-895</lpage>
+</bibl>
+
+<bibl id="B14">
+  <title><p>Structural holes: The social structure of competition</p></title>
+  <aug>
+    <au><snm>Burt</snm><fnm>RS</fnm></au>
+  </aug>
+  <publisher>Cambridge: Harvard university press</publisher>
+  <pubdate>2009</pubdate>
+</bibl>
+
+<bibl id="B15">
+  <title><p>Tastes, ties, and time: A new social network dataset using
+  Facebook. com</p></title>
+  <aug>
+    <au><snm>Lewis</snm><fnm>K</fnm></au>
+    <au><snm>Kaufman</snm><fnm>J</fnm></au>
+    <au><snm>Gonzalez</snm><fnm>M</fnm></au>
+    <au><snm>Wimmer</snm><fnm>A</fnm></au>
+    <au><snm>Christakis</snm><fnm>N</fnm></au>
+  </aug>
+  <source>Social networks</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2008</pubdate>
+  <volume>30</volume>
+  <issue>4</issue>
+  <fpage>330</fpage>
+  <lpage>-342</lpage>
+</bibl>
+
+<bibl id="B16">
+  <title><p>Toward a Better Understanding of Evolving Social
+  Networks</p></title>
+  <aug>
+    <au><snm>Nick</snm><fnm>B</fnm></au>
+  </aug>
+  <source>PhD thesis</source>
+  <pubdate>2013</pubdate>
+</bibl>
+
+<bibl id="B17">
+  <title><p>Preferential attachment in online networks: measurement and
+  explanations</p></title>
+  <aug>
+    <au><snm>Kunegis</snm><fnm>J</fnm></au>
+    <au><snm>Blattner</snm><fnm>M</fnm></au>
+    <au><snm>Moser</snm><fnm>C</fnm></au>
+  </aug>
+  <source>Proceedings of the 5th Annual ACM Web Science Conference</source>
+  <pubdate>2013</pubdate>
+  <fpage>205</fpage>
+  <lpage>-214</lpage>
+</bibl>
+
+<bibl id="B18">
+  <title><p>Why we twitter: understanding microblogging usage and
+  communities</p></title>
+  <aug>
+    <au><snm>Java</snm><fnm>A</fnm></au>
+    <au><snm>Song</snm><fnm>X</fnm></au>
+    <au><snm>Finin</snm><fnm>T</fnm></au>
+    <au><snm>Tseng</snm><fnm>B</fnm></au>
+  </aug>
+  <source>Proceedings of the 9th WebKDD and 1st SNA-KDD 2007 workshop on Web
+  mining and social network analysis</source>
+  <pubdate>2007</pubdate>
+  <fpage>56</fpage>
+  <lpage>-65</lpage>
+</bibl>
+
+<bibl id="B19">
+  <title><p>The simple rules of social contagion</p></title>
+  <aug>
+    <au><snm>Hodas</snm><fnm>NO</fnm></au>
+    <au><snm>Lerman</snm><fnm>K</fnm></au>
+  </aug>
+  <source>Scientific reports</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2014</pubdate>
+  <volume>4</volume>
+</bibl>
+
+<bibl id="B20">
+  <title><p>When the wikipedians talk: Network and tree structure of wikipedia
+  discussion pages.</p></title>
+  <aug>
+    <au><snm>Laniado</snm><fnm>D</fnm></au>
+    <au><snm>Tasso</snm><fnm>R</fnm></au>
+    <au><snm>Volkovich</snm><fnm>Y</fnm></au>
+    <au><snm>Kaltenbrunner</snm><fnm>A</fnm></au>
+  </aug>
+  <source>ICWSM</source>
+  <pubdate>2011</pubdate>
+</bibl>
+
+<bibl id="B21">
+  <title><p>Expertise networks in online communities: structure and
+  algorithms</p></title>
+  <aug>
+    <au><snm>Zhang</snm><fnm>J</fnm></au>
+    <au><snm>Ackerman</snm><fnm>MS</fnm></au>
+    <au><snm>Adamic</snm><fnm>L</fnm></au>
+  </aug>
+  <source>Proceedings of the 16th international conference on World Wide
+  Web</source>
+  <pubdate>2007</pubdate>
+  <fpage>221</fpage>
+  <lpage>-230</lpage>
+</bibl>
+
+<bibl id="B22">
+  <title><p>A quantitative study of social organisation in open source software
+  communities</p></title>
+  <aug>
+    <au><snm>Zanetti</snm><fnm>MS</fnm></au>
+    <au><snm>Sarigol</snm><fnm>E</fnm></au>
+    <au><snm>Scholtes</snm><fnm>I</fnm></au>
+    <au><snm>Tessone</snm><fnm>CJ</fnm></au>
+    <au><snm>Schweitzer</snm><fnm>F</fnm></au>
+  </aug>
+  <source>arXiv preprint arXiv:1208.4289</source>
+  <pubdate>2012</pubdate>
+</bibl>
+
+<bibl id="B23">
+  <title><p>Emergence of scaling in random networks</p></title>
+  <aug>
+    <au><snm>Barab{\'a}si</snm><fnm>AL</fnm></au>
+    <au><snm>Albert</snm><fnm>R</fnm></au>
+  </aug>
+  <source>science</source>
+  <publisher>American Association for the Advancement of Science</publisher>
+  <pubdate>1999</pubdate>
+  <volume>286</volume>
+  <issue>5439</issue>
+  <fpage>509</fpage>
+  <lpage>-512</lpage>
+</bibl>
+
+<bibl id="B24">
+  <title><p>The origin of bursts and heavy tails in human dynamics</p></title>
+  <aug>
+    <au><snm>Barabasi</snm><fnm>AL</fnm></au>
+  </aug>
+  <source>Nature</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2005</pubdate>
+  <volume>435</volume>
+  <issue>7039</issue>
+  <fpage>207</fpage>
+  <lpage>-211</lpage>
+</bibl>
+
+<bibl id="B25">
+  <title><p>Mean-field theory for scale-free random networks</p></title>
+  <aug>
+    <au><snm>Barab{\'a}si</snm><fnm>AL</fnm></au>
+    <au><snm>Albert</snm><fnm>R</fnm></au>
+    <au><snm>Jeong</snm><fnm>H</fnm></au>
+  </aug>
+  <source>Physica A: Statistical Mechanics and its Applications</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>1999</pubdate>
+  <volume>272</volume>
+  <issue>1</issue>
+  <fpage>173</fpage>
+  <lpage>-187</lpage>
+</bibl>
+
+<bibl id="B26">
+  <title><p>Planetary-scale views on a large instant-messaging
+  network</p></title>
+  <aug>
+    <au><snm>Leskovec</snm><fnm>J</fnm></au>
+    <au><snm>Horvitz</snm><fnm>E</fnm></au>
+  </aug>
+  <source>Proceedings of the 17th international conference on World Wide
+  Web</source>
+  <pubdate>2008</pubdate>
+  <fpage>915</fpage>
+  <lpage>-924</lpage>
+</bibl>
+
+<bibl id="B27">
+  <title><p>Testing for the signature of policy in online
+  communities</p></title>
+  <aug>
+    <au><snm>Cottica</snm><fnm>A</fnm></au>
+    <au><snm>Melan{\c{c}}on</snm><fnm>G</fnm></au>
+    <au><snm>Renoust</snm><fnm>B</fnm></au>
+  </aug>
+  <source>International Workshop on Complex Networks and their
+  Applications</source>
+  <pubdate>2016</pubdate>
+  <fpage>41</fpage>
+  <lpage>-54</lpage>
+</bibl>
+
+<bibl id="B28">
+  <title><p>Distinguishing topical and social groups based on common identity
+  and bond theory</p></title>
+  <aug>
+    <au><snm>Grabowicz</snm><fnm>PA</fnm></au>
+    <au><snm>Aiello</snm><fnm>LM</fnm></au>
+    <au><snm>Egu{\'\i}luz</snm><fnm>VM</fnm></au>
+    <au><snm>Jaimes</snm><fnm>A</fnm></au>
+  </aug>
+  <source>Proceedings of the sixth ACM international conference on Web search
+  and data mining</source>
+  <pubdate>2013</pubdate>
+  <fpage>627</fpage>
+  <lpage>-636</lpage>
+</bibl>
+
+<bibl id="B29">
+  <title><p>Power-law distributions in empirical data</p></title>
+  <aug>
+    <au><snm>Clauset</snm><fnm>A</fnm></au>
+    <au><snm>Shalizi</snm><fnm>CR</fnm></au>
+    <au><snm>Newman</snm><fnm>ME</fnm></au>
+  </aug>
+  <source>SIAM review</source>
+  <publisher>SIAM</publisher>
+  <pubdate>2009</pubdate>
+  <volume>51</volume>
+  <issue>4</issue>
+  <fpage>661</fpage>
+  <lpage>-703</lpage>
+</bibl>
+
+</refgrp>
+} % end of \BMCxmlcomment
