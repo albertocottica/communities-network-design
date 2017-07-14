@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.19)  6 MAR 2017 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.1.19)  7 MAR 2017 12:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -541,8 +541,8 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
 ./testing-for-signature.tex:105: Undefined control sequence.
 <argument> \astroncite 
                        {Cottica et~al.}{2016}
-l.105 ...016 conference (\cite{cottica2016testing}
-                                                  )
+l.105 ...2016 conference \cite{cottica2016testing}
+                                                  
 ? r
 OK, entering \nonstopmode...
 [1
@@ -562,8 +562,8 @@ and I'll forget about whatever was undefined.
 ./testing-for-signature.tex:121: Undefined control sequence.
 <argument> \astroncite 
                        {Tapscott and Williams}{2008}
-l.121 ...literature (\cite{tapscott2008wikinomics}
-                                                  ,\cite{slegg2014facebook}).
+l.121 ... literature \cite{tapscott2008wikinomics}
+                                                  ,\cite{slegg2014facebook}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -574,7 +574,7 @@ and I'll forget about whatever was undefined.
 <argument> \astroncite 
                        {Slegg}{2014}
 l.121 ...t2008wikinomics},\cite{slegg2014facebook}
-                                                  ).
+                                                  .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1038,41 +1038,40 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Pictures/PDF_fit_innovatoriPA.png, id=182, 519.6213pt x 414.8298pt>
-File: ./Pictures/PDF_fit_innovatoriPA.png Graphic file (type png)
+<./Pictures/PDF_innovatoriPA.png, id=182, 578.16pt x 433.62pt>
+File: ./Pictures/PDF_innovatoriPA.png Graphic file (type png)
 
-<use ./Pictures/PDF_fit_innovatoriPA.png>
-Package pdftex.def Info: ./Pictures/PDF_fit_innovatoriPA.png used on input line
- 245.
-(pdftex.def)             Requested size: 215.00452pt x 113.80952pt.
+<use ./Pictures/PDF_innovatoriPA.png>
+Package pdftex.def Info: ./Pictures/PDF_innovatoriPA.png used on input line 245
+.
+(pdftex.def)             Requested size: 215.0023pt x 161.25072pt.
 
-<./Pictures/YES_PDF_fit_no_onboarding_178.png, id=184, 519.6213pt x 414.8298pt>
-File: ./Pictures/YES_PDF_fit_no_onboarding_178.png Graphic file (type png)
-<use ./Pictures/YES_PDF_fit_no_onboarding_178.png>
-Package pdftex.def Info: ./Pictures/YES_PDF_fit_no_onboarding_178.png used on i
-nput line 245.
-(pdftex.def)             Requested size: 215.00452pt x 113.80952pt.
+<./Pictures/PDF_fit_no_onboarding_0049.png, id=184, 578.16pt x 433.62pt>
+File: ./Pictures/PDF_fit_no_onboarding_0049.png Graphic file (type png)
 
-<./Pictures/PDF_fit_edgeryders.png, id=185, 519.6213pt x 414.8298pt>
-File: ./Pictures/PDF_fit_edgeryders.png Graphic file (type png)
+<use ./Pictures/PDF_fit_no_onboarding_0049.png>
+Package pdftex.def Info: ./Pictures/PDF_fit_no_onboarding_0049.png used on inpu
+t line 245.
+(pdftex.def)             Requested size: 215.0023pt x 161.25072pt.
 
-<use ./Pictures/PDF_fit_edgeryders.png>
-Package pdftex.def Info: ./Pictures/PDF_fit_edgeryders.png used on input line 2
-54.
-(pdftex.def)             Requested size: 215.00452pt x 113.80952pt.
+<./Pictures/PDF_edgeryders.png, id=185, 578.16pt x 433.62pt>
+File: ./Pictures/PDF_edgeryders.png Graphic file (type png)
 
-<./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png, id=186, 519.6213pt x 414.82
-98pt>
-File: ./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png Graphic file (type png)
+<use ./Pictures/PDF_edgeryders.png>
+Package pdftex.def Info: ./Pictures/PDF_edgeryders.png used on input line 254.
+(pdftex.def)             Requested size: 215.0023pt x 161.25072pt.
 
- <use ./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png>
-Package pdftex.def Info: ./Pictures/YES-PDF_fit_onboarding_nu_1_1__429.png used
- on input line 254.
-(pdftex.def)             Requested size: 215.00452pt x 113.80952pt.
+<./Pictures/PDF_fit_nu1_1_nu2_1_wob_True_0049.png, id=186, 578.16pt x 433.62pt>
+File: ./Pictures/PDF_fit_nu1_1_nu2_1_wob_True_0049.png Graphic file (type png)
+<use ./Pictures/PDF_fit_nu1_1_nu2_1_wob_True_0049.png>
+Package pdftex.def Info: ./Pictures/PDF_fit_nu1_1_nu2_1_wob_True_0049.png used 
+on input line 254.
+(pdftex.def)             Requested size: 215.0023pt x 161.25072pt.
  [6 <./Pictures/innovatoripa_01.jpg> <./Pictures/edgeryders_02.jpg> <./Pictures
-/matera2019_01.jpg>] [7 <./Pictures/PDF_fit_innovatoriPA.png> <./Pictures/YES_P
-DF_fit_no_onboarding_178.png> <./Pictures/PDF_fit_edgeryders.png> <./Pictures/Y
-ES-PDF_fit_onboarding_nu_1_1__429.png>]
+/matera2019_01.jpg>]
+[7 <./Pictures/PDF_innovatoriPA.png> <./Pictures/PDF_fit_no_onboarding_0049.png
+> <./Pictures/PDF_edgeryders.png> <./Pictures/PDF_fit_nu1_1_nu2_1_wob_True_0049
+.png>]
 ./testing-for-signature.tex:291: Undefined control sequence.
 <argument> \astroncite 
                        {Dorogovtsev and Mendes}{2002}
@@ -1542,13 +1541,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 617.
  ) 
 Here is how much of TeX's memory you used:
- 10496 strings out of 493089
- 161194 string characters out of 6134842
- 299101 words of memory out of 5000000
- 13262 multiletter control sequences out of 15000+600000
+ 10497 strings out of 493089
+ 161157 string characters out of 6134842
+ 299148 words of memory out of 5000000
+ 13263 multiletter control sequences out of 15000+600000
  86791 words of font info for 417 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,11n,52p,2040b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,11n,52p,2038b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
@@ -1561,10 +1560,10 @@ exmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2015/texmf
 nts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on testing-for-signature.pdf (21 pages, 1105793 bytes).
+Output written on testing-for-signature.pdf (21 pages, 1098544 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
+ 406 PDF objects out of 1000 (max. 8388607)
+ 349 compressed objects within 4 object streams
  107 named destinations out of 1000 (max. 500000)
  63152 words of extra memory for PDF output out of 74296 (max. 10000000)
 
