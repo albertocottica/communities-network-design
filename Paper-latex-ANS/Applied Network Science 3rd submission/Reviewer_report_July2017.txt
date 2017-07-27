@@ -1,0 +1,87 @@
+APNS-D-17-00031R1
+Online community management as social network design: testing for the signature of management activities in online communities
+Alberto Cottica; Guy Melançon; Benjamin Renoust, PhD
+Applied Network Science
+
+Dear Mr. Melançon,
+
+Your manuscript "Online community management as social network design: testing for the signature of management activities in online communities" (APNS-D-17-00031R1) has been assessed by our reviewers. Although it is of interest, we are unable to consider it for publication in its current form. The reviewers have raised a number of points which we believe would improve the manuscript and may allow a revised version to be published in Applied Network Science. 
+
+Their reports, together with any other comments, are below. Please also take a moment to check our website at http://apns.edmgr.com/ for any additional comments that were saved as attachments.
+
+If you are able to fully address these points, we would encourage you to submit a revised manuscript to Applied Network Science. Once you have made the necessary corrections, please submit online at:
+
+http://apns.edmgr.com/
+
+Your username is: melancon
+Your password is: available at this link http://apns.edmgr.com/Default.aspx?pg=accountFinder.aspx&firstname=Guy&lastname=Melan%c3%a7on&email_address=Guy.Melancon@u-bordeaux.fr
+
+Please include a point-by-point response within the 'Response to Reviewers' box in the submission system and highlight (with 'tracked changes'/coloured/underlines/highlighted text) all changes made when revising the manuscript. Please ensure you describe additional experiments that were carried out and include a detailed rebuttal of any criticisms or requested revisions that you disagreed with. Please also ensure that your revised manuscript conforms to the journal style, which can be found in the Submission Guidelines on the journal homepage.
+
+The due date for submitting the revised version of your article is 03 Aug 2017.
+
+Please note, if your manuscript is accepted you will not be able to make any changes to the authors, or order of authors, of your manuscript once the editor has accepted your manuscript for publication. If you wish to make any changes to authorship before you resubmit your revisions, please reply to this email and ask for a 'Request for change in authorship' form which should be completed by all authors (including those to be removed) and returned to this email address. Please ensure that any changes in authorship fulfil the criteria for authorship as outlined in BioMed Central's editorial policies (http://www.biomedcentral.com/about/editorialpolicies#authorship).
+
+Once you have completed and returned the form, your request will be considered and you will be advised whether the requested changes will be allowed.
+By resubmitting your manuscript you confirm that all author details on the revised version are correct, that all authors have agreed to authorship and order of authorship for this manuscript and that all authors have the appropriate permissions and rights to the reported data.
+
+Please be aware that we may investigate, or ask your institute to investigate, any unauthorised attempts to change authorship or discrepancies in authorship between the submitted and revised versions of your manuscript.
+
+I look forward to receiving your revised manuscript soon.
+
+Best wishes,
+
+Hocine Cherifi, Ph.D
+Applied Network Science
+https://appliednetsci.springeropen.com/
+
+Reviewer reports:
+
+Reviewer #1: The authors have presented an interesting approach to test the signature of management activities using degree (in-degree) distribution in online community networks. The authors have addressed some of the previous comments in the revised version.
+
+Below are the new comments.
+- The details added in section 3.3 make the experiments a bit clearer. However, some parts of section 3.2 are not very clear until reading section 3.3.
+- The hypotheses should be put in the context of the paper. Hypothesis 1 and 2 seem only slightly different (k>1 versus k>= k_min). They are very much similar. Can you give more explanations about these hypotheses? Why were they chosen? Give the values of k_min for each case study.
+- Both hypotheses do not mention about onboarding, which is the central of the study. Thus, the current version is less convincing.
+- There is some inconsistency in the notations. For example, 
++ "Denote the in-degree of nodes in the network by k", "where k is the in-degree distribution of C".
++ 3.3.1 Without onboarding: "the probability that the new edge points to node s is proportional to k(s)+A_s"
+- 3.3.2 With onboarding: "the probability that the new edge points to node s is proportional to k(s) + A"
+=> But later only A value is specified. If A is a constant for all nodes, the probability based on k(s)+A is somewhat similar to k(s).
++ section 3.2, "m the number of nodes that join the network at each timestep", and then section 3.3.1 mentions that "At each time step, one new node ... m new edges ...". Section 3.3.2 doesn't mention about m, but rather it states that 3 edges are added at each time step (three dot points).
+=> These details need to clear. At the moment, it is very confusing how the graphs were generated.
+- Many details of the Results should be put in the context of the hypotheses. Also there should be a summary of the hypotheses (either confirmation or rejection) for the studies. Can we detect the existence or non-existence of onboarding? Which set of values, m, k, A, v1, v2 are good or bad?
+- The discussions in the first paragraph of Section 5 are interesting. The author may consider to generate some hypotheses from these and then revise the experiments and results. 
+
+Some typos
+- A lot of missing references. So many ??
+- Page 6, second paragraph, "where q_min is ..." => do you mean k_min?
+
+
+Reviewer #3: With regard to the points I raised in my previous review:
+3.1 The authors have now included a satisfactory description of their model process.
+
+3.2 Having seen how the model works, I am even less convinced about v_1 and v_2. In their response, the authors state:
+"Section now addresses this issue. It is worth noting that this actually
+is a result, and an unexpected and surprising one - as discussed in the
+paper. To get to it, we had to run the simulation in the way we did."
+The authors forgot to mention which section this new information is in, and having read through the new version of the paper, I cannot find any significant discussion of what this result is or why the simulation has to be done in this way.
+
+3.3 The grammar in the paper seems to be improved.
+
+3.4
+The description of v_1 clarifies why the results with v_1 = 1 are closest to the null model: v_1 essentially introduces preferential attachment, and if A= A_s (the values used are not given), we will inevitably get back the same powerlaw exponent. 
+
+I also have some new comments:
+
+3.5 I have several concerns about the model:
+* It is not clear at all what v_1 achieves: in the null model, m new edges are introduced when a new node is introduced, and their destinations are assigned according to preferential attachment. In the onboarding model, a new edge is introduced with probability v_1, whose destination is also assigned by preferential attachment. Meanwhile the m nodes have disappeared.
+Presumably the m edges added in the null model are supposed to represent the normal activity within the network, nothing to do with the new node. It makes no sense to eliminate this step in the onboarding model. Why would this normal activity suddenly stop?
+Further, the effect of these m edges is substituted (at least in part) by the v_1 step. The onboarding model therefore is not clear with respect to edge additions.
+* The effect of v_2 seems a more reasonable conception of onboarding.
+* A new edge is always added pointing to the new node. Where does it come from?
+
+So, combined with 3.2, I am less convinced by the model, and particularly the results related to v_1.
+The authors should write more than "this is actually a result" in order to convince me.
+
+In summary, the paper is more complete, as the authors now properly describe what they have done. But in seeing this, I remain more sceptical about the model. Further revision is needed.
